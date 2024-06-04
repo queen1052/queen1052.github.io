@@ -1,5 +1,5 @@
 ---
-title: 전략만들기 - Powertrend 2
+title: 전략만들기 1
 author: Dev
 date: 2024-06-03 15:14:42 +0900
 categories: [systemtrading, strategy]
@@ -7,9 +7,9 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 ## 전략만들기 설명
 ---
-- [전략만들기 - Powertrend 1](/posts/nasdaq-strategy-Powertrend/)
-- [전략만들기 - Powertrend 2](/posts/nasdaq-strategy-Powertrend-func/)
-- [전략만들기 - Powertrend 3](/posts/nasdaq-strategy-Powertrend-tradingview/)
+- [전략만들기 1](/posts/nasdaq-strategy-1/)
+- [전략만들기 2](/posts/nasdaq-strategy-2/)
+- [전략만들기 3](/posts/nasdaq-strategy-3/)
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.
 > - trading view 신호 분석
@@ -24,12 +24,13 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 
 사용하는 함수로 인한 차이 같은데 함수를 데이터로 찍어보면서 확인 해봐야 할 것 같다.
 
-![img](/assets/img/2024-06-03/2024-06-03-tradingview-powertrend.png)*trading vidw powertrend*
+![img](/assets/img/2024-06-03/2024-06-03-tradingview.png)*trading view indicator*
 
 
 # [python 코드로 변환]
 > - nz는 값이 NaN이면 0을 반환하고 아니면 값을 그대로 사용한다.
 ## trading view function
+
 ```python
 smoothrng(float source, int sampling_period = 50, float range_mult = 3)=>
     wper      = (sampling_period*2) - 1
@@ -92,4 +93,4 @@ return upward
 
 trading view에서 웹훅을 이용해서 개발 해보던지 해야할 것 같다.
 
-![img](/assets/img/2024-06-04/2024-06-04-027-test-result.png)*trading vidw powertrend*
+![img](/assets/img/2024-06-04/2024-06-04-027-test-result.png)*테스트 결과*

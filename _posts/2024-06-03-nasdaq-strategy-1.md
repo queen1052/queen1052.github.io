@@ -1,5 +1,5 @@
 ---
-title: 전략만들기 - Powertrend 1
+title: 전략만들기 2
 author: Dev
 date: 2024-06-03 15:14:42 +0900
 categories: [systemtrading, strategy]
@@ -7,9 +7,9 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 ## 전략만들기 설명
 ---
-- [전략만들기 - Powertrend 1](/posts/nasdaq-strategy-Powertrend/)
-- [전략만들기 - Powertrend 2](/posts/nasdaq-strategy-Powertrend-func/)
-- [전략만들기 - Powertrend 3](/posts/nasdaq-strategy-Powertrend-tradingview/)
+- [전략만들기 1](/posts/nasdaq-strategy-1/)
+- [전략만들기 2](/posts/nasdaq-strategy-2/)
+- [전략만들기 3](/posts/nasdaq-strategy-3/)
 
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.
@@ -19,7 +19,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 
 # [trading view 신호 분석]
 
-오늘 분석하고 개발을 진행할 신호는 trading view의 Powertrend 신호이다.
+trading view 신호를 분석하고 python으로 개발 해보자.
 
 아래는 5분 캔들 차트에 buy/sell 신호가 적용된 모습이다.
 
@@ -29,7 +29,7 @@ python 언어를 사용하는 이유는 데이터 처리에 매우 뛰어나고 
 
 개발 실력이 없어도 chatgpt와 문법을 조금 공부하고 google 검색을 해보면 개발이 가능하다.
 
-![img](/assets/img/2024-06-03/2024-06-03-tradingview-powertrend.png)*trading vidw powertrend*
+![img](/assets/img/2024-06-03/2024-06-03-tradingview.png)*trading view*
 
 아래는 pine script 코드를 정리한 것 이다. pine script 코드 블럭이 없기 때문에 python 코드 블럭으로 한다.
 
@@ -63,8 +63,8 @@ lowband = basetype - smoothrng_val
 uprng = self.trendUp(basetype)
 
 uprng_bool = uprng > 0
-data['powertrend_buy'] = np.logical_and(uprng_bool, np.roll(data['close'], 1) < hband)
-        data['powertrend_sell'] = np.logical_and(~uprng_bool, np.roll(data['close'], 1) > lowband)
+data['buy'] = np.logical_and(uprng_bool, np.roll(data['close'], 1) < hband)
+data['sell'] = np.logical_and(~uprng_bool, np.roll(data['close'], 1) > lowband)
 ```
 
 # [테스트 결과]
@@ -75,4 +75,4 @@ trading view 함수와 python 함수가 차이가 나다보니 결과도 오차�
 
 이런 오차를 잡아주고 수치를 맞추는게 꽤 어려운 작업인 것 같다. ㅠ.ㅠ
 
-![img](/assets/img/2024-06-03/2024-06-03-tradingview-powertrend-test1.png)*trading vidw powertrend*
+![img](/assets/img/2024-06-03/2024-06-03-tradingview-test1.png)*테스트 결과*

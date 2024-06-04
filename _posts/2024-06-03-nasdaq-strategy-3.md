@@ -1,5 +1,5 @@
 ---
-title: 전략만들기 - Powertrend 3
+title: 전략만들기 3
 author: Dev
 date: 2024-06-04 20:14:42 +0900
 categories: [systemtrading, strategy]
@@ -7,9 +7,9 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 ## 전략만들기 설명
 ---
-- [전략만들기 - Powertrend 1](/posts/nasdaq-strategy-Powertrend/)
-- [전략만들기 - Powertrend 2](/posts/nasdaq-strategy-Powertrend-func/)
-- [전략만들기 - Powertrend 3](/posts/nasdaq-strategy-Powertrend-tradingview/)
+- [전략만들기 1](/posts/nasdaq-strategy-1/)
+- [전략만들기 2](/posts/nasdaq-strategy-2/)
+- [전략만들기 3](/posts/nasdaq-strategy-3/)
 
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.
@@ -27,7 +27,7 @@ pine script 코드를 다시 들여다 보다 python에서 왜 뒤죽박죽인�
 
 우선 이 신호를 web hook으로 받아서 처리 해보기로 했다. 결과가 나쁘지 않으면 모로가도 한양만 가면 되는 것 아닌가...ㅎ.ㅎ
 
-![img](/assets/img/2024-06-03/2024-06-03-tradingview-powertrend.png)*trading vidw powertrend*
+![img](/assets/img/2024-06-03/2024-06-03-tradingview.png)*trading view*
 
 
 # web hook 만들기
@@ -76,3 +76,4 @@ def webhook():
 이제 이걸 자동매매하는 서버에 웹소켓으로 전달하면 될 것 같다.
 
 ![img](/assets/img/2024-06-04/2024-06-04-031-webhook-result.png)*web hook message 수신 결과*
+
