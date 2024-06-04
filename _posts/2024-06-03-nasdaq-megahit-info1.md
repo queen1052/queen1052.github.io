@@ -8,7 +8,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ## 자동매매 신호 설명
 ---
 - [자동매매 프로그램 설치 매뉴얼](https://blog.naver.com/making_money_nasdaq/222647725327)
-- [SpeedHit 소개](/자동매매/speedhit/2024/06/03/nasdaq-speedhit-info1/)
+- [SpeedHit 소개](/posts/nasdaq-speedhit-info1/)
 
 <br>
 <br>

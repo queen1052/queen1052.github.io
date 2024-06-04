@@ -8,9 +8,9 @@ tags: [GitHub, blog, GitHub blog]
 
 ## GitHub Blog 만들기
 ---
-[GitHub 블로그 만들기 기록 - 1](/it/2024/05/31/first-step-new-blog/)
+[GitHub 블로그 만들기 기록 - 1](/posts/first-step-new-blog/)
 
-[GitHub 블로그 만들기 기록 - 2](/it/2024/05/31/second-step-new-blog/)
+[GitHub 블로그 만들기 기록 - 2](/posts/second-step-new-blog/)
 
 <br>
 <br>
