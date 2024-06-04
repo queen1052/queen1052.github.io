@@ -86,6 +86,10 @@ return upward
 
 # [테스트 결과]
 
-핫무ㅜㄴㅇㄹㄴㅇㄹ
+결국 로직을 검토하면서 로직상 문제가 없는 것을 확인 했으나,,, 값은 일치 시킬 수 없었다.
 
-![img](/assets/img/2024-06-03/.png)*trading vidw powertrend*
+추가적으로 보정값을 주거나 변수를 바꿔봐야 할 것 같다.
+
+trading view에서 웹훅을 이용해서 개발 해보던지 해야할 것 같다.
+
+![img](/assets/img/2024-06-04/2024-06-04-027-test-result.png)*trading vidw powertrend*
