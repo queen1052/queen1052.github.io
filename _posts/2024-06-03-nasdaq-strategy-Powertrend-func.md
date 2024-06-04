@@ -9,7 +9,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 - [전략만들기 - Powertrend 1](/posts/nasdaq-strategy-Powertrend/)
 - [전략만들기 - Powertrend 2](/posts/nasdaq-strategy-Powertrend-func/)
-
+- [전략만들기 - Powertrend 3](/posts/nasdaq-strategy-Powertrend-tradingview/)
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.
 > - trading view 신호 분석
@@ -27,7 +27,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ![img](/assets/img/2024-06-03/2024-06-03-tradingview-powertrend.png)*trading vidw powertrend*
 
 
-
+# [python 코드로 변환]
 > - nz는 값이 NaN이면 0을 반환하고 아니면 값을 그대로 사용한다.
 ## trading view function
 ```python
