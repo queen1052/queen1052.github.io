@@ -51,7 +51,7 @@ trading view web hook을 만들기 위해 돈을 투자했다. 무료 35$...
 
 ![img](/assets/img/2024-06-04/2024-06-04-029-tradingview-alert2.png)*trading vidw alert 만들기 2*
 
-
+ 
 ## python flask
 
 flask로 web hook을 받은 코드를 만들었다.
