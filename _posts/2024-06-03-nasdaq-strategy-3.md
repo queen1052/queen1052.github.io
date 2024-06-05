@@ -30,7 +30,7 @@ pine script 코드를 다시 들여다 보다 python에서 왜 뒤죽박죽인�
 ![img](/assets/img/2024-06-03/2024-06-03-tradingview.png)*trading view*
 
 
-# web hook 만들기
+# [web hook 만들기]
 
 trading view web hook을 만들기 위해 돈을 투자했다. 무료 35$...
 
