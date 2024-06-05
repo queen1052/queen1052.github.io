@@ -1,5 +1,5 @@
 ---
-title: 전략만들기 3
+title: Trading view web hook 을 이용한 자동매매 개발
 author: Dev
 date: 2024-06-04 20:14:42 +0900
 categories: [systemtrading, strategy]
@@ -7,9 +7,10 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 ## 전략만들기 설명
 ---
-- [전략만들기 1](/posts/nasdaq-strategy-1/)
-- [전략만들기 2](/posts/nasdaq-strategy-2/)
-- [전략만들기 3](/posts/nasdaq-strategy-3/)
+- [Trading view를 분석해서 자동매매 만들기](/posts/nasdaq-strategy-1/)
+- [Trading view 함수 오차 잡는건 어렵다.](/posts/nasdaq-strategy-2/)
+- [Trading view web hook 을 이용한 자동매매 개발](/posts/nasdaq-strategy-3/)
+- [Trading view web hook 을 적용한 자동매매 결과](/posts/nasdaq-strategy-4/)
 
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.
