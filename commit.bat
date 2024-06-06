@@ -2,6 +2,10 @@
 setlocal
 
 REM Stage all changes
+
+echo "pull orgin main"
+git pull origin main
+
 echo Staging changes...
 git add .
 

@@ -1,7 +1,7 @@
 ---
-title: Trading view web hook 을 적용한 자동매매 결과
+title: [전략1] Trading view web hook 을 적용한 자동매매 결과
 author: Dev
-date: 2024-06-05 19:14:42 +0900
+date: 2024-06-06 09:14:42 +0900
 categories: [systemtrading, strategy]
 tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크, 누적수익, 전략, tradingview, webhook, 웹훅]
 ---
@@ -80,3 +80,20 @@ trading view에 신호를 적용한 모습은 아래와 같다.
 
 ![img](/assets/img/2024-06-05/2024-06-05-024-tradingview-result1.png)*신호 테스트 결과*
 
+17시 10분에 발생된 신호가 미장 시작 이후에도 유지되어 매수 원웨이로 됐다.
+
+아래 차트는 trading view에서의 결과이다.
+
+![img](/assets/img/2024-06-05/2024-06-06-013-tradingview-result3.png)*신호 테스트 결과*
+
+자동매매 결과는 아래와 같다.
+
+목표 금액을 700만원으로 설정했는데 700만원 달성 후 종료가 됐다.
+
+목표 금액보다 더 높게 올려서 전부 먹지는 못했다.
+
+이제 해당 전략은 테스트만 쭉~ 해보면 될 것 같다.
+
+![img](/assets/img/2024-06-05/2024-06-06-013-tradingview-result4.png)*신호 테스트 결과*
+
+![img](/assets/img/2024-06-05/2024-06-06-013-tradingview-result5.png)*신호 테스트 결과*
