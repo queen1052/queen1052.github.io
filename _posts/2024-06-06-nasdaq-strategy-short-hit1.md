@@ -15,7 +15,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - ShortHit 수익 현황
 > - ShortHit 거래 내역
 
-# [PIKAPIKA ?]
+# [ShortHit ?]
 
 SpeedHit과 MegaHit은 ShortHit의 큰 형들이다.
 
@@ -32,7 +32,7 @@ SpeedHit과 MegaHit이 5분 캔들을 가지고 장기 추세로 본다면, Shor
 ![img](/assets/img/2024-06-06/2024-06-06-001-shorthit-1.png)*ShortHit  통계*
 
 
-# [PIKAPIKA 수익 현황]
+# [ShortHit 수익 현황]
 
 일별 수익을 보면 나쁘지 않은 승률을 보이고 있다. 
 
@@ -42,7 +42,7 @@ SpeedHit과 MegaHit이 5분 캔들을 가지고 장기 추세로 본다면, Shor
 
 ![img](/assets/img/2024-06-06/2024-06-06-001-shorthit-2.png)*ShortHit 수익 현황*
 
-# [PIKAPIKA 거래 내역]
+# [ShortHit 거래 내역]
 
 자동매매에서 가장 중요한 것이 매매 횟수이다.
 
