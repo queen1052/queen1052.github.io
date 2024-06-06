@@ -2,7 +2,7 @@
 title: Trading view 함수 오차 잡는건 어렵다(전략1)
 author: Dev
 date: 2024-06-03 15:14:42 +0900
-categories: [systemtrading, strategy]
+categories: [systemtrading, PT8번]
 tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크, 누적수익, 전략, tradingview]
 ---
 ## 전략만들기 설명

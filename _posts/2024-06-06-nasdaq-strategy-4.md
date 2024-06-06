@@ -2,7 +2,7 @@
 title: Trading view web hook 을 적용한 자동매매 결과(전략1)
 author: Dev
 date: 2024-06-06 09:14:42 +0900
-categories: [systemtrading, strategy]
+categories: [systemtrading, PT8번]
 tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크, 누적수익, 전략, tradingview, webhook, 웹훅]
 ---
 ## 전략만들기 설명
