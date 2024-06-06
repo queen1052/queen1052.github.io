@@ -59,4 +59,4 @@ PIKAPIKA 도 그러다가 나온 신호이다.
 
 ![img](/assets/img/2024-06-06/2024-06-06-023-pikapika4.png)*pikapika 즉시진입 O 거래 내역*
 
-![img](/assets/img/2024-06-06/2024-06-06-023-pikapika4.png)*pikapika 즉시진입 X 거래 내역*
+![img](/assets/img/2024-06-06/2024-06-06-023-pikapika5.png)*pikapika 즉시진입 X 거래 내역*
