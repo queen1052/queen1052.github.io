@@ -3,8 +3,8 @@ setlocal
 
 REM Stage all changes
 
-echo "pull orgin main"
-git pull origin main
+@REM echo "pull orgin main"
+@REM git pull origin main
 
 echo Staging changes...
 git add .

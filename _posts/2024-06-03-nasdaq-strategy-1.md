@@ -1,5 +1,5 @@
 ---
-title: [전략1] Trading view를 분석해서 자동매매 만들기
+title: 전략1 - Trading view를 분석해서 자동매매 만들기
 author: Dev
 date: 2024-06-03 15:14:42 +0900
 categories: [systemtrading, strategy]
