@@ -3,7 +3,7 @@ title: ShortHit - 1
 author: Dev
 date: 2024-06-06 10:14:42 +0900
 categories: [systemtrading, ShortHit]
-tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크, 누적수익, 전략, tradingview, webhook, 웹훅]
+tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크, 누적수익, 전략, tradingview]
 ---
 ## 전략만들기 설명
 ---
