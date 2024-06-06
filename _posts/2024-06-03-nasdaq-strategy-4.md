@@ -1,5 +1,5 @@
 ---
-title: 전략1 - Trading view web hook 을 적용한 자동매매 결과
+title: Trading view web hook 을 적용한 자동매매 결과(전략1)
 author: Dev
 date: 2024-06-06 09:14:42 +0900
 categories: [systemtrading, strategy]

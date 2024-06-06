@@ -1,5 +1,5 @@
 ---
-title: 전략1 - Trading view 함수 오차 잡는건 어렵다.
+title: Trading view 함수 오차 잡는건 어렵다(전략1)
 author: Dev
 date: 2024-06-03 15:14:42 +0900
 categories: [systemtrading, strategy]
