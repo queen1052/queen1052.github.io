@@ -1,5 +1,5 @@
 ---
-title: 새로운 전략 PIKAPIKA 1
+title: 새로운 전략 - PIKAPIKA 1
 author: Dev
 date: 2024-06-06 10:14:42 +0900
 categories: [systemtrading, pikapika]
@@ -7,7 +7,8 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 ## 전략만들기 설명
 ---
-- [Trading view를 분석해서 자동매매 만들기](/posts/nasdaq-strategy-pikapika1/)
+- [새로운 전략 - PIKAPIKA 1](/posts/nasdaq-strategy-pikapika1/)
+- [삐까삐까~ 진정 넌 왕인 것이냐 - PIKAPIKA 2](/posts/nasdaq-strategy-pikapika2/)
 
 > 본 포스팅 신규 개발된 PIKAPIKA 소개한다.
 > - PIKAPIKA ?

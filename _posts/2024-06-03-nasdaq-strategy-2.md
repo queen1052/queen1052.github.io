@@ -11,6 +11,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 - [Trading view 함수 오차 잡는건 어렵다.](/posts/nasdaq-strategy-2/)
 - [Trading view web hook 을 이용한 자동매매 개발](/posts/nasdaq-strategy-3/)
 - [Trading view web hook 을 적용한 자동매매 결과](/posts/nasdaq-strategy-4/)
+- [거래를 오버해서 테스트 해보는 중](/posts/nasdaq-strategy-5/)
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.
 > - trading view 신호 분석
