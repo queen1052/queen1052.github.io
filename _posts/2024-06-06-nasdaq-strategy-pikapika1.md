@@ -15,7 +15,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - PIKAPIKA 수익 현황
 > - PIKAPIKA 거래 내역
 
-# [PIKAPIKA ?]
+## [PIKAPIKA ?]
 
 새로운 전략이 생각나거나 trading view에서 새로운 indicator를 보거나 유튜브에서 새로운 전략을 보게되면 개발해서 적용 해보고 있다.
 
@@ -36,7 +36,7 @@ PIKAPIKA 도 그러다가 나온 신호이다.
 ![img](/assets/img/2024-06-06/2024-06-06-021-pikapika1.png)*pikapika 통계*
 
 
-# [PIKAPIKA 수익 현황]
+## [PIKAPIKA 수익 현황]
 
 일별 수익 현황을 보면 즉시 진입한 것은 손실 제한에 걸리면서 -350만원이 됐다. 
 
@@ -48,7 +48,7 @@ PIKAPIKA 도 그러다가 나온 신호이다.
 
 ![img](/assets/img/2024-06-06/2024-06-06-021-pikapika2.png)*pikapika 즉시진입 X 수익 현황*
 
-# [PIKAPIKA 거래 내역]
+## [PIKAPIKA 거래 내역]
 
 단타인 걸까???
 

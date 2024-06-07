@@ -15,7 +15,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - PIKAPIKA 수익 현황
 > - PIKAPIKA 거래 내역
 
-# [PIKAPIKA ?]
+## [PIKAPIKA ?]
 
 간혹 예측이 안되는 결과가 나왔을 때 당황하게 된다.
 
@@ -30,7 +30,7 @@ PIKAPIKA는 현재 예측이 안되는 상황이다.
 ![img](/assets/img/2024-06-07/2024-06-07-007.png)*pikapika 차트*
 
 
-# [PIKAPIKA 수익 현황]
+## [PIKAPIKA 수익 현황]
 
 400틱 횡보에서 약수익 이지만 수익 종료가 됐다. 왜~?
 
@@ -40,7 +40,7 @@ PIKAPIKA는 현재 예측이 안되는 상황이다.
 
 ![img](/assets/img/2024-06-07/2024-06-07-005.png)*pikapika 수익 현황*
 
-# [PIKAPIKA 거래 내역]
+## [PIKAPIKA 거래 내역]
 
 거래내역을 봐도 좋은 위치에서 스위칭 되면서 수익을 종료가 됐다. 왜?
 

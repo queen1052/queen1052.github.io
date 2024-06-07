@@ -19,7 +19,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - web hook 신호 처리
 > - 테스트 결과
 
-# [trading view 신호 분석]
+## [trading view 신호 분석]
 
 전일 나스닥애 횡보와 급등/급락으로 기분이 안좋다.
 
@@ -30,7 +30,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ![img](/assets/img/2024-06-05/2024-06-05-023-tradingview-chart1.png)*trading view chart*
 
 
-# [web hook 신호 처리]
+## [web hook 신호 처리]
 
 web hook을 만들어서 alert을 받았을 때 대략 1~10초 정도의 gap이 발생한다.
 
@@ -63,7 +63,7 @@ def read_webhook_data(self):
         return None
 ```
 
-# [테스트 결과]
+## [테스트 결과]
 
 횡보 구간에서 스위칭이 될 때는 100~150틱 정도 손절을 감수해야 할 것 같다.
 

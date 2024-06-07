@@ -19,7 +19,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - python 코드로 변환
 > - 테스트 결과
 
-# [trading view 신호 분석]
+## [trading view 신호 분석]
 
 trading view 신호를 분석하고 python으로 개발 해보자.
 
@@ -52,7 +52,7 @@ b = uprng and ta.crossover(close,hband)
 s = not uprng and ta.crossunder(close,lowband)
 ```
 
-# [python 코드로 변환]
+## [python 코드로 변환]
 ```python
 l = 200
 smoothrng_val = self.smoothrng(data['close'], l, 3)
@@ -69,7 +69,7 @@ data['buy'] = np.logical_and(uprng_bool, np.roll(data['close'], 1) < hband)
 data['sell'] = np.logical_and(~uprng_bool, np.roll(data['close'], 1) > lowband)
 ```
 
-# [테스트 결과]
+## [테스트 결과]
 
 차트와 같이 결과가 나오지 않아 내부 함수를 수정 해봐야 할 것 같다.
 

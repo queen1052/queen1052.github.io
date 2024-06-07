@@ -9,9 +9,9 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ---
 - [대한금융신문 - 출처](https://www.kbanker.co.kr/news/articleView.html?idxno=212839)
 
-# 송태원의 쉽게 푸는 자본시장1
+## 송태원의 쉽게 푸는 자본시장1
 
-## 자동 주식매매의 등장
+### 자동 주식매매의 등장
 
 금투업 인가, 법원 판단은
 

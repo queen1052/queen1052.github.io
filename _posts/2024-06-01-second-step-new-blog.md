@@ -19,12 +19,12 @@ tags: [GitHub, blog, GitHub blog, Jekyll, Ruby]
 > - Jekyll과 Ruby 설치
 > - 테마 적용하기
 
-# Jekyll과 Ruby 설치
+## Jekyll과 Ruby 설치
 
 github repository가 정상적으로 생성이 되면 블로그처럼 꾸미는 작업이 필요하다.
 모든 코드를 직접 작성하면 좋겠지만 만들어진 테마를 사용하면 간편하다.
 
-## ruby 설치
+### ruby 설치
 
 아래 사이트로 이동하여 ruby를 다운로드하고 설치한다.
 

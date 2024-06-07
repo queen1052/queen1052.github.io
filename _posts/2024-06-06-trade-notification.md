@@ -6,7 +6,7 @@ categories: [Blog]
 tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크, 누적수익, 전략, tradingview]
 ---
 ---
-# <span style="color:red">[해외선물 투자 위험 공지]</span>
+## <span style="color:red">[해외선물 투자 위험 공지]</span>
 ---
 
 ---

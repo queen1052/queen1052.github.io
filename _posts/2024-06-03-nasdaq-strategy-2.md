@@ -18,7 +18,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - python 코드로 변환
 > - 테스트 결과
 
-# [trading view 신호 분석]
+## [trading view 신호 분석]
 
 차트에서 신호가 추세 자리에서 자주 발생하지 않고, 추세를 길게 보도록 신호가 발생한다.
 
@@ -29,9 +29,9 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 ![img](/assets/img/2024-06-03/2024-06-03-tradingview.png)*trading view indicator*
 
 
-# [python 코드로 변환]
+## [python 코드로 변환]
 > - nz는 값이 NaN이면 0을 반환하고 아니면 값을 그대로 사용한다.
-## trading view function
+### trading view function
 
 ```python
 smoothrng(float source, int sampling_period = 50, float range_mult = 3)=>
@@ -54,7 +54,7 @@ trendUp(float source)=>
     upward
 ```
 
-## python function
+### python function
 ```python
 def smoothrng(self, source, sampling_period=50, range_mult=3):
         wper = (sampling_period * 2) - 1
@@ -87,7 +87,7 @@ return upward
 
 ```
 
-# [테스트 결과]
+## [테스트 결과]
 
 결국 로직을 검토하면서 로직상 문제가 없는 것을 확인 했으나,,, 값은 일치 시킬 수 없었다.
 
