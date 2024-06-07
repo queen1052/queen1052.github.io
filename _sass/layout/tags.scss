@@ -1,6 +1,7 @@
 /*
   Styles for Tab Tags
 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 .tag {
   border-radius: 0.7em;
@@ -13,6 +14,7 @@
   span {
     margin-left: 0.6em;
     font-size: 0.7em;
-    font-family: 'Oswald', sans-serif;
+    // font-family: 'Oswald', sans-serif;
+    font-family: "Jua", sans-serif;
   }
 }

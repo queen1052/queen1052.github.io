@@ -1,10 +1,12 @@
 /*
   Style for Homepage
 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 .pagination {
   color: var(--btn-patinator-text-color);
-  font-family: 'Lato', sans-serif;
+  // font-family: 'Lato', sans-serif;
+  font-family: "Jua", sans-serif;
 
   a:hover {
     text-decoration: none;
