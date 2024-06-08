@@ -1,5 +1,5 @@
 ---
-title: Trading view web hook 을 적용한 자동매매 결과(전략1)
+title: Trading view web hook 을 적용한 자동매매 결과(PT8)
 author: Dev
 date: 2024-06-06 09:14:42 +0900
 categories: [systemtrading, PT8번]
@@ -12,6 +12,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 - [Trading view web hook 을 이용한 자동매매 개발](/posts/nasdaq-strategy-3/)
 - [Trading view web hook 을 적용한 자동매매 결과](/posts/nasdaq-strategy-4/)
 - [거래를 오버해서 테스트 해보는 중](/posts/nasdaq-strategy-5/)
+- [개선이 필요한 PT8](/posts/nasdaq-strategy-6/)
 
 
 > 본 포스팅에서는 trading view 신호를 python 으로 변환 적용하는 방법에 대해서 개발하고 연구한다.

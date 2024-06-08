@@ -15,7 +15,7 @@ tags: [해외선물, 나스닥, nasdaq, 자동매매, system trading, 재테크,
 > - PIKAPIKA 수익 현황
 > - PIKAPIKA 거래 내역
 
-## [PIKAPIKA ?]
+## [PIKAPIKA 분석]
 
 간혹 예측이 안되는 결과가 나왔을 때 당황하게 된다.
 
