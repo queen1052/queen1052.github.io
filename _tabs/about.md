@@ -4,5 +4,5 @@ icon: fas fa-info
 order: 4
 ---
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
-IP=http://193.123.245.111/
+> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page. http://193.123.245.111/
+
