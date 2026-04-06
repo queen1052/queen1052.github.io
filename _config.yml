@@ -158,6 +158,8 @@ exclude:
   - gulpfile.js
   - node_modules
   - '*.json'
+  - skills
+  - ragflow
 
 jekyll-archives:
   enabled: [categories, tags]

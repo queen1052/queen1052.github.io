@@ -1,0 +1,19 @@
+not_found:
+  head_back: "메인으로 돌아가기"
+  archives_page: "아카이브 페이지"
+  statment: "찾을 수 없는 페이지입니다."
+  hint_template: ":HEAD_BAK 또는 :ARCHIVES_PAGE 중 하나를 이용하세요."
+panel:
+  lastmod: "최근 수정"
+  trending_tags: "인기 태그"
+  toc: "목차"
+post:
+  button:
+    previous: "이전"
+    next: "다음"
+  share: "공유"
+  read_time:
+    prompt: "읽는 시간"
+    unit: "분"
+tabs:
+  home: "홈"
