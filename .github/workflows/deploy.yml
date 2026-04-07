@@ -19,10 +19,14 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        # Use npm install because package-lock.json may be absent
+        # Use npm ci for deterministic installs (package-lock.json is committed)
         run: |
           cd site
-          npm install
+          npm ci
+      - name: Generate sitemap & RSS
+        run: |
+          cd site
+          node scripts/generate_feeds.js
       - name: Build
         run: |
           cd site
