@@ -19,8 +19,14 @@ export async function getPosts() {
     }
     const filename = filePath.split('/').pop()
     const slug = filename.replace(/^[0-9-]+/, '').replace(/\.md$/, '')
-    return { slug, title: meta.title || slug, content }
+    return { slug, title: meta.title || slug, content, meta }
   }))
-  // sort by slug or any other metadata if needed
-  return entries.sort((a, b) => a.slug.localeCompare(b.slug))
+  // sort by date if present in meta, else by slug
+  entries.sort((a, b) => {
+    const da = a.meta && a.meta.date ? new Date(a.meta.date) : null
+    const db = b.meta && b.meta.date ? new Date(b.meta.date) : null
+    if (da && db) return db - da
+    return a.slug.localeCompare(b.slug)
+  })
+  return entries
 }
