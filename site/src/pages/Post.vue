@@ -12,9 +12,15 @@
 
 <script setup>
 import { useRoute } from 'vue-router'
-import { posts } from '@/posts'
+import { getPosts } from '@/posts'
+import { ref, onMounted } from 'vue'
 
 const route = useRoute()
 const slug = route.params.slug
-const post = posts.find(p => p.slug === slug)
+const post = ref(null)
+
+onMounted(async () => {
+  const all = await getPosts()
+  post.value = all.find(p => p.slug === slug)
+})
 </script>
