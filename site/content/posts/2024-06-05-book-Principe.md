@@ -16,7 +16,4 @@ tags: [책, 독서, 자기계발, 군주론]
 ## []
 
 
-![img](/assets/img/2024-06-05/.png)**
-
-
-
+![img](/assets/img/profile.png)

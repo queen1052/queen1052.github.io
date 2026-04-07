@@ -16,6 +16,4 @@ tags: [책, 독서, 자기계발, 마흔에 읽는 쇼펜하우어]
 ## []
 
 
-![img](/assets/img/2024-06-05/.png)**
-
-
+![img](/assets/img/profile.png)
