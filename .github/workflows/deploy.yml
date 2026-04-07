@@ -14,9 +14,10 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
+        # Use npm install because package-lock.json may be absent
         run: |
           cd site
-          npm ci
+          npm install
       - name: Build
         run: |
           cd site
