@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/tailwind.css'
+import './styles/apple-design.css'
 import Prism from './plugins/prism'
 
 const app = createApp(App)
