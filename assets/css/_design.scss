@@ -1,0 +1,211 @@
+/* Apple-inspired design system (from DESIGN.md)
+   - Variables, typography, buttons, nav glass, cards, and helpers
+   - Note: "SF Pro" fonts are proprietary. Use system font stack as fallback.
+*/
+
+:root {
+  /* Colors */
+  --sk-black: #000000;
+  --sk-light-gray: #f5f5f7;
+  --sk-near-black: #1d1d1f;
+  --sk-apple-blue: #0071e3;
+  --sk-link-blue: #0066cc;
+  --sk-bright-blue: #2997ff;
+
+  --sk-black-80: rgba(0,0,0,0.8);
+  --sk-black-48: rgba(0,0,0,0.48);
+
+  --sk-dark-surface-1: #272729;
+  --sk-dark-surface-2: #262628;
+  --sk-dark-surface-3: #28282a;
+  --sk-dark-surface-4: #2a2a2d;
+  --sk-dark-surface-5: #242426;
+
+  --sk-button-active: #ededf2;
+  --sk-button-default-light: #fafafc;
+
+  --sk-card-shadow: 0 5px 30px rgba(0,0,0,0.22);
+
+  /* Spacing base */
+  --sk-space-1: 4px;
+  --sk-space-2: 8px; /* base */
+  --sk-container-width: 980px;
+
+  /* Radius */
+  --sk-radius-micro: 5px;
+  --sk-radius-standard: 8px;
+  --sk-radius-comfort: 11px;
+  --sk-radius-large: 12px;
+  --sk-radius-pill: 980px;
+}
+
+/* Font stack: prefer SF Pro if available, otherwise system fallbacks */
+$apple-font-stack: "SF Pro Display", "SF Pro Text", "SF Pro Icons", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $apple-font-stack;
+  font-size: 17px; /* base from design */
+  line-height: 1.47;
+  color: var(--sk-near-black);
+  background: var(--sk-light-gray);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography: headings follow the Design.md scale */
+h1, .display-hero {
+  font-family: "SF Pro Display", $apple-font-stack;
+  font-weight: 600;
+  font-size: 3.5rem; /* 56px */
+  line-height: 1.07;
+  letter-spacing: -0.28px;
+  margin: 0 0 24px;
+}
+
+h2, .section-heading {
+  font-family: "SF Pro Display", $apple-font-stack;
+  font-weight: 600;
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.10;
+  margin: 0 0 20px;
+}
+
+h3, .tile-heading {
+  font-family: "SF Pro Display", $apple-font-stack;
+  font-weight: 400;
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.14;
+}
+
+h4, .card-title {
+  font-family: "SF Pro Display", $apple-font-stack;
+  font-weight: 700;
+  font-size: 1.31rem; /* 21px */
+  line-height: 1.19;
+}
+
+p, .body-text {
+  font-family: "SF Pro Text", $apple-font-stack;
+  font-size: 1.06rem; /* 17px */
+  line-height: 1.47;
+  letter-spacing: -0.374px;
+  margin: 0 0 16px;
+}
+
+.small, .caption {
+  font-size: 0.88rem; /* 14px */
+  letter-spacing: -0.224px;
+}
+
+.micro { font-size: 0.75rem; letter-spacing: -0.12px; }
+.nano { font-size: 0.63rem; letter-spacing: -0.08px; }
+
+/* Links */
+a { color: var(--sk-body-link-color, var(--sk-link-blue)); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Apple blue on dark backgrounds */
+.dark a { color: var(--sk-bright-blue); }
+
+/* Buttons */
+.btn-apple {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: var(--sk-radius-standard);
+  font-family: "SF Pro Text", $apple-font-stack;
+  font-size: 1.06rem;
+  font-weight: 400;
+  color: #fff;
+  background: var(--sk-apple-blue);
+  border: 1px solid transparent;
+  transition: background-color .12s ease, transform .08s ease;
+  cursor: pointer;
+}
+.btn-apple:hover { background-color: darken(var(--sk-apple-blue), 3%); }
+.btn-apple:active { background: var(--sk-button-active); transform: translateY(1px); }
+.btn-apple:focus { outline: 2px solid var(--sk-apple-blue); outline-offset: 2px; }
+
+.btn-apple--dark {
+  background: var(--sk-near-black);
+  color: #fff;
+}
+
+/* Pill link */
+.btn-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--sk-radius-pill);
+  background: transparent;
+  border: 1px solid var(--sk-link-blue);
+  color: var(--sk-link-blue);
+  font-size: 0.88rem;
+}
+.btn-pill:hover { text-decoration: underline; }
+
+/* Filter / Search Button */
+.btn-filter {
+  padding: 0 14px;
+  background: var(--sk-button-default-light);
+  color: var(--sk-black-80);
+  border-radius: var(--sk-radius-comfort);
+  border: 3px solid rgba(0,0,0,0.04);
+}
+.btn-filter:focus { outline: 2px solid var(--sk-apple-blue); }
+
+/* Media control */
+.media-control {
+  background: rgba(210,210,215,0.64);
+  color: rgba(0,0,0,0.48);
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  display:inline-flex; align-items:center; justify-content:center;
+  transition: transform .12s ease, background .12s ease;
+}
+.media-control:active { transform: scale(.92); }
+.media-control:focus { outline: 2px solid var(--sk-apple-blue); }
+
+/* Cards */
+.card-apple {
+  background: var(--sk-light-gray);
+  border-radius: var(--sk-radius-standard);
+  box-shadow: var(--sk-card-shadow);
+  padding: 18px;
+  text-align: center;
+}
+.card-apple.dark { background: var(--sk-dark-surface-1); color: #fff; }
+
+/* Navigation glass */
+.nav-glass {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  height: 48px;
+  display:flex; align-items:center; padding:0 16px;
+  position: sticky; top: 0; z-index: 9999;
+}
+
+/* Layout helpers */
+.container-980 { max-width: var(--sk-container-width); margin: 0 auto; padding: 0 20px; }
+.section-full {
+  width: 100%;
+  display:block;
+  padding: 64px 0;
+}
+.section-dark { background: var(--sk-black); color: #fff; }
+.section-light { background: var(--sk-light-gray); color: var(--sk-near-black); }
+
+/* Utility: centered hero */
+.hero-center { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height: 70vh; }
+
+/* Small tweaks for existing theme */
+.navbar, .topbar { background: transparent; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
