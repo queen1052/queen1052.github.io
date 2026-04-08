@@ -1,5 +1,5 @@
 <template>
-  <article class="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
+  <article class="card-apple rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
     <img :src="card.image" alt="" class="w-full h-40 object-cover">
     <div class="p-4">
       <router-link :to="`/posts/${card.slug}`" class="text-lg font-semibold text-gray-900 dark:text-gray-100 hover:text-primary">{{ card.title }}</router-link>
