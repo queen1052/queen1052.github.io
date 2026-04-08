@@ -41,6 +41,17 @@ layout: page
   {% endfor %}
 {% endif %}
 
+<section class="section-full section-dark">
+  <div class="container-980 hero-center">
+    <h1 class="display-hero">{{ site.title }}</h1>
+    <p class="body-text" style="color: rgba(255,255,255,0.85); max-width: 720px; text-align:center;">{{ site.description }}</p>
+    <div style="margin-top: 28px; display:flex; gap:12px; align-items:center; justify-content:center;">
+      <a class="btn-pill" href="/about/">Learn more</a>
+      <a class="btn-apple" href="/">Buy</a>
+    </div>
+  </div>
+</section>
+
 <div id="post-list">
 
 {% for post in posts %}
