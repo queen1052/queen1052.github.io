@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>queen1052 블로그</title>
+    <link>https://queen1052.github.io</link>
+    <description>개발 이야기와 기술 트렌드</description>
+    <language>ko</language>
+    <atom:link href="https://queen1052.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>현대 웹 개발의 트렌드</title>
+    <link>https://queen1052.github.io/post/modern-web-development</link>
+    <guid isPermaLink="true">https://queen1052.github.io/post/modern-web-development</guid>
+    <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+    <description>2026년 현재 웹 개발 생태계는 빠르게 변화하고 있습니다. React, TypeScript, Vite 등의 기술이 표준으로 자리잡았으며...</description>
+    <category>웹 개발</category>
+  </item>
+  <item>
+    <title>클린 코드 작성 팁</title>
+    <link>https://queen1052.github.io/post/clean-code-tips</link>
+    <guid isPermaLink="true">https://queen1052.github.io/post/clean-code-tips</guid>
+    <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+    <description>좋은 코드는 단순히 동작하는 것을 넘어, 읽기 쉽고 유지보수하기 쉬워야 합니다. 클린 코드의 핵심 원칙들을 살펴봅니다...</description>
+    <category>프로그래밍</category>
+  </item>
+  <item>
+    <title>UI/UX 디자인 기초</title>
+    <link>https://queen1052.github.io/post/uiux-design-basics</link>
+    <guid isPermaLink="true">https://queen1052.github.io/post/uiux-design-basics</guid>
+    <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+    <description>좋은 UI/UX 디자인은 사용자의 경험을 향상시키고 비즈니스 목표를 달성하는 데 핵심적인 역할을 합니다...</description>
+    <category>디자인</category>
+  </item>
+  </channel>
+</rss>
