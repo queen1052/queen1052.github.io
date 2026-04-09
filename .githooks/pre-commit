@@ -1,0 +1,14 @@
+#!/bin/bash
+# Prevent committing deletions of protected files
+PROTECTED='(^|/)ads.txt$|(^|/)google783dcb8a0442b30e.html$|(^|/)naver7f16b249a8cc9978261187c8b5e2fef4.html$'
+# get staged changes
+git diff --cached --name-status -r | awk '{print $1 "\t" $2}' | while IFS=$'\t' read -r status file; do
+  if [[ "$status" == "D" ]]; then
+    if [[ "$file" =~ $PROTECTED ]]; then
+      echo "ERROR: Attempt to delete protected file '$file' is blocked by pre-commit hook." >&2
+      echo "Protected files: ads.txt, google783dcb8a0442b30e.html, naver7f16b249a8cc9978261187c8b5e2fef4.html" >&2
+      exit 1
+    fi
+  fi
+done
+exit 0

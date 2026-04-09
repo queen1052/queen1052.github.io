@@ -1,0 +1,24 @@
+#!/bin/bash
+# Prevent pushing commits that delete protected files
+PROTECTED='(^|/)ads.txt$|(^|/)google783dcb8a0442b30e.html$|(^|/)naver7f16b249a8cc9978261187c8b5e2fef4.html$'
+set -e
+while read local_ref local_sha remote_ref remote_sha; do
+  # if creating new branch, remote_sha may be 000...
+  if [[ "$remote_sha" =~ ^0+$ ]]; then
+    range="$local_sha"
+  else
+    range="$remote_sha..$local_sha"
+  fi
+  # list names and statuses in the range
+  if [ -n "$range" ]; then
+    git diff --name-status --no-renames $range | while read -r status file; do
+      if [[ "$status" == "D" ]]; then
+        if [[ "$file" =~ $PROTECTED ]]; then
+          echo "ERROR: Push would delete protected file '$file' - blocked by pre-push hook." >&2
+          exit 1
+        fi
+      fi
+    done
+  fi
+done
+exit 0
