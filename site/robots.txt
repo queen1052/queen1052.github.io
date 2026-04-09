@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://queen1052.github.io/sitemap.xml

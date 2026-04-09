@@ -3,16 +3,19 @@
 !.git*
 !.editorconfig
 !.nojekyll
-!.travis.yml
-
-# bundler cache
-_site
-vendor
-Gemfile.lock
-
-# rubygem
-*.gem
 
 # npm dependencies
 node_modules
-package-lock.json
+
+# build output
+dist
+
+# generated files (created at build time by Vite plugin)
+src/generated/posts.json
+
+# environment files
+.env*
+
+# OS
+.DS_Store
+Thumbs.db
