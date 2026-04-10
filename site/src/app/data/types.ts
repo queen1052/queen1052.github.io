@@ -22,3 +22,32 @@ export interface PostFrontMatter {
   readTime?: string;
   image?: string | null;
 }
+
+// --- Graph Types ---
+
+export type GraphNodeType = 'post' | 'tag';
+
+export interface GraphNode {
+  id: string;
+  type: GraphNodeType;
+  label: string;
+  weight: number;
+  slug?: string;
+  // d3-force runtime properties
+  x?: number;
+  y?: number;
+  vx?: number;
+  vy?: number;
+  fx?: number | null;
+  fy?: number | null;
+}
+
+export interface GraphEdge {
+  source: string;
+  target: string;
+}
+
+export interface GraphData {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+}

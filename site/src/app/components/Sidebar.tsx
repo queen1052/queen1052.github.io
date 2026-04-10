@@ -1,4 +1,5 @@
-import { Folder, Tag, Hash, X } from 'lucide-react';
+import { Folder, Tag, Hash, X, Network } from 'lucide-react';
+import { Link, useLocation } from 'react-router';
 
 interface SidebarProps {
   categories: string[];
@@ -21,6 +22,7 @@ export function Sidebar({
   isOpen = true,
   onClose,
 }: SidebarProps) {
+  const location = useLocation();
   return (
     <>
       {/* Mobile overlay */}
@@ -108,6 +110,20 @@ export function Sidebar({
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="mt-4 pt-4 border-t border-zinc-800">
+          <Link
+            to="/graph"
+            className={`flex items-center gap-2 text-sm px-3 py-2 rounded-md transition-colors w-full ${
+              location.pathname === '/graph'
+                ? 'bg-purple-600/20 text-purple-400'
+                : 'text-zinc-400 hover:text-white hover:bg-zinc-800'
+            }`}
+          >
+            <Network className="w-4 h-4" />
+            지식 그래프
+          </Link>
         </div>
       </aside>
     </>

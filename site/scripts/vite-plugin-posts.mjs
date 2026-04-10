@@ -9,7 +9,7 @@ import sanitizeHtml from 'sanitize-html';
  * Vite plugin that:
  * 1. buildStart: Scans posts/*.md → validates front-matter → parses markdown →
  *    writes src/generated/posts.json
- * 2. writeBundle: Generates dist/sitemap.xml and dist/feed.xml (RSS)
+ * 2. writeBundle: Generates dist/sitemap.xml, dist/feed.xml (RSS), and dist/404.html
  *
  * @param {object} [options]
  * @param {string} [options.postsDir] - Absolute path to the posts directory
@@ -136,6 +136,7 @@ export function postsPlugin(options = {}) {
 
       generateSitemap(posts, outDir, siteUrl);
       generateFeed(posts, outDir, siteUrl);
+      generateSpaFallback(outDir);
     },
   };
 }
@@ -204,4 +205,15 @@ ${items}
 
   writeFileSync(join(outDir, 'feed.xml'), rss, 'utf-8');
   console.log(`[vite-plugin-posts] feed.xml written`);
+}
+
+/**
+ * Copies the built SPA entry to 404.html so GitHub Pages can serve client-side routes.
+ *
+ * @param {string} outDir
+ */
+function generateSpaFallback(outDir) {
+  const indexHtml = readFileSync(join(outDir, 'index.html'), 'utf-8');
+  writeFileSync(join(outDir, '404.html'), indexHtml, 'utf-8');
+  console.log('[vite-plugin-posts] 404.html written');
 }

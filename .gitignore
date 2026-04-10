@@ -17,3 +17,9 @@ Gemfile.lock
 # npm dependencies
 node_modules
 package-lock.json
+
+# Node / Vite build outputs
+/dist/
+/build/
+*.log
+.env*
