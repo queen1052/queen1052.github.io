@@ -93,18 +93,8 @@ export default function GraphPage() {
     (node: GraphNode) => {
       if (node.type === 'post' && node.slug) {
         navigate(`/post/${node.slug}`);
-      } else {
-        // Tag click: toggle persistent highlight (single-select)
-        setHighlightIds((prev) => {
-          const next = new Set(prev);
-          if (next.has(node.id)) {
-            next.delete(node.id);
-          } else {
-            next.clear();
-            next.add(node.id);
-          }
-          return next;
-        });
+      } else if (node.type === 'tag') {
+        navigate(`/?tag=${encodeURIComponent(node.label)}`);
       }
     },
     [navigate]

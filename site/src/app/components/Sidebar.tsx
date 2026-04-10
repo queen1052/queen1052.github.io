@@ -58,7 +58,7 @@ export function Sidebar({
             <Hash className="w-6 h-6 text-purple-500" />
             Dev Blog
           </h1>
-          <p className="text-sm text-zinc-400">현대적인 개발 블로그</p>
+          <p className="text-sm text-zinc-400">아카이브</p>
         </div>
 
         <div className="mb-8">

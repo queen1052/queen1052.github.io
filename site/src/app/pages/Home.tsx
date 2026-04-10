@@ -1,13 +1,33 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BlogCard } from '../components/BlogCard';
 import { Sidebar } from '../components/Sidebar';
 import { posts, categories, allTags } from '../data/posts';
 import { Menu } from 'lucide-react';
+import { useSearchParams } from 'react-router';
 
 export function Home() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState('전체');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    const tagFromUrl = searchParams.get('tag');
+    const validTag = tagFromUrl && allTags.includes(tagFromUrl) ? tagFromUrl : null;
+    setSelectedTag(validTag);
+  }, [searchParams]);
+
+  const handleTagChange = (tag: string | null) => {
+    const next = new URLSearchParams(searchParams);
+
+    if (tag) {
+      next.set('tag', tag);
+    } else {
+      next.delete('tag');
+    }
+
+    setSearchParams(next);
+  };
 
   const filteredPosts = posts.filter((post) => {
     const categoryMatch = selectedCategory === '전체' || post.category === selectedCategory;
@@ -23,7 +43,7 @@ export function Home() {
         selectedCategory={selectedCategory}
         selectedTag={selectedTag}
         onCategoryChange={setSelectedCategory}
-        onTagChange={setSelectedTag}
+        onTagChange={handleTagChange}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
       />
