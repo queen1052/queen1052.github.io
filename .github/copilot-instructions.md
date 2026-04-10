@@ -1,8 +1,9 @@
 # queen1052.github.io Development Guidelines
 
-Auto-generated from all feature plans. Last updated: 2026-04-09
+Auto-generated from all feature plans. Last updated: 2026-04-10
 
 ## Active Technologies
+- `site/posts/*.md` → `site/src/generated/posts.json` (existing build artifact). (002-tag-knowledge-graph)
 
 - TypeScript 5 / Node.js 20 (LTS, pinned in CI) (001-uiux-md-blog)
 
@@ -22,6 +23,7 @@ npm test; npm run lint
 TypeScript 5 / Node.js 20 (LTS, pinned in CI): Follow standard conventions
 
 ## Recent Changes
+- 002-tag-knowledge-graph: Added TypeScript 5 / Node.js 20 (LTS, pinned in CI)
 
 - 001-uiux-md-blog: Added TypeScript 5 / Node.js 20 (LTS, pinned in CI)
 
