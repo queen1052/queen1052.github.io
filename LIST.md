@@ -10,6 +10,43 @@
 
 ## 완료
 
+- [2026-04-20-code-review-graph.md](site/posts/2026-04-20-code-review-graph.md) — 원본: https://github.com/tirth8205/code-review-graph
+- [2026-04-20-kronos.md](site/posts/2026-04-20-kronos.md) — 원본: https://github.com/shiyu-coder/Kronos
+- [2026-04-20-ralph.md](site/posts/2026-04-20-ralph.md) — 원본: https://github.com/snarktank/ralph
+- [2026-04-20-vertical-agent-kit.md](site/posts/2026-04-20-vertical-agent-kit.md) — 원본: https://github.com/gabogabucho/vertical-agent-kit
+- [2026-04-20-johpaz-hive.md](site/posts/2026-04-20-johpaz-hive.md) — 원본: https://github.com/johpaz/hive
+- [2026-04-20-nesquena-hermes-webui.md](site/posts/2026-04-20-nesquena-hermes-webui.md) — 원본: https://github.com/nesquena/hermes-webui
+- [2026-04-20-paseo.md](site/posts/2026-04-20-paseo.md) — 원본: https://github.com/getpaseo/paseo
+- [2026-04-20-ai-hedge-fund.md](site/posts/2026-04-20-ai-hedge-fund.md) — 원본: https://github.com/virattt/ai-hedge-fund.git
+- [2026-04-20-arnis.md](site/posts/2026-04-20-arnis.md) — 원본: https://github.com/louis-e/arnis?tab=readme-ov-file
+- [2026-04-20-twenty.md](site/posts/2026-04-20-twenty.md) — 원본: https://github.com/twentyhq/twenty
+- [2026-04-20-pixel-agents.md](site/posts/2026-04-20-pixel-agents.md) — 원본: https://github.com/pablodelucca/pixel-agents
+- [2026-04-20-nofx.md](site/posts/2026-04-20-nofx.md) — 원본: https://github.com/NoFxAiOS/nofx
+- [2026-04-20-dataflow.md](site/posts/2026-04-20-dataflow.md) — 원본: https://github.com/OpenDCAI/DataFlow
+- [2026-04-20-chainlit.md](site/posts/2026-04-20-chainlit.md) — 원본: https://github.com/Chainlit/chainlit
+- [2026-04-20-spec-kitty.md](site/posts/2026-04-20-spec-kitty.md) — 원본: https://github.com/Priivacy-ai/spec-kitty
+- [2026-04-20-karpathy-llm-wiki.md](site/posts/2026-04-20-karpathy-llm-wiki.md) — 원본: https://github.com/Astro-Han/karpathy-llm-wiki
+- [2026-04-20-telegram-mcp.md](site/posts/2026-04-20-telegram-mcp.md) — 원본: https://github.com/chigwell/telegram-mcp
+- [2026-04-20-pi-autoresearch.md](site/posts/2026-04-20-pi-autoresearch.md) — 원본: https://github.com/davebcn87/pi-autoresearch
+- [2026-04-20-logocreator.md](site/posts/2026-04-20-logocreator.md) — 원본: https://github.com/Nutlope/logocreator
+- [2026-04-20-mineru.md](site/posts/2026-04-20-mineru.md) — 원본: https://github.com/opendatalab/MinerU
+- [2026-04-20-gpui-component.md](site/posts/2026-04-20-gpui-component.md) — 원본: https://github.com/longbridge/gpui-component
+- [2026-04-20-fingpt.md](site/posts/2026-04-20-fingpt.md) — 원본: https://github.com/AI4Finance-Foundation/FinGPT
+- [2026-04-20-goclaw.md](site/posts/2026-04-20-goclaw.md) — 원본: https://github.com/nextlevelbuilder/goclaw
+- [2026-04-20-awesome-ai-apps.md](site/posts/2026-04-20-awesome-ai-apps.md) — 원본: https://github.com/Arindam200/awesome-ai-apps
+- [2026-04-20-yfinance.md](site/posts/2026-04-20-yfinance.md) — 원본: https://github.com/ranaroussi/yfinance
+- [2026-04-20-flowise.md](site/posts/2026-04-20-flowise.md) — 원본: https://github.com/FlowiseAI/Flowise
+- [2026-04-20-byterover-cli.md](site/posts/2026-04-20-byterover-cli.md) — 원본: https://github.com/campfirein/byterover-cli
+- [2026-04-20-ralph-loop-agent.md](site/posts/2026-04-20-ralph-loop-agent.md) — 원본: https://github.com/vercel-labs/ralph-loop-agent
+- [2026-04-20-ragatouille.md](site/posts/2026-04-20-ragatouille.md) — 원본: https://github.com/AnswerDotAI/RAGatouille
+- [2026-04-20-funasr-api.md](site/posts/2026-04-20-funasr-api.md) — 원본: https://github.com/Quantatirsk/funasr-api
+- [2026-04-20-arc-kit.md](site/posts/2026-04-20-arc-kit.md) — 원본: https://github.com/tractorjuice/arc-kit
+- [2026-04-20-insane-search.md](site/posts/2026-04-20-insane-search.md) — 원본: https://github.com/fivetaku/insane-search
+- [2026-04-20-skip.md](site/posts/2026-04-20-skip.md) — 원본: https://github.com/skiptools/skip
+- [2026-04-20-get-shit-done.md](site/posts/2026-04-20-get-shit-done.md) — 원본: https://github.com/gsd-build/get-shit-done
+- [2026-04-20-homepage.md](site/posts/2026-04-20-homepage.md) — 원본: https://github.com/gethomepage/homepage
+- [2026-04-20-korean-law-mcp.md](site/posts/2026-04-20-korean-law-mcp.md) — 원본: https://github.com/chrisryugj/korean-law-mcp
+
 - [2026-04-11-hermes-hudui.md](site/posts/2026-04-11-hermes-hudui.md) — 원본: https://github.com/joeynyc/hermes-hudui
 - [2026-04-11-gbrain.md](site/posts/2026-04-11-gbrain.md) — 원본: https://github.com/garrytan/gbrain
 - [2026-04-11-ai-trader.md](site/posts/2026-04-11-ai-trader.md) — 원본: https://github.com/HKUDS/AI-Trader
