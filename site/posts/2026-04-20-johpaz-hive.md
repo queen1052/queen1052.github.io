@@ -2,7 +2,7 @@
 title: "Hive: 로컬 우선 멀티채널 에이전트 게이트웨이"
 date: "2026-04-20"
 category: "AI/에이전트"
-tags: ["Bun", "SQLite", "multi-agent", "gateway", "local-first"]
+tags: ["Bun", "SQLite", "multi-agent"]
 excerpt: "메신저와 웹, 로컬 환경을 아우르는 self-hosted 에이전트 플랫폼입니다."
 author: "큐레이터"
 readTime: "5분"

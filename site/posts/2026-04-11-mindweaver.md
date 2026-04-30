@@ -2,7 +2,7 @@
 title: "MindWeaver: 학습 세션을 지식 그래프로 변환하는 로컬 퍼스트 AI 도구"
 date: "2026-04-11"
 category: "지식 관리"
-tags: ["AI", "KnowledgeGraph", "LocalFirst", "Learning", "MindMap", "JavaScript", "OpenAI"]
+tags: ["AI", "KnowledgeGraph", "LocalFirst"]
 excerpt: "MindWeaver는 학습 자료를 출처 기반 개념 그래프로 변환해주는 로컬 퍼스트 AI 지식 관리 도구입니다. Chrome 익스텐션과 OpenAI를 활용한 갭 분석, 퀴즈 생성 기능을 제공합니다."
 author: "큐레이터"
 readTime: "5분"

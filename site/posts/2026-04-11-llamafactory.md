@@ -2,7 +2,7 @@
 title: "LlamaFactory: 100개 이상의 LLM을 제로코드 CLI와 웹 UI로 파인튜닝하는 통합 프레임워크"
 date: "2026-04-11"
 category: "AI 모델 학습"
-tags: ["파인튜닝", "LLM", "LoRA", "RLHF", "오픈소스"]
+tags: ["파인튜닝", "LLM", "LoRA"]
 excerpt: "Amazon, NVIDIA, Alibaba Cloud가 사용하는 LLaMA·Qwen·Gemma 등 100개 이상의 LLM을 통합 파인튜닝하는 ACL 2024 논문 기반 프레임워크로 69.9k 스타를 보유합니다."
 author: "큐레이터"
 readTime: "9분"

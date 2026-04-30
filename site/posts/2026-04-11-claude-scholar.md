@@ -2,7 +2,7 @@
 title: "Claude Scholar: AI 연구자를 위한 반자동화 학술 연구 보조 시스템"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["학술 연구", "Claude Code", "Zotero", "Obsidian", "AI 연구 보조"]
+tags: ["학술 연구", "Claude Code", "Zotero"]
 excerpt: "컴퓨터 과학·AI 연구자 특화. Zotero MCP 통합, Obsidian 지식베이스, 7대 연구 워크플로우. 아이디어 생성부터 논문 게재 후 홍보까지 전 과정을 AI가 함께 한다."
 author: "큐레이터"
 readTime: "8분"

@@ -2,7 +2,7 @@
 title: "OpenClaw Master Skills: Claude를 위한 387개 마스터 스킬"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["Claude", "skills", "DevOps", "marketing", "collection"]
+tags: ["Claude", "skills", "DevOps"]
 excerpt: "LeoYeAI의 OpenClaw Master Skills — 검색/웹(21), 개발/DevOps(87), 마케팅(35), 소셜(13) 등 387개 Claude 스킬의 완결판 컬렉션."
 author: "큐레이터"
 readTime: "6분"

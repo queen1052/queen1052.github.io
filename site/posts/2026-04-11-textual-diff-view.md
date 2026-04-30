@@ -2,7 +2,7 @@
 title: "Textual Diff View: 터미널에서 아름다운 코드 diff를 보여주는 Python 위젯"
 date: "2026-04-11"
 category: "개발 도구"
-tags: ["Python", "Textual", "TUI", "diff", "터미널"]
+tags: ["Python", "Textual", "TUI"]
 excerpt: "Textual Diff View는 터미널 앱에서 아름다운 코드 diff를 렌더링하는 Textual 위젯입니다. 통합 뷰와 분할 뷰, 구문 강조, 색맹 사용자를 위한 어노테이션을 지원합니다. Toad IDE의 핵심 컴포넌트입니다."
 author: "큐레이터"
 readTime: "6분"

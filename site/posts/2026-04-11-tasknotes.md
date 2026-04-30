@@ -2,7 +2,7 @@
 title: "TaskNotes: 각 태스크가 마크다운 노트인 Obsidian용 태스크 관리 플러그인"
 date: "2026-04-11"
 category: "생산성 도구"
-tags: ["Obsidian", "태스크관리", "플러그인", "PKM", "오픈소스"]
+tags: ["Obsidian", "태스크관리", "플러그인"]
 excerpt: "각 태스크를 독립적인 마크다운 파일로 저장하고 Obsidian Bases로 쿼리하는 혁신적인 태스크 관리 플러그인으로, 1.6k 스타를 보유합니다."
 author: "큐레이터"
 readTime: "7분"

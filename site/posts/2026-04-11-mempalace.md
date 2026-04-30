@@ -2,7 +2,7 @@
 title: "MemPalace: 역대 최고 점수 AI 메모리 시스템, 그리고 무료"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["AI 메모리", "LLM", "MCP", "오픈소스", "Claude Code"]
+tags: ["AI 메모리", "LLM", "MCP"]
 excerpt: "LongMemEval 96.6% R@5. 외부 API 없이 완전 로컬, 무료로 AI의 영구 메모리를 구현한다. 팰리스 아키텍처와 AAAK 언어로 수백만 토큰의 대화 기록을 170토큰으로 압축한다."
 author: "큐레이터"
 readTime: "9분"

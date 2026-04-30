@@ -2,7 +2,7 @@
 title: "Translumo: 실시간 화면 번역 도구 — 게임 자막도 즉시 번역"
 date: "2026-04-10"
 category: "개발도구"
-tags: [".NET", "OCR", "translation", "C#", "screen"]
+tags: [".NET", "OCR", "translation"]
 excerpt: "ramjke의 Translumo — EasyOCR과 Tesseract를 활용한 실시간 화면 텍스트 번역 도구. 하드코딩된 게임 자막, 앱 UI 번역에 특화된 .NET 8 오픈소스."
 author: "큐레이터"
 readTime: "5분"

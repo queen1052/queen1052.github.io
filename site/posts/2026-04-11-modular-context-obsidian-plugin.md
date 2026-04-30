@@ -2,7 +2,7 @@
 title: "Modular Context: Obsidian 안에서 여러 AI 에이전트 터미널을 동시에 돌리는 플러그인"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["Obsidian", "Claude Code", "AI 터미널", "지식관리", "플러그인"]
+tags: ["Obsidian", "Claude Code", "AI 터미널"]
 excerpt: "Obsidian에 최대 8개의 AI 에이전트 터미널을 나란히 배치한다. Claude Code·Codex 동시 실행, 스킬 사이드바, 에이전트 트래커, 3층 LLM Wiki 방법론으로 Vault가 살아있는 지식 베이스가 된다."
 author: "큐레이터"
 readTime: "7분"

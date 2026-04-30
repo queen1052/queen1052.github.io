@@ -1,0 +1,286 @@
+{
+  "skip": [
+    {
+      "url": "https://github.com/fivetaku/insane-search",
+      "reason": "already-in-done"
+    },
+    {
+      "url": "https://github.com/obra/superpowers",
+      "reason": "already-in-done"
+    },
+    {
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "reason": "already-in-done"
+    },
+    {
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "reason": "already-in-done"
+    },
+    {
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "reason": "already-in-done"
+    }
+  ],
+  "toProcess": [
+    {
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "slug": "local-deep-research"
+    },
+    {
+      "url": "https://github.com/hackmdio/codimd",
+      "slug": "codimd"
+    },
+    {
+      "url": "https://github.com/marketingtoolslist/awesome-marketing",
+      "slug": "awesome-marketing"
+    },
+    {
+      "url": "https://github.com/vava-nessa/free-coding-models",
+      "slug": "free-coding-models"
+    },
+    {
+      "url": "https://github.com/agnt-gg/agnt",
+      "slug": "agnt"
+    },
+    {
+      "url": "https://github.com/airweave-ai/airweave",
+      "slug": "airweave"
+    },
+    {
+      "url": "https://github.com/mxrch/GHunt",
+      "slug": "ghunt"
+    },
+    {
+      "url": "https://github.com/unidoc/unioffice",
+      "slug": "unioffice"
+    },
+    {
+      "url": "https://github.com/CodeBoarding/CodeBoarding",
+      "slug": "codeboarding"
+    },
+    {
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+      "slug": "awesome-openclaw-usecases"
+    },
+    {
+      "url": "https://github.com/QuantaAlpha/QuantaAlpha",
+      "slug": "quantaalpha"
+    },
+    {
+      "url": "https://github.com/lllyasviel/Fooocus",
+      "slug": "fooocus"
+    },
+    {
+      "url": "https://github.com/penpot/penpot",
+      "slug": "penpot"
+    },
+    {
+      "url": "https://github.com/calcom/cal.diy",
+      "slug": "cal-diy"
+    },
+    {
+      "url": "https://github.com/cline/cline",
+      "slug": "cline"
+    },
+    {
+      "url": "https://github.com/heygen-com/hyperframes",
+      "slug": "hyperframes"
+    },
+    {
+      "url": "https://github.com/danny-avila/LibreChat",
+      "slug": "librechat"
+    },
+    {
+      "url": "https://github.com/AgriciDaniel/claude-ads",
+      "slug": "claude-ads"
+    },
+    {
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "slug": "finceptterminal"
+    },
+    {
+      "url": "https://github.com/777genius/claude_agent_teams_ui",
+      "slug": "claude-agent-teams-ui"
+    },
+    {
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "slug": "open-llm-vtuber"
+    },
+    {
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "slug": "open-generative-ai"
+    },
+    {
+      "url": "https://github.com/cloudflare/agentic-inbox",
+      "slug": "agentic-inbox"
+    },
+    {
+      "url": "https://github.com/jackwener/OpenCLI",
+      "slug": "opencli"
+    },
+    {
+      "url": "https://github.com/EtienneLescot/n8n-as-code",
+      "slug": "n8n-as-code"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain",
+      "slug": "langchain"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "slug": "langgraph"
+    },
+    {
+      "url": "https://github.com/run-llama/llama_index",
+      "slug": "llama-index"
+    },
+    {
+      "url": "https://github.com/crewAIInc/crewAI",
+      "slug": "crewai"
+    },
+    {
+      "url": "https://github.com/qdrant/qdrant",
+      "slug": "qdrant"
+    },
+    {
+      "url": "https://github.com/vibrantlabsai/ragas",
+      "slug": "ragas"
+    },
+    {
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "slug": "awesome-mcp-servers"
+    },
+    {
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "slug": "ai-agents-for-beginners"
+    },
+    {
+      "url": "https://github.com/h4ckf0r0day/obscura",
+      "slug": "obscura"
+    },
+    {
+      "url": "https://github.com/HKUDS/VideoAgent",
+      "slug": "videoagent"
+    },
+    {
+      "url": "https://github.com/firecrawl/open-lovable",
+      "slug": "open-lovable"
+    },
+    {
+      "url": "https://github.com/warpdotdev/warp",
+      "slug": "warp"
+    },
+    {
+      "url": "https://github.com/Git-on-my-level/codex-autorunner",
+      "slug": "codex-autorunner"
+    },
+    {
+      "url": "https://github.com/yousifamanuel/terraink",
+      "slug": "terraink"
+    },
+    {
+      "url": "https://github.com/OpnForm/OpnForm",
+      "slug": "opnform"
+    },
+    {
+      "url": "https://github.com/cloudshipai/station",
+      "slug": "station"
+    },
+    {
+      "url": "https://github.com/starpig1129/DATAGEN",
+      "slug": "datagen"
+    },
+    {
+      "url": "https://github.com/Prat011/awesome-llm-skills",
+      "slug": "awesome-llm-skills"
+    },
+    {
+      "url": "https://github.com/OpenAEV-Platform/openaev",
+      "slug": "openaev"
+    },
+    {
+      "url": "https://github.com/future-agi/future-agi",
+      "slug": "future-agi"
+    },
+    {
+      "url": "https://github.com/iannuttall/ralph",
+      "slug": "ralph"
+    },
+    {
+      "url": "https://github.com/henrydaum/second-brain",
+      "slug": "second-brain"
+    },
+    {
+      "url": "https://github.com/Botspot/bvm",
+      "slug": "bvm"
+    },
+    {
+      "url": "https://github.com/Snouzy/workout-cool",
+      "slug": "workout-cool"
+    },
+    {
+      "url": "https://github.com/Mega4alik/ollm",
+      "slug": "ollm"
+    },
+    {
+      "url": "https://github.com/sleekdotdesign/agent-skills",
+      "slug": "agent-skills"
+    },
+    {
+      "url": "https://github.com/Erio-Harrison/rust-trade",
+      "slug": "rust-trade"
+    },
+    {
+      "url": "https://github.com/nashsu/llm_wiki",
+      "slug": "llm-wiki"
+    },
+    {
+      "url": "https://github.com/sentrux/sentrux",
+      "slug": "sentrux"
+    },
+    {
+      "url": "https://github.com/browser-use/video-use",
+      "slug": "video-use"
+    },
+    {
+      "url": "https://github.com/pheralb/svgl",
+      "slug": "svgl"
+    },
+    {
+      "url": "https://github.com/agent0ai/agent-zero",
+      "slug": "agent-zero"
+    },
+    {
+      "url": "https://github.com/nowork-studio/toprank",
+      "slug": "toprank"
+    },
+    {
+      "url": "https://github.com/mksglu/context-mode",
+      "slug": "context-mode"
+    },
+    {
+      "url": "https://github.com/public-apis/public-apis",
+      "slug": "public-apis"
+    },
+    {
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "slug": "yt-dlp"
+    },
+    {
+      "url": "https://github.com/henchmarketing-rgb/headroom",
+      "slug": "headroom"
+    },
+    {
+      "url": "https://github.com/Mathieu2301/TradingView-API",
+      "slug": "tradingview-api"
+    },
+    {
+      "url": "https://github.com/jasonkneen/muxy/tree/huxy",
+      "slug": "muxy"
+    },
+    {
+      "url": "https://github.com/plait-board/drawnix",
+      "slug": "drawnix"
+    }
+  ]
+}

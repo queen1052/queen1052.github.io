@@ -2,7 +2,7 @@
 title: "Awesome Finance Skills: AI 에이전트를 월스트리트 애널리스트로 만드는 금융 스킬 컬렉션"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["금융 분석", "AI 스킬", "주식", "뉴스 분석", "Claude Code"]
+tags: ["금융 분석", "AI 스킬", "주식"]
 excerpt: "8개 스킬로 LLM에 실시간 뉴스, 주식 데이터, 감성 분석, 시계열 예측, 논리 체인 시각화를 부여한다. npx 한 줄로 Claude·Codex·Gemini가 금융 전문가가 된다."
 author: "큐레이터"
 readTime: "7분"

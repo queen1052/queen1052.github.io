@@ -2,7 +2,7 @@
 title: "Korean Law MCP: 한국 법령·판례 검색을 위한 MCP 서버"
 date: "2026-04-20"
 category: "MCP/리걸테크"
-tags: ["MCP", "legal-tech", "Korea", "TypeScript", "citation-verification"]
+tags: ["MCP", "legal-tech", "Korea"]
 excerpt: "법제처 API를 AI 도구에서 바로 활용하게 해주는 한국 법률 MCP 서버입니다."
 author: "큐레이터"
 readTime: "5분"

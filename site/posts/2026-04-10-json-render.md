@@ -2,7 +2,7 @@
 title: "json-render: JSON 하나로 React·이메일·터미널·영상 UI를 생성"
 date: "2026-04-10"
 category: "개발도구"
-tags: ["React", "JSON", "generative-UI", "TypeScript", "Vercel"]
+tags: ["React", "JSON", "generative-UI"]
 excerpt: "Vercel Labs의 json-render — JSON 스키마로 React/shadcn, 이메일, Next.js, Ink 터미널, Remotion 영상을 동시에 렌더링하는 14.1k 스타의 생성형 UI 프레임워크."
 author: "큐레이터"
 readTime: "6분"

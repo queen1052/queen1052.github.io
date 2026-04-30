@@ -2,7 +2,7 @@
 title: "x-research: AI 에이전트를 위한 X/Twitter 리서치 스킬"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["X API", "Twitter", "Claude Code", "OpenClaw", "TypeScript", "AI 에이전트"]
+tags: ["X API", "Twitter", "Claude Code"]
 excerpt: "X/Twitter 연구를 위한 Claude Code·OpenClaw 전용 에이전트 스킬. 트윗 검색, 스레드 추적, 계정 모니터링을 터미널 하나로 처리한다."
 author: "큐레이터"
 readTime: "6분"

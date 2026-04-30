@@ -2,7 +2,7 @@
 title: "HYDRA Engine: 로컬 우선 올인원 자동매매 엔진"
 date: "2026-04-11"
 category: "핀테크"
-tags: ["알고트레이딩", "백테스트", "FastAPI", "Docker", "Python", "암호화폐"]
+tags: ["알고트레이딩", "백테스트", "FastAPI"]
 excerpt: "데이터 수집 → 지표 계산 → 레짐 분류 → 시그널 생성 → 백테스트 → 실거래까지 하나의 저장소에서 관리하는 로컬 우선 자동매매 엔진."
 author: "큐레이터"
 readTime: "7분"

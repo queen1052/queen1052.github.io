@@ -2,7 +2,7 @@
 title: "Career-Ops: Claude Code 기반 AI 취업 탐색 시스템 — 740개 공고, 100개 맞춤 이력서, 드림 잡 착지"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["취업", "Claude Code", "이력서", "ATS", "채용 자동화", "Go TUI"]
+tags: ["취업", "Claude Code", "이력서"]
 excerpt: "AI 기반 취업 파이프라인. A-F 스코어링, ATS 최적화 PDF 이력서 생성, Playwright 포탈 스캐너, 병렬 배치 처리, Go TUI 대시보드를 갖춘 14개 스킬 모드 시스템으로 740+ 공고를 효율적으로 처리한다."
 author: "큐레이터"
 readTime: "7분"

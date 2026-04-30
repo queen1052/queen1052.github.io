@@ -2,7 +2,7 @@
 title: "QuantAgent: LLM 기반 고빈도 트레이딩(HFT) 멀티 에이전트"
 date: "2026-04-10"
 category: "AI/ML"
-tags: ["trading", "LLM", "multi-agent", "Python", "HFT"]
+tags: ["trading", "LLM", "multi-agent"]
 excerpt: "Y-Research-SBU의 QuantAgent — OpenAI/Claude/Qwen을 활용한 LLM 기반 고빈도 트레이딩 멀티 에이전트 시스템. arXiv 2509.09995 논문 구현체."
 author: "큐레이터"
 readTime: "6분"

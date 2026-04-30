@@ -2,7 +2,7 @@
 title: "Page Agent: 자바스크립트로 웹페이지를 자연어로 제어하는 GUI 에이전트"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["JavaScript", "browser-automation", "agent", "LLM", "npm"]
+tags: ["JavaScript", "browser-automation", "agent"]
 excerpt: "브라우저 확장 프로그램도, Python도, 헤드리스 브라우저도 필요 없이 페이지 내 JS만으로 웹 UI를 자연어로 자동화하는 Alibaba 오픈소스 라이브러리."
 author: "큐레이터"
 readTime: "5분"

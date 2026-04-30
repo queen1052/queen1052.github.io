@@ -2,7 +2,7 @@
 title: "Superpowers: Claude Code를 위한 15가지 스킬 라이브러리"
 date: "2026-04-10"
 category: "개발도구"
-tags: ["Claude", "skills", "TDD", "agents", "productivity"]
+tags: ["Claude", "skills", "TDD"]
 excerpt: "obra가 공개한 Claude Code 스킬 라이브러리 — TDD, 브레인스토밍, 디버깅, 병렬 에이전트 등 15가지 검증된 워크플로우 스킬."
 author: "큐레이터"
 readTime: "5분"

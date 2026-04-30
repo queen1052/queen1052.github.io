@@ -2,7 +2,7 @@
 title: "MoneyPrinterV2: Python 자동화로 소셜 미디어 콘텐츠 수익화"
 date: "2026-04-10"
 category: "자동화"
-tags: ["Python", "automation", "YouTube", "Twitter", "content"]
+tags: ["Python", "automation", "YouTube"]
 excerpt: "FujiwaraChoki의 MoneyPrinterV2 — YouTube Shorts, Twitter 아웃리치, 제휴 마케팅을 자동화하는 Python 도구. 29k 스타의 인기 오픈소스 프로젝트."
 author: "큐레이터"
 readTime: "5분"

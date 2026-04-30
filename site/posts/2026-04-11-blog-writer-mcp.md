@@ -2,7 +2,7 @@
 title: "blog-writer-mcp: 창작 DNA로 나만의 목소리를 찾는 AI 블로그 자동화 MCP 서버"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["MCP", "블로그 자동화", "창작 DNA", "Claude Desktop", "SEO", "쿠팡 파트너스"]
+tags: ["MCP", "블로그 자동화", "창작 DNA"]
 excerpt: "Claude Desktop과 ChatGPT에 직접 연결해 나만의 글쓰기 세계관으로 블로그를 자동 운영하는 MCP 서버. 창작 DNA 시스템, SEO/GEO 최적화, 쿠팡 파트너스 자동 링크 삽입, Blogger/WordPress 발행까지 한 번에."
 author: "큐레이터"
 readTime: "6분"

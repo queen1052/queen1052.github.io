@@ -2,7 +2,7 @@
 title: "Steel Browser: AI 에이전트용 오픈소스 브라우저 API"
 date: "2026-04-11"
 category: "브라우저 자동화"
-tags: ["AI 에이전트", "브라우저 자동화", "TypeScript", "Docker", "API"]
+tags: ["AI 에이전트", "브라우저 자동화", "TypeScript"]
 excerpt: "AI 에이전트와 앱이 웹과 상호작용하기 쉽게 만드는 오픈소스 브라우저 API. 세션 관리, 프록시 지원, 안티-탐지까지 배터리 포함. 6.8k 스타."
 author: "큐레이터"
 readTime: "6분"

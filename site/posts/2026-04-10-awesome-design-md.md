@@ -2,7 +2,7 @@
 title: "awesome-design-md: 100개 인기 사이트의 DESIGN.md 컬렉션"
 date: "2026-04-10"
 category: "디자인"
-tags: ["design-system", "AI", "DESIGN.md", "branding", "frontend"]
+tags: ["design-system", "AI", "DESIGN.md"]
 excerpt: "VoltAgent의 awesome-design-md — Stripe, Linear, Vercel 등 100개 이상 인기 사이트의 DESIGN.md를 모은 컬렉션. AI에게 정확한 디자인 언어를 주입하는 새로운 표준."
 author: "큐레이터"
 readTime: "6분"

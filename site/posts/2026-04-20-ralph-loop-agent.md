@@ -2,7 +2,7 @@
 title: "ralph-loop-agent: AI SDK용 반복 자율 실행 패턴"
 date: "2026-04-20"
 category: "AI/에이전트"
-tags: ["Vercel", "AI-SDK", "agents", "loop", "TypeScript"]
+tags: ["Vercel", "AI-SDK", "agents"]
 excerpt: "완료 조건을 만족할 때까지 에이전트를 반복 실행하는 패턴 구현입니다."
 author: "큐레이터"
 readTime: "5분"

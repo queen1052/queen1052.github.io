@@ -2,7 +2,7 @@
 title: "pi-autoresearch: 실험 루프를 자동화하는 pi 확장"
 date: "2026-04-20"
 category: "개발자동화"
-tags: ["pi", "benchmark", "automation", "optimization", "TypeScript"]
+tags: ["pi", "benchmark", "automation"]
 excerpt: "벤치마크를 반복하며 개선만 남기는 자율 최적화 루프 확장입니다."
 author: "큐레이터"
 readTime: "5분"

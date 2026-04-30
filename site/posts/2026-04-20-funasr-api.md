@@ -2,7 +2,7 @@
 title: "FunASR API: 52개 언어를 지원하는 로컬 음성 인식 API"
 date: "2026-04-20"
 category: "음성AI"
-tags: ["ASR", "speech", "OpenAI-API", "Python", "WebSocket"]
+tags: ["ASR", "speech", "OpenAI-API"]
 excerpt: "FunASR와 Qwen3-ASR 기반의 로컬 음성인식 API 서버입니다."
 author: "큐레이터"
 readTime: "5분"

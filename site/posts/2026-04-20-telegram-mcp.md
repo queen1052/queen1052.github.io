@@ -2,7 +2,7 @@
 title: "telegram-mcp: Telegram을 위한 MCP 연결 서버"
 date: "2026-04-20"
 category: "MCP"
-tags: ["Telegram", "MCP", "bot", "integration", "Node.js"]
+tags: ["Telegram", "MCP", "bot"]
 excerpt: "Telegram 채널과 MCP 도구를 연결해 자동화를 확장하는 서버입니다."
 author: "큐레이터"
 readTime: "5분"

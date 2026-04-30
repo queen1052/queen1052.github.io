@@ -2,7 +2,7 @@
 title: "Hermes Agent 에코시스템 맵: 80개 이상의 도구·스킬·플러그인 총정리"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["Hermes", "AI에이전트", "오픈소스", "NousResearch", "에코시스템"]
+tags: ["Hermes", "AI에이전트", "오픈소스"]
 excerpt: "Nous Research의 Hermes Agent(43,700+ stars)를 중심으로 구성된 80개 이상의 스킬, 플러그인, 배포 템플릿, 통합 도구를 한 눈에 정리한 에코시스템 맵입니다."
 author: "큐레이터"
 readTime: "5분"

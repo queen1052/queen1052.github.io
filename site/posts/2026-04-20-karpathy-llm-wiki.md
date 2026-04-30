@@ -2,7 +2,7 @@
 title: "karpathy-llm-wiki: LLM 학습 자료를 한곳에 모은 위키"
 date: "2026-04-20"
 category: "학습자료"
-tags: ["LLM", "wiki", "education", "Karpathy", "reference"]
+tags: ["LLM", "wiki", "education"]
 excerpt: "LLM 개념과 학습 자료를 체계적으로 모아 둔 위키형 저장소입니다."
 author: "큐레이터"
 readTime: "5분"

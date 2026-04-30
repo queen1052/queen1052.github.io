@@ -2,7 +2,7 @@
 title: "DeepAgents: LangChain과 LangGraph 기반 심층 리서치 에이전트"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["LangChain", "LangGraph", "Python", "research", "MCP"]
+tags: ["LangChain", "LangGraph", "Python"]
 excerpt: "LangChain이 공개한 DeepAgents — 웹 검색과 파일시스템을 도구로 활용하는 계획형 심층 리서치 에이전트, uv 한 줄로 설치 완료."
 author: "큐레이터"
 readTime: "5분"

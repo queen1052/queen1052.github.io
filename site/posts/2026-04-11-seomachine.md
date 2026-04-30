@@ -2,7 +2,7 @@
 title: "SEO Machine: Claude Code로 구동되는 장문 SEO 콘텐츠 자동화 워크플로우"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["SEO", "콘텐츠 마케팅", "Claude Code", "WordPress", "마케팅 자동화"]
+tags: ["SEO", "콘텐츠 마케팅", "Claude Code"]
 excerpt: "Castos 팟캐스트 SaaS에서 실전 검증된 SEO 콘텐츠 생성 시스템. 키워드 리서치부터 WordPress 발행까지 원스톱. 10개 전문 에이전트, 26개 마케팅 스킬, GA4/GSC/DataForSEO 통합."
 author: "큐레이터"
 readTime: "8분"

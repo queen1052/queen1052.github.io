@@ -2,7 +2,7 @@
 title: "vertical-agent-kit: Hermes 기반 버티컬 에이전트 스캐폴드"
 date: "2026-04-20"
 category: "AI/에이전트"
-tags: ["Hermes", "agents", "scaffolding", "templates", "shell"]
+tags: ["Hermes", "agents", "scaffolding"]
 excerpt: "Hermes를 특정 업무용 에이전트로 다듬기 위한 실전형 키트입니다."
 author: "큐레이터"
 readTime: "5분"

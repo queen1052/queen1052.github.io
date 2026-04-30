@@ -2,7 +2,7 @@
 title: "Agency Agents: 완전한 AI 에이전시를 위한 100+ 전문 에이전트"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["multi-agent", "Claude", "agency", "specialists", "productivity"]
+tags: ["multi-agent", "Claude", "agency"]
 excerpt: "실제 에이전시처럼 구성된 AI 에이전트 팀 — 제품, 엔지니어링, 디자인, 마케팅, 영업 부문별 100개 이상의 전문 AI 에이전트."
 author: "큐레이터"
 readTime: "6분"

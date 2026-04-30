@@ -2,7 +2,7 @@
 title: "AI Engineering from Scratch: 처음부터 배우는 AI 엔지니어링 260+ 레슨"
 date: "2026-04-11"
 category: "학습 자료"
-tags: ["AI 교육", "머신러닝", "딥러닝", "LLM", "에이전트", "Python", "TypeScript"]
+tags: ["AI 교육", "머신러닝", "딥러닝"]
 excerpt: "선형대수부터 자율 에이전트 스웜까지. 260개 이상의 레슨, 20개 단계, 약 290시간 분량의 AI 엔지니어링 완전 정복 커리큘럼."
 author: "큐레이터"
 readTime: "7분"

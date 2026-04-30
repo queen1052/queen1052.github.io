@@ -2,7 +2,7 @@
 title: "Awesome Codex Subagents: 136개 전문 서브에이전트 컬렉션"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["Codex", "subagents", "CLI", "automation", "OpenAI"]
+tags: ["Codex", "subagents", "CLI"]
 excerpt: "VoltAgent가 엄선한 136개 이상의 OpenAI Codex 서브에이전트 — PR 리뷰, 버그 조사, 리포 탐색 등 10가지 카테고리로 즉시 활용 가능."
 author: "큐레이터"
 readTime: "5분"

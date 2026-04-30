@@ -2,7 +2,7 @@
 title: "Luce Megakernel: DeltaNet/Attention 하이브리드 LLM을 위한 첫 CUDA 메가커널"
 date: "2026-04-11"
 category: "AI 인프라"
-tags: ["CUDA", "LLM 최적화", "메가커널", "GPU", "DeltaNet"]
+tags: ["CUDA", "LLM 최적화", "메가커널"]
 excerpt: "Qwen 3.5-0.8B 24개 레이어를 단일 CUDA 디스패치로 처리, prefill 3.4x/decode 1.55x 속도 향상과 1.87 tok/J 에너지 효율을 달성한 최초의 하이브리드 LLM 메가커널."
 author: "큐레이터"
 readTime: "8분"

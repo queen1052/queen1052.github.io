@@ -2,7 +2,7 @@
 title: "tradingview-mcp: 30개 이상의 기술 분석 도구를 Claude에 연결하는 AI 트레이딩 MCP 서버"
 date: "2026-04-11"
 category: "AI 트레이딩"
-tags: ["MCP", "트레이딩", "기술분석", "ClaudeDesktop", "오픈소스"]
+tags: ["MCP", "트레이딩", "기술분석"]
 excerpt: "TradingView 기술 분석, 백테스팅, 실시간 감성 분석, Yahoo Finance를 Claude Desktop에 연결하는 30개 이상의 MCP 도구를 제공하는 AI 트레이딩 인프라입니다."
 author: "큐레이터"
 readTime: "7분"

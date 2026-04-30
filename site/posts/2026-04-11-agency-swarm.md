@@ -2,7 +2,7 @@
 title: "Agency Swarm: OpenAI Agents SDK 기반 신뢰성 높은 멀티 에이전트 오케스트레이션 프레임워크"
 date: "2026-04-11"
 category: "AI 에이전트"
-tags: ["멀티 에이전트", "Agency Swarm", "OpenAI Agents SDK", "Python", "오케스트레이션", "VRSEN"]
+tags: ["멀티 에이전트", "Agency Swarm", "OpenAI Agents SDK"]
 excerpt: "CEO, 개발자, 어시스턴트 등 실제 조직 구조를 모방한 AI 에이전트 팀을 쉽게 구축하는 프레임워크. OpenAI Agents SDK를 확장해 방향성 있는 통신 흐름과 타입 안전 도구를 제공한다."
 author: "큐레이터"
 readTime: "7분"

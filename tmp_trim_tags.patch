@@ -1,0 +1,690 @@
+*** Begin Patch
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-agency-agents.md
+@@
+-tags: ["multi-agent", "Claude", "agency", "specialists", "productivity"]
++tags: ["multi-agent", "Claude", "agency"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-agent-lightning.md
+@@
+-tags: ["RL", "reinforcement-learning", "Python", "TypeScript", "Microsoft"]
++tags: ["RL", "reinforcement-learning", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-autoresearchclaw.md
+@@
+-tags: ["research", "LaTeX", "autonomous", "academic", "Claude"]
++tags: ["research", "LaTeX", "autonomous"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-awesome-codex-subagents.md
+@@
+-tags: ["Codex", "subagents", "CLI", "automation", "OpenAI"]
++tags: ["Codex", "subagents", "CLI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-awesome-design-md.md
+@@
+-tags: ["design-system", "AI", "DESIGN.md", "branding", "frontend"]
++tags: ["design-system", "AI", "DESIGN.md"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-bitnet.md
+@@
+-tags: ["LLM", "inference", "1-bit", "CPU", "Microsoft"]
++tags: ["LLM", "inference", "1-bit"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-claude-code-tips.md
+@@
+-tags: ["Claude Code", "AI", "agentic", "productivity", "CLI"]
++tags: ["Claude Code", "AI", "agentic"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-context-hub.md
+@@
+-tags: ["CLI", "documentation", "AI", "RAG", "context"]
++tags: ["CLI", "documentation", "AI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-deepagents.md
+@@
+-tags: ["LangChain", "LangGraph", "Python", "research", "MCP"]
++tags: ["LangChain", "LangGraph", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-deeptutor.md
+@@
+-tags: ["AI", "education", "agent", "LLM", "RAG"]
++tags: ["AI", "education", "agent"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-hermes-ecosystem.md
+@@
+-tags: ["Hermes", "AI에이전트", "오픈소스", "NousResearch", "에코시스템"]
++tags: ["Hermes", "AI에이전트", "오픈소스"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-hermes-webui.md
+@@
+-tags: ["FastAPI", "React", "TailwindCSS", "SQLite", "monitoring"]
++tags: ["FastAPI", "React", "TailwindCSS"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-hive.md
+@@
+-tags: ["multi-agent", "Python", "production", "AI", "orchestration"]
++tags: ["multi-agent", "Python", "production"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-impeccable.md
+@@
+-tags: ["Claude", "design", "frontend", "commands", "UI"]
++tags: ["Claude", "design", "frontend"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-json-render.md
+@@
+-tags: ["React", "JSON", "generative-UI", "TypeScript", "Vercel"]
++tags: ["React", "JSON", "generative-UI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-kiwimu.md
+@@
+-tags: ["TypeScript", "D3.js", "knowledge-graph", "wiki", "Bun"]
++tags: ["TypeScript", "D3.js", "knowledge-graph"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-lightpanda-browser.md
+@@
+-tags: ["browser", "Zig", "headless", "AI", "automation"]
++tags: ["browser", "Zig", "headless"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-memento-skills.md
+@@
+-tags: ["self-evolving", "skills", "Python", "benchmark", "GAIA"]
++tags: ["self-evolving", "skills", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-mirofish.md
+@@
+-tags: ["collective-intelligence", "GraphRAG", "Python", "Vue", "prediction"]
++tags: ["collective-intelligence", "GraphRAG", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-mission-control.md
+@@
+-tags: ["product", "autonomous", "Next.js", "SQLite", "Docker"]
++tags: ["product", "autonomous", "Next.js"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-moneyprinterv2.md
+@@
+-tags: ["Python", "automation", "YouTube", "Twitter", "content"]
++tags: ["Python", "automation", "YouTube"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-observer-patch-holography.md
+@@
+-tags: ["물리학", "표준모형", "양자중력", "홀로그래피", "오픈소스"]
++tags: ["물리학", "표준모형", "양자중력"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-open-source-games.md
+@@
+-tags: ["games", "HTML5", "JavaScript", "browser", "open-source"]
++tags: ["games", "HTML5", "JavaScript"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-openbb.md
+@@
+-tags: ["Python", "finance", "data", "analytics", "open-source"]
++tags: ["Python", "finance", "data"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-openclaw-master-skills.md
+@@
+-tags: ["Claude", "skills", "DevOps", "marketing", "collection"]
++tags: ["Claude", "skills", "DevOps"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-opendataloader-pdf.md
+@@
+-tags: ["Java", "Python", "PDF", "OCR", "document-parsing"]
++tags: ["Java", "Python", "PDF"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-openspace.md
+@@
+-tags: ["multi-agent", "skills", "Python", "benchmark", "self-evolving"]
++tags: ["multi-agent", "skills", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-openviking.md
+@@
+-tags: ["Python", "Rust", "agent", "context", "framework"]
++tags: ["Python", "Rust", "agent"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-page-agent.md
+@@
+-tags: ["JavaScript", "browser-automation", "agent", "LLM", "npm"]
++tags: ["JavaScript", "browser-automation", "agent"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-paperclip.md
+@@
+-tags: ["orchestration", "business", "AI", "organization", "budget"]
++tags: ["orchestration", "business", "AI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-quantagent.md
+@@
+-tags: ["trading", "LLM", "multi-agent", "Python", "HFT"]
++tags: ["trading", "LLM", "multi-agent"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-ragflow.md
+@@
+-tags: ["RAG", "Python", "Docker", "LLM", "enterprise"]
++tags: ["RAG", "Python", "Docker"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-sleek-ui.md
+@@
+-tags: ["TypeScript", "design-system", "JSON", "shadcn", "AI"]
++tags: ["TypeScript", "design-system", "JSON"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-smythos-studio.md
+@@
+-tags: ["TypeScript", "visual-builder", "no-code", "agent", "pnpm"]
++tags: ["TypeScript", "visual-builder", "no-code"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-superpowers.md
+@@
+-tags: ["Claude", "skills", "TDD", "agents", "productivity"]
++tags: ["Claude", "skills", "TDD"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-tradingagents.md
+@@
+-tags: ["trading", "LLM", "multi-agent", "finance", "Python"]
++tags: ["trading", "LLM", "multi-agent"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-translumo.md
+@@
+-tags: [".NET", "OCR", "translation", "C#", "screen"]
++tags: [".NET", "OCR", "translation"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-trek.md
+@@
+-tags: ["Node.js", "React", "SQLite", "WebSocket", "travel"]
++tags: ["Node.js", "React", "SQLite"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-trendshift.md
+@@
+-tags: ["open-source", "trending", "discovery", "AI", "GitHub"]
++tags: ["open-source", "trending", "discovery"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-10-turboquant-plus.md
+@@
+-tags: ["LLM", "양자화", "KV캐시", "llama.cpp", "Apple Silicon"]
++tags: ["LLM", "양자화", "KV캐시"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-49agents.md
+@@
+-tags: ["IDE", "AI 에이전트", "2D 캔버스", "터미널", "멀티 머신"]
++tags: ["IDE", "AI 에이전트", "2D 캔버스"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-agency-swarm.md
+@@
+-tags: ["멀티 에이전트", "Agency Swarm", "OpenAI Agents SDK", "Python", "오케스트레이션", "VRSEN"]
++tags: ["멀티 에이전트", "Agency Swarm", "OpenAI Agents SDK"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-agent-file.md
+@@
+-tags: ["에이전트포맷", "Letta", "에이전트공유", "상태저장", "오픈스탠다드"]
++tags: ["에이전트포맷", "Letta", "에이전트공유"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-agent-orchestrator.md
+@@
+-tags: ["AI 에이전트", "병렬 처리", "git worktree", "Claude Code", "오케스트레이션"]
++tags: ["AI 에이전트", "병렬 처리", "git worktree"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-ai-engineering-from-scratch.md
+@@
+-tags: ["AI 교육", "머신러닝", "딥러닝", "LLM", "에이전트", "Python", "TypeScript"]
++tags: ["AI 교육", "머신러닝", "딥러닝"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-ai-trader.md
+@@
+-tags: ["AI트레이딩", "에이전트", "자동화", "금융", "주식"]
++tags: ["AI트레이딩", "에이전트", "자동화"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-appflowy.md
+@@
+-tags: ["Notion", "OpenSource", "Flutter", "Rust", "Collaboration", "SelfHosted", "AI"]
++tags: ["Notion", "OpenSource", "Flutter"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-astron-agent.md
+@@
+-tags: ["AI", "Agent", "Workflow", "Enterprise", "MCP", "LLM", "iFLYTEK"]
++tags: ["AI", "Agent", "Workflow"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-ava-ai-voice-agent.md
+@@
+-tags: ["음성AI", "Asterisk", "STT", "TTS", "Docker"]
++tags: ["음성AI", "Asterisk", "STT"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-awesome-finance-skills.md
+@@
+-tags: ["금융 분석", "AI 스킬", "주식", "뉴스 분석", "Claude Code"]
++tags: ["금융 분석", "AI 스킬", "주식"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-awesome-llm-apps.md
+@@
+-tags: ["LLM", "RAG", "AI 에이전트", "멀티에이전트", "MCP"]
++tags: ["LLM", "RAG", "AI 에이전트"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-blog-writer-mcp.md
+@@
+-tags: ["MCP", "블로그 자동화", "창작 DNA", "Claude Desktop", "SEO", "쿠팡 파트너스"]
++tags: ["MCP", "블로그 자동화", "창작 DNA"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-blog-writer.md
+@@
+-tags: ["블로그 자동화", "콘텐츠 생성", "YouTube Shorts", "Python", "멀티플랫폼", "수익화"]
++tags: ["블로그 자동화", "콘텐츠 생성", "YouTube Shorts"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-camofox-browser.md
+@@
+-tags: ["AI 에이전트", "안티-탐지", "Camoufox", "Firefox", "브라우저 자동화"]
++tags: ["AI 에이전트", "안티-탐지", "Camoufox"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-career-ops.md
+@@
+-tags: ["취업", "Claude Code", "이력서", "ATS", "채용 자동화", "Go TUI"]
++tags: ["취업", "Claude Code", "이력서"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-chatwoot.md
+@@
+-tags: ["CustomerSupport", "Omnichannel", "Ruby", "Vue", "OpenSource", "SelfHosted", "AI"]
++tags: ["CustomerSupport", "Omnichannel", "Ruby"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-claude-mem.md
+@@
+-tags: ["Claude Code", "메모리", "컨텍스트", "MCP", "SQLite", "ChromaDB"]
++tags: ["Claude Code", "메모리", "컨텍스트"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-claude-scholar.md
+@@
+-tags: ["학술 연구", "Claude Code", "Zotero", "Obsidian", "AI 연구 보조"]
++tags: ["학술 연구", "Claude Code", "Zotero"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-claude-usage.md
+@@
+-tags: ["Claude Code", "토큰", "사용량", "대시보드", "비용 추적"]
++tags: ["Claude Code", "토큰", "사용량"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-clawless.md
+@@
+-tags: ["AI 에이전트", "WebContainers", "WASM", "브라우저", "오픈소스"]
++tags: ["AI 에이전트", "WebContainers", "WASM"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-cocoindex-code.md
+@@
+-tags: ["코드검색", "AST", "MCP", "시맨틱검색", "코딩에이전트"]
++tags: ["코드검색", "AST", "MCP"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-continue.md
+@@
+-tags: ["AI", "CI", "GitHub", "CodeReview", "TypeScript", "OpenSource", "DevTools"]
++tags: ["AI", "CI", "GitHub"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-dexter.md
+@@
+-tags: ["금융 리서치", "AI 에이전트", "TypeScript", "Bun", "자율 에이전트", "WhatsApp"]
++tags: ["금융 리서치", "AI 에이전트", "TypeScript"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-everything-claude-code.md
+@@
+-tags: ["ClaudeCode", "에이전트", "스킬", "훅", "개발도구"]
++tags: ["ClaudeCode", "에이전트", "스킬"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-freqtrade.md
+@@
+-tags: ["freqtrade", "암호화폐", "자동매매", "백테스팅", "FreqAI", "Telegram"]
++tags: ["freqtrade", "암호화폐", "자동매매"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-gbrain.md
+@@
+-tags: ["GBrain", "지식관리", "Postgres", "pgvector", "에이전트"]
++tags: ["GBrain", "지식관리", "Postgres"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-geo-seo-claude.md
+@@
+-tags: ["GEO", "SEO", "Claude Code", "AI 검색", "ChatGPT", "Perplexity"]
++tags: ["GEO", "SEO", "Claude Code"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-goose.md
+@@
+-tags: ["AI 에이전트", "오픈소스", "Rust", "MCP", "Linux Foundation"]
++tags: ["AI 에이전트", "오픈소스", "Rust"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-gov-chat-bot.md
+@@
+-tags: ["챗봇", "카카오톡", "FAQ 자동화", "SmartBot", "지자체", "소상공인"]
++tags: ["챗봇", "카카오톡", "FAQ 자동화"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-gptaku-plugins.md
+@@
+-tags: ["Claude Code", "플러그인", "한국어", "AI Native", "바이브코딩"]
++tags: ["Claude Code", "플러그인", "한국어"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-graphify.md
+@@
+-tags: ["graphify", "지식그래프", "ClaudeCode", "코드분석", "AI도구"]
++tags: ["graphify", "지식그래프", "ClaudeCode"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hermes-agent.md
+@@
+-tags: ["AI 에이전트", "자기개선 AI", "멀티플랫폼", "Nous Research", "오픈소스"]
++tags: ["AI 에이전트", "자기개선 AI", "멀티플랫폼"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hermes-hudui.md
+@@
+-tags: ["Hermes", "AI에이전트", "대시보드", "웹UI", "모니터링"]
++tags: ["Hermes", "AI에이전트", "대시보드"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hermes-workspace.md
+@@
+-tags: ["HermesWorkspace", "AI에이전트", "PWA", "대시보드", "워크스페이스"]
++tags: ["HermesWorkspace", "AI에이전트", "PWA"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hummingbot.md
+@@
+-tags: ["암호화폐", "알고트레이딩", "마켓메이킹", "Python", "DEX", "CEX"]
++tags: ["암호화폐", "알고트레이딩", "마켓메이킹"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hydra-engine.md
+@@
+-tags: ["알고트레이딩", "백테스트", "FastAPI", "Docker", "Python", "암호화폐"]
++tags: ["알고트레이딩", "백테스트", "FastAPI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hypatia.md
+@@
+-tags: ["AI 메모리", "Rust", "지식 그래프", "SQLite", "DuckDB"]
++tags: ["AI 메모리", "Rust", "지식 그래프"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-hyper-extract.md
+@@
+-tags: ["지식그래프", "LLM", "정보추출", "하이퍼그래프", "오픈소스"]
++tags: ["지식그래프", "LLM", "정보추출"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-iterative-contextual-refinements.md
+@@
+-tags: ["멀티에이전트", "LangGraph", "반복정제", "TypeScript", "AI추론"]
++tags: ["멀티에이전트", "LangGraph", "반복정제"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-languagetool.md
+@@
+-tags: ["NLP", "Grammar", "Spellcheck", "Java", "OpenSource", "Writing", "Proofreading"]
++tags: ["NLP", "Grammar", "Spellcheck"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-lark-cli.md
+@@
+-tags: ["Lark", "Feishu", "CLI", "AI 에이전트", "자동화"]
++tags: ["Lark", "Feishu", "CLI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-leceipts.md
+@@
+-tags: ["AI 코딩", "코드 검증", "CI/CD", "TypeScript", "개발 워크플로우"]
++tags: ["AI 코딩", "코드 검증", "CI/CD"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-lightrag.md
+@@
+-tags: ["RAG", "지식 그래프", "LLM", "Python", "EMNLP2025", "검색증강생성"]
++tags: ["RAG", "지식 그래프", "LLM"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-lightweight-charts.md
+@@
+-tags: ["금융 차트", "TypeScript", "HTML5", "TradingView", "오픈소스"]
++tags: ["금융 차트", "TypeScript", "HTML5"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-llamafactory.md
+@@
+-tags: ["파인튜닝", "LLM", "LoRA", "RLHF", "오픈소스"]
++tags: ["파인튜닝", "LLM", "LoRA"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-llm-engineer-toolkit.md
+@@
+-tags: ["LLM", "AI 에이전트", "RAG", "파인튜닝", "큐레이션"]
++tags: ["LLM", "AI 에이전트", "RAG"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-localai.md
+@@
+-tags: ["로컬AI", "오픈소스", "셀프호스팅", "LLM", "OpenAI호환"]
++tags: ["로컬AI", "오픈소스", "셀프호스팅"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-luce-megakernel.md
+@@
+-tags: ["CUDA", "LLM 최적화", "메가커널", "GPU", "DeltaNet"]
++tags: ["CUDA", "LLM 최적화", "메가커널"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-maestro.md
+@@
+-tags: ["에이전트 오케스트레이션", "Kanban", "Tailscale", "Node.js", "TypeScript", "셀프호스팅"]
++tags: ["에이전트 오케스트레이션", "Kanban", "Tailscale"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-mcp-toolbox.md
+@@
+-tags: ["MCP", "데이터베이스", "Google", "AI 도구", "Go"]
++tags: ["MCP", "데이터베이스", "Google"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-mcp-use.md
+@@
+-tags: ["MCP", "AI", "TypeScript", "Python", "Claude", "ChatGPT", "Framework"]
++tags: ["MCP", "AI", "TypeScript"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-mempalace.md
+@@
+-tags: ["AI 메모리", "LLM", "MCP", "오픈소스", "Claude Code"]
++tags: ["AI 메모리", "LLM", "MCP"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-memvid.md
+@@
+-tags: ["AI 메모리", "Rust", "에이전트", "벡터스토어", "임베딩"]
++tags: ["AI 메모리", "Rust", "에이전트"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-mindweaver.md
+@@
+-tags: ["AI", "KnowledgeGraph", "LocalFirst", "Learning", "MindMap", "JavaScript", "OpenAI"]
++tags: ["AI", "KnowledgeGraph", "LocalFirst"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-modular-context-obsidian-plugin.md
+@@
+-tags: ["Obsidian", "Claude Code", "AI 터미널", "지식관리", "플러그인"]
++tags: ["Obsidian", "Claude Code", "AI 터미널"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-multica.md
+@@
+-tags: ["Multica", "에이전트관리", "협업", "오픈소스", "ClaudeCode"]
++tags: ["Multica", "에이전트관리", "협업"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-n8n.md
+@@
+-tags: ["Automation", "Workflow", "AI", "LangChain", "SelfHosted", "TypeScript", "NoCode"]
++tags: ["Automation", "Workflow", "AI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-obsidian-skills.md
+@@
+-tags: ["Obsidian", "Claude Code", "AI 에이전트", "스킬", "마크다운", "지식관리"]
++tags: ["Obsidian", "Claude Code", "AI 에이전트"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-oh-my-claudecode.md
+@@
+-tags: ["Claude Code", "멀티 에이전트", "오케스트레이션", "oh-my-claudecode", "오픈소스"]
++tags: ["Claude Code", "멀티 에이전트", "오케스트레이션"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-open-higgsfield-ai.md
+@@
+-tags: ["AI 이미지", "AI 비디오", "Next.js", "오픈소스", "Higgsfield"]
++tags: ["AI 이미지", "AI 비디오", "Next.js"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-open-seo.md
+@@
+-tags: ["SEO", "오픈소스", "셀프호스팅", "DataForSEO", "키워드 리서치", "백링크"]
++tags: ["SEO", "오픈소스", "셀프호스팅"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-openclaude.md
+@@
+-tags: ["ClaudeCode", "코딩에이전트", "CLI", "오픈소스", "멀티프로바이더"]
++tags: ["ClaudeCode", "코딩에이전트", "CLI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-openclaw-autoresearch.md
+@@
+-tags: ["OpenClaw", "자동화", "실험", "최적화", "TypeScript", "플러그인"]
++tags: ["OpenClaw", "자동화", "실험"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-opencode-telegram-bot.md
+@@
+-tags: ["OpenCode", "Telegram", "AI 코딩", "원격 제어", "TypeScript"]
++tags: ["OpenCode", "Telegram", "AI 코딩"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-owl.md
+@@
+-tags: ["멀티에이전트", "GAIA", "CAMEL", "자동화", "브라우저자동화"]
++tags: ["멀티에이전트", "GAIA", "CAMEL"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-pikiclaw.md
+@@
+-tags: ["AI 에이전트", "Telegram", "Claude Code", "모바일 AI", "MCP"]
++tags: ["AI 에이전트", "Telegram", "Claude Code"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-posthog.md
+@@
+-tags: ["제품분석", "웹분석", "피처플래그", "오픈소스", "셀프호스팅"]
++tags: ["제품분석", "웹분석", "피처플래그"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-praisonai.md
+@@
+-tags: ["PraisonAI", "멀티에이전트", "Python", "자동화", "LLM"]
++tags: ["PraisonAI", "멀티에이전트", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-pricedrop-io.md
+@@
+-tags: ["가격 알림", "네이버 쇼핑", "Telegram", "Python", "MVP", "자동화"]
++tags: ["가격 알림", "네이버 쇼핑", "Telegram"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-prompts-chat.md
+@@
+-tags: ["프롬프트", "ChatGPT", "프롬프트엔지니어링", "자체호스팅", "MCP"]
++tags: ["프롬프트", "ChatGPT", "프롬프트엔지니어링"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-reclip.md
+@@
+-tags: ["동영상다운로드", "yt-dlp", "자체호스팅", "Python", "Flask"]
++tags: ["동영상다운로드", "yt-dlp", "자체호스팅"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-reverse-synthid.md
+@@
+-tags: ["워터마크", "SynthID", "스펙트럼분석", "Python", "AI보안"]
++tags: ["워터마크", "SynthID", "스펙트럼분석"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-rowboat.md
+@@
+-tags: ["Rowboat", "AI에이전트", "지식그래프", "로컬퍼스트", "생산성"]
++tags: ["Rowboat", "AI에이전트", "지식그래프"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-scrapling.md
+@@
+-tags: ["웹 스크래핑", "Python", "AI", "MCP", "크롤링"]
++tags: ["웹 스크래핑", "Python", "AI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-seomachine.md
+@@
+-tags: ["SEO", "콘텐츠 마케팅", "Claude Code", "WordPress", "마케팅 자동화"]
++tags: ["SEO", "콘텐츠 마케팅", "Claude Code"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-sherlock.md
+@@
+-tags: ["OSINT", "소셜미디어", "보안", "Python", "계정추적"]
++tags: ["OSINT", "소셜미디어", "보안"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-shorts-engine.md
+@@
+-tags: ["YouTube Shorts", "틱톡", "AI 영상", "TypeScript", "CLI", "콘텐츠 자동화"]
++tags: ["YouTube Shorts", "틱톡", "AI 영상"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-sim.md
+@@
+-tags: ["Sim", "에이전트", "워크플로우", "오픈소스", "노코드"]
++tags: ["Sim", "에이전트", "워크플로우"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-st3gg.md
+@@
+-tags: ["스테가노그래피", "보안", "레드팀", "CTF", "오픈소스"]
++tags: ["스테가노그래피", "보안", "레드팀"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-stable-diffusion-webui.md
+@@
+-tags: ["StableDiffusion", "AI", "ImageGeneration", "Python", "Gradio", "WebUI", "AUTOMATIC1111"]
++tags: ["StableDiffusion", "AI", "ImageGeneration"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-steel-browser.md
+@@
+-tags: ["AI 에이전트", "브라우저 자동화", "TypeScript", "Docker", "API"]
++tags: ["AI 에이전트", "브라우저 자동화", "TypeScript"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-straregy-consol.md
+@@
+-tags: ["Binance", "자동매매", "AI 분석", "이미지 패턴", "Kill Switch", "페이퍼 트레이딩"]
++tags: ["Binance", "자동매매", "AI 분석"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-strix.md
+@@
+-tags: ["AI 에이전트", "보안", "침투테스트", "취약점 탐지", "CI/CD"]
++tags: ["AI 에이전트", "보안", "침투테스트"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-tabby.md
+@@
+-tags: ["AI", "CodingAssistant", "SelfHosted", "Rust", "OpenSource", "IDE", "Copilot"]
++tags: ["AI", "CodingAssistant", "SelfHosted"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-tasknotes.md
+@@
+-tags: ["Obsidian", "태스크관리", "플러그인", "PKM", "오픈소스"]
++tags: ["Obsidian", "태스크관리", "플러그인"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-textual-diff-view.md
+@@
+-tags: ["Python", "Textual", "TUI", "diff", "터미널"]
++tags: ["Python", "Textual", "TUI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-timesfm.md
+@@
+-tags: ["시계열 예측", "Google Research", "파운데이션 모델", "ICML 2024", "오픈소스"]
++tags: ["시계열 예측", "Google Research", "파운데이션 모델"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-tradingview-mcp.md
+@@
+-tags: ["MCP", "트레이딩", "기술분석", "ClaudeDesktop", "오픈소스"]
++tags: ["MCP", "트레이딩", "기술분석"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-vibe-trading.md
+@@
+-tags: ["트레이딩", "AI에이전트", "백테스팅", "핀테크", "오픈소스"]
++tags: ["트레이딩", "AI에이전트", "백테스팅"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-vibevoice.md
+@@
+-tags: ["TTS", "ASR", "음성AI", "Microsoft", "실시간"]
++tags: ["TTS", "ASR", "음성AI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-vnpy.md
+@@
+-tags: ["퀀트", "알고리즘트레이딩", "Python", "Python AI", "선물"]
++tags: ["퀀트", "알고리즘트레이딩", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-voxcpm.md
+@@
+-tags: ["TTS", "음성합성", "음성복제", "VoxCPM", "OpenBMB", "다국어"]
++tags: ["TTS", "음성합성", "음성복제"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-whisper.md
+@@
+-tags: ["음성인식", "STT", "OpenAI", "오픈소스", "딥러닝"]
++tags: ["음성인식", "STT", "OpenAI"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-workshop-agentic-search.md
+@@
+-tags: ["에이전틱 검색", "컨텍스트 엔지니어링", "LangChain", "Elasticsearch", "워크숍"]
++tags: ["에이전틱 검색", "컨텍스트 엔지니어링", "LangChain"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-x-research-skill.md
+@@
+-tags: ["X API", "Twitter", "Claude Code", "OpenClaw", "TypeScript", "AI 에이전트"]
++tags: ["X API", "Twitter", "Claude Code"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-11-xyops.md
+@@
+-tags: ["자동화", "모니터링", "잡스케줄링", "워크플로우", "오픈소스"]
++tags: ["자동화", "모니터링", "잡스케줄링"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-ai-hedge-fund.md
+@@
+-tags: ["agents", "trading", "finance", "Python", "backtesting"]
++tags: ["agents", "trading", "finance"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-arc-kit.md
+@@
+-tags: ["architecture", "toolkit", "enterprise", "planning", "documentation"]
++tags: ["architecture", "toolkit", "enterprise"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-arnis.md
+@@
+-tags: ["Rust", "Minecraft", "OpenStreetMap", "geospatial", "Tauri"]
++tags: ["Rust", "Minecraft", "OpenStreetMap"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-awesome-ai-apps.md
+@@
+-tags: ["awesome-list", "AI", "agents", "examples", "reference"]
++tags: ["awesome-list", "AI", "agents"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-byterover-cli.md
+@@
+-tags: ["memory", "CLI", "agents", "TypeScript", "MCP"]
++tags: ["memory", "CLI", "agents"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-chainlit.md
+@@
+-tags: ["LLM", "chatbot", "Python", "UI", "agents"]
++tags: ["LLM", "chatbot", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-code-review-graph.md
+@@
+-tags: ["MCP", "Tree-sitter", "code-review", "knowledge-graph", "Python"]
++tags: ["MCP", "Tree-sitter", "code-review"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-dataflow.md
+@@
+-tags: ["LLM", "data-cleaning", "pipelines", "Python", "WebUI"]
++tags: ["LLM", "data-cleaning", "pipelines"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-fingpt.md
+@@
+-tags: ["LLM", "finance", "sentiment", "LoRA", "Python"]
++tags: ["LLM", "finance", "sentiment"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-flowise.md
+@@
+-tags: ["LLM", "workflow", "low-code", "Node.js", "RAG"]
++tags: ["LLM", "workflow", "low-code"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-funasr-api.md
+@@
+-tags: ["ASR", "speech", "OpenAI-API", "Python", "WebSocket"]
++tags: ["ASR", "speech", "OpenAI-API"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-get-shit-done.md
+@@
+-tags: ["Claude-Code", "spec-driven", "context-engineering", "automation", "TypeScript"]
++tags: ["Claude-Code", "spec-driven", "context-engineering"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-goclaw.md
+@@
+-tags: ["Go", "multi-agent", "PostgreSQL", "gateway", "self-hosted"]
++tags: ["Go", "multi-agent", "PostgreSQL"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-gpui-component.md
+@@
+-tags: ["Rust", "GPUI", "desktop", "components", "UI"]
++tags: ["Rust", "GPUI", "desktop"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-homepage.md
+@@
+-tags: ["dashboard", "Docker", "Next.js", "self-hosted", "YAML"]
++tags: ["dashboard", "Docker", "Next.js"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-insane-search.md
+@@
+-tags: ["search", "scraping", "automation", "web", "Python"]
++tags: ["search", "scraping", "automation"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-johpaz-hive.md
+@@
+-tags: ["Bun", "SQLite", "multi-agent", "gateway", "local-first"]
++tags: ["Bun", "SQLite", "multi-agent"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-karpathy-llm-wiki.md
+@@
+-tags: ["LLM", "wiki", "education", "Karpathy", "reference"]
++tags: ["LLM", "wiki", "education"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-korean-law-mcp.md
+@@
+-tags: ["MCP", "legal-tech", "Korea", "TypeScript", "citation-verification"]
++tags: ["MCP", "legal-tech", "Korea"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-kronos.md
+@@
+-tags: ["finance", "time-series", "Transformer", "forecasting", "Python"]
++tags: ["finance", "time-series", "Transformer"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-logocreator.md
+@@
+-tags: ["Flux", "Next.js", "design", "Together-AI", "TypeScript"]
++tags: ["Flux", "Next.js", "design"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-mineru.md
+@@
+-tags: ["PDF", "OCR", "document-parsing", "RAG", "Python"]
++tags: ["PDF", "OCR", "document-parsing"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-nesquena-hermes-webui.md
+@@
+-tags: ["Hermes", "WebUI", "Python", "self-hosted", "SSE"]
++tags: ["Hermes", "WebUI", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-nofx.md
+@@
+-tags: ["trading", "x402", "Go", "React", "agents"]
++tags: ["trading", "x402", "Go"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-paseo.md
+@@
+-tags: ["Claude-Code", "Codex", "OpenCode", "mobile", "TypeScript"]
++tags: ["Claude-Code", "Codex", "OpenCode"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-pi-autoresearch.md
+@@
+-tags: ["pi", "benchmark", "automation", "optimization", "TypeScript"]
++tags: ["pi", "benchmark", "automation"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-pixel-agents.md
+@@
+-tags: ["VS-Code", "Claude-Code", "visualization", "agents", "TypeScript"]
++tags: ["VS-Code", "Claude-Code", "visualization"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-ragatouille.md
+@@
+-tags: ["ColBERT", "retrieval", "RAG", "Python", "search"]
++tags: ["ColBERT", "retrieval", "RAG"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-ralph-loop-agent.md
+@@
+-tags: ["Vercel", "AI-SDK", "agents", "loop", "TypeScript"]
++tags: ["Vercel", "AI-SDK", "agents"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-ralph.md
+@@
+-tags: ["Claude-Code", "agents", "PRD", "automation", "shell"]
++tags: ["Claude-Code", "agents", "PRD"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-skip.md
+@@
+-tags: ["Swift", "SwiftUI", "Android", "Jetpack-Compose", "cross-platform"]
++tags: ["Swift", "SwiftUI", "Android"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-spec-kitty.md
+@@
+-tags: ["spec-driven", "agents", "Python", "dashboard", "worktrees"]
++tags: ["spec-driven", "agents", "Python"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-telegram-mcp.md
+@@
+-tags: ["Telegram", "MCP", "bot", "integration", "Node.js"]
++tags: ["Telegram", "MCP", "bot"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-twenty.md
+@@
+-tags: ["CRM", "PostgreSQL", "TypeScript", "open-source", "dashboard"]
++tags: ["CRM", "PostgreSQL", "TypeScript"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-vertical-agent-kit.md
+@@
+-tags: ["Hermes", "agents", "scaffolding", "templates", "shell"]
++tags: ["Hermes", "agents", "scaffolding"]
+*** Update File: C:\vscode\queen1052.github.io\site\posts\2026-04-20-yfinance.md
+@@
+-tags: ["Python", "finance", "pandas", "API", "stocks"]
++tags: ["Python", "finance", "pandas"]
+*** End Patch

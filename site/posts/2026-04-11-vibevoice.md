@@ -2,7 +2,7 @@
 title: "VibeVoice: Microsoft 오픈소스 프론티어 음성 AI — ASR·TTS·실시간 스트리밍"
 date: "2026-04-11"
 category: "AI 음성"
-tags: ["TTS", "ASR", "음성AI", "Microsoft", "실시간"]
+tags: ["TTS", "ASR", "음성AI"]
 excerpt: "60분 단일패스 ASR, 90분 멀티스피커 TTS, 300ms 실시간 스트리밍을 지원하는 Microsoft의 오픈소스 프론티어 음성 AI 모델 패밀리."
 author: "큐레이터"
 readTime: "8분"

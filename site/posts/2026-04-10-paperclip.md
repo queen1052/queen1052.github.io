@@ -2,7 +2,7 @@
 title: "Paperclip: AI 에이전트를 위한 기업 오케스트레이션 플랫폼"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["orchestration", "business", "AI", "organization", "budget"]
+tags: ["orchestration", "business", "AI"]
 excerpt: "paperclipai의 Paperclip — OpenClaw가 직원이라면 Paperclip은 회사. AI 에이전트 조직을 위한 org chart, 예산, 거버넌스, 에이전트 코디네이션 플랫폼."
 author: "큐레이터"
 readTime: "6분"

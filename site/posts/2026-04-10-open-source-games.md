@@ -2,7 +2,7 @@
 title: "leereilly/games: 브라우저에서 바로 즐기는 오픈소스 게임 모음"
 date: "2026-04-10"
 category: "오픈소스"
-tags: ["games", "HTML5", "JavaScript", "browser", "open-source"]
+tags: ["games", "HTML5", "JavaScript"]
 excerpt: "leereilly의 games 저장소 — 아케이드, FPS, RPG, 퍼즐 등 수백 개의 HTML5 브라우저 게임과 게임 엔진/프레임워크를 정리한 최고의 오픈소스 게임 큐레이션."
 author: "큐레이터"
 readTime: "5분"

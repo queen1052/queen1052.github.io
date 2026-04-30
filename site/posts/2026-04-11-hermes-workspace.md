@@ -2,7 +2,7 @@
 title: "Hermes Workspace: AI 에이전트 통합 작업 인터페이스"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["HermesWorkspace", "AI에이전트", "PWA", "대시보드", "워크스페이스"]
+tags: ["HermesWorkspace", "AI에이전트", "PWA"]
 excerpt: "채팅, 파일, 메모리, 스킬, 터미널을 하나로 통합한 Hermes 에이전트용 오픈소스 워크스페이스"
 author: "큐레이터"
 readTime: "5분"

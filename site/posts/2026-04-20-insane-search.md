@@ -2,7 +2,7 @@
 title: "insane-search: 회복력 높은 웹 검색·수집 자동화 도구"
 date: "2026-04-20"
 category: "웹자동화"
-tags: ["search", "scraping", "automation", "web", "Python"]
+tags: ["search", "scraping", "automation"]
 excerpt: "난이도 높은 웹 수집과 검색 시나리오를 자동화하려는 실험적 도구입니다."
 author: "큐레이터"
 readTime: "5분"

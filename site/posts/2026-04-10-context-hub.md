@@ -2,7 +2,7 @@
 title: "Context Hub: AI 에이전트를 위한 버전 관리된 문서 허브"
 date: "2026-04-10"
 category: "AI 도구"
-tags: ["CLI", "documentation", "AI", "RAG", "context"]
+tags: ["CLI", "documentation", "AI"]
 excerpt: "Andrew Ng이 공개한 Context Hub — AI 에이전트가 최신 문서를 정확하게 참조할 수 있도록 버전 관리와 주석 기능을 갖춘 문서 큐레이션 시스템."
 author: "큐레이터"
 readTime: "5분"

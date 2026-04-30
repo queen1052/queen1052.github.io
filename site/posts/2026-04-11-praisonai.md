@@ -2,7 +2,7 @@
 title: "PraisonAI: 5줄 코드로 24/7 AI 인력 배치하기"
 date: "2026-04-11"
 category: "AI 프레임워크"
-tags: ["PraisonAI", "멀티에이전트", "Python", "자동화", "LLM"]
+tags: ["PraisonAI", "멀티에이전트", "Python"]
 excerpt: "100개 이상 LLM을 지원하는 멀티에이전트 AI 프레임워크 - Elon Musk도 주목한 5줄 코드 에이전트 배포"
 author: "큐레이터"
 readTime: "6분"

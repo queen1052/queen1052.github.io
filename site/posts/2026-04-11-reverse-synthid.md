@@ -2,7 +2,7 @@
 title: "Reverse-SynthID: Google Gemini AI 워터마크를 역공학으로 탐지·제거"
 date: "2026-04-11"
 category: "AI 보안"
-tags: ["워터마크", "SynthID", "스펙트럼분석", "Python", "AI보안"]
+tags: ["워터마크", "SynthID", "스펙트럼분석"]
 excerpt: "신호 처리와 스펙트럼 분석으로 Google Gemini의 SynthID 워터마크를 90% 정확도로 탐지하고, V3 멀티해상도 스펙트럼 우회로 43+ dB PSNR을 달성한 연구 프로젝트."
 author: "큐레이터"
 readTime: "8분"

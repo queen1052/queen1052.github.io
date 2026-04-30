@@ -2,7 +2,7 @@
 title: "OpenViking: 다중 레이어 컨텍스트 관리 AI 에이전트 프레임워크"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["Python", "Rust", "agent", "context", "framework"]
+tags: ["Python", "Rust", "agent"]
 excerpt: "Volcengine이 공개한 OpenViking — L0/L1/L2 3단계 컨텍스트 아키텍처로 에이전트의 장기 기억과 단기 추론을 효율적으로 관리하는 프레임워크."
 author: "큐레이터"
 readTime: "5분"

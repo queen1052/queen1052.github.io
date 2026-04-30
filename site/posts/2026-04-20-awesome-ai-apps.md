@@ -2,7 +2,7 @@
 title: "awesome-ai-apps: AI 앱과 에이전트 예제 모음"
 date: "2026-04-20"
 category: "학습자료"
-tags: ["awesome-list", "AI", "agents", "examples", "reference"]
+tags: ["awesome-list", "AI", "agents"]
 excerpt: "실전형 AI 앱 예제를 폭넓게 모아 둔 큐레이션 저장소입니다."
 author: "큐레이터"
 readTime: "5분"

@@ -2,7 +2,7 @@
 title: "45 Claude Code Tips: 에이전트 코딩 마스터 가이드"
 date: "2026-04-10"
 category: "개발도구"
-tags: ["Claude Code", "AI", "agentic", "productivity", "CLI"]
+tags: ["Claude Code", "AI", "agentic"]
 excerpt: "Claude Code를 최대한 활용하는 45가지 팁. 초보부터 고급까지 실무에서 검증된 워크플로우를 총정리."
 author: "큐레이터"
 readTime: "7분"

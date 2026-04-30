@@ -2,7 +2,7 @@
 title: "GPTaku Plugins: AI Native를 위한 한국어 Claude Code 플러그인 모음"
 date: "2026-04-11"
 category: "개발 도구"
-tags: ["Claude Code", "플러그인", "한국어", "AI Native", "바이브코딩"]
+tags: ["Claude Code", "플러그인", "한국어"]
 excerpt: "GPTaku Plugins는 AI Native가 되고 싶은 사람들을 위한 Claude Code 플러그인 모음입니다. 딥리서치, PRD 생성, 멀티 에이전트 코딩, Google Workspace 자동화 등 한국어로 특화된 9개의 플러그인을 제공합니다."
 author: "큐레이터"
 readTime: "6분"

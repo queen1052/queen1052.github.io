@@ -2,7 +2,7 @@
 title: "OpenDataLoader PDF: 정확한 읽기 순서를 보장하는 PDF 파서"
 date: "2026-04-10"
 category: "개발도구"
-tags: ["Java", "Python", "PDF", "OCR", "document-parsing"]
+tags: ["Java", "Python", "PDF"]
 excerpt: "OpenDataLoader Project의 PDF 파서 — 다단 레이아웃에서도 정확한 읽기 순서 보장, OCR, 표 추출, LaTeX 수식 변환을 지원하는 Apache-2.0 라이선스 도구."
 author: "큐레이터"
 readTime: "5분"

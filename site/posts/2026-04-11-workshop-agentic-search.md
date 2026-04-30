@@ -2,7 +2,7 @@
 title: "Workshop Agentic Search: 컨텍스트 엔지니어링을 위한 에이전틱 검색 실습"
 date: "2026-04-11"
 category: "AI 학습"
-tags: ["에이전틱 검색", "컨텍스트 엔지니어링", "LangChain", "Elasticsearch", "워크숍"]
+tags: ["에이전틱 검색", "컨텍스트 엔지니어링", "LangChain"]
 excerpt: "Leonie Monigatti의 에이전틱 검색 실습 워크숍. Elasticsearch, 쉘 도구, DB 쿼리 도구로 각기 다른 컨텍스트 소스를 탐색하는 3가지 검색 패턴을 직접 경험한다."
 author: "큐레이터"
 readTime: "6분"

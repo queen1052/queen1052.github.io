@@ -2,7 +2,7 @@
 title: "Agent Lightning: Microsoft의 RL 기반 에이전트 훈련 프레임워크"
 date: "2026-04-10"
 category: "AI/ML"
-tags: ["RL", "reinforcement-learning", "Python", "TypeScript", "Microsoft"]
+tags: ["RL", "reinforcement-learning", "Python"]
 excerpt: "Microsoft가 공개한 Agent Lightning — 강화학습(RL)으로 에이전트를 훈련시키는 프레임워크. Python과 TypeScript를 결합한 하이브리드 구현."
 author: "큐레이터"
 readTime: "5분"

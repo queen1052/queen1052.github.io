@@ -2,7 +2,7 @@
 title: "OpenSpace: 자율 진화하는 에이전트 스킬 생태계"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["multi-agent", "skills", "Python", "benchmark", "self-evolving"]
+tags: ["multi-agent", "skills", "Python"]
 excerpt: "HKUDS가 공개한 OpenSpace — 에이전트가 스스로 스킬을 진화시키며 경제적 성과를 4.2배 향상시키는 자율 스킬 생태계 플랫폼."
 author: "큐레이터"
 readTime: "6분"

@@ -2,7 +2,7 @@
 title: "OpenCode Telegram Bot: 스마트폰으로 AI 코딩 에이전트 원격 제어"
 date: "2026-04-11"
 category: "개발 도구"
-tags: ["OpenCode", "Telegram", "AI 코딩", "원격 제어", "TypeScript"]
+tags: ["OpenCode", "Telegram", "AI 코딩"]
 excerpt: "OpenCode AI 코딩 에이전트를 Telegram으로 원격 제어. 음성 프롬프트, 예약 태스크, 실시간 에이전트 활동 모니터링. macOS/Windows/Linux 지원. 414 스타."
 author: "큐레이터"
 readTime: "6분"

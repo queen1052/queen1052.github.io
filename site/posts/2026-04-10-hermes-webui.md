@@ -2,7 +2,7 @@
 title: "Hermes WebUI: Hermes 에이전트를 위한 실시간 모니터링 대시보드"
 date: "2026-04-10"
 category: "AI 도구"
-tags: ["FastAPI", "React", "TailwindCSS", "SQLite", "monitoring"]
+tags: ["FastAPI", "React", "TailwindCSS"]
 excerpt: "sanchomuzax의 Hermes WebUI — FastAPI + React 19 + TailwindCSS 4로 구축된 Hermes 에이전트 프로세스 모니터링 및 관리 대시보드."
 author: "큐레이터"
 readTime: "5분"

@@ -2,7 +2,7 @@
 title: "CocoIndex Code: 토큰 70% 절감하는 AST 기반 코드 시맨틱 검색 도구"
 date: "2026-04-11"
 category: "개발 도구"
-tags: ["코드검색", "AST", "MCP", "시맨틱검색", "코딩에이전트"]
+tags: ["코드검색", "AST", "MCP"]
 excerpt: "AST 기반 코드 파싱으로 중요 코드만 임베딩하여 토큰 70% 절감, 28개 언어 지원, Claude Code/Codex MCP 연동을 지원하는 경량 코드 검색 CLI."
 author: "큐레이터"
 readTime: "7분"

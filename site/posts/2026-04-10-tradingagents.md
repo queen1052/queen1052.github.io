@@ -2,7 +2,7 @@
 title: "TradingAgents: 멀티에이전트 LLM 금융 트레이딩 프레임워크"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["trading", "LLM", "multi-agent", "finance", "Python"]
+tags: ["trading", "LLM", "multi-agent"]
 excerpt: "여러 LLM 에이전트가 토론하며 주식 트레이딩 결정을 내리는 오픈소스 금융 프레임워크. 49,000개 이상의 GitHub 스타를 보유."
 author: "큐레이터"
 readTime: "6분"

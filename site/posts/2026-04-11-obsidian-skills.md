@@ -2,7 +2,7 @@
 title: "obsidian-skills: AI 에이전트를 위한 Obsidian 전용 스킬 모음"
 date: "2026-04-11"
 category: "생산성"
-tags: ["Obsidian", "Claude Code", "AI 에이전트", "스킬", "마크다운", "지식관리"]
+tags: ["Obsidian", "Claude Code", "AI 에이전트"]
 excerpt: "Obsidian 볼트를 AI 에이전트가 자유롭게 읽고 쓸 수 있도록 해 주는 공식 스킬 모음. Claude Code, Codex CLI, OpenCode, OpenClaw 등 모든 에이전트와 호환."
 author: "큐레이터"
 readTime: "5분"

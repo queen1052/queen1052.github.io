@@ -2,7 +2,7 @@
 title: "LanguageTool: 25개 이상 언어를 지원하는 오픈소스 문법 교정 도구"
 date: "2026-04-11"
 category: "생산성 도구"
-tags: ["NLP", "Grammar", "Spellcheck", "Java", "OpenSource", "Writing", "Proofreading"]
+tags: ["NLP", "Grammar", "Spellcheck"]
 excerpt: "LanguageTool은 영어, 스페인어, 프랑스어, 독일어 등 25개 이상 언어의 문법, 스타일, 철자를 교정하는 오픈소스 교정 소프트웨어입니다. LGPL 2.1 라이선스로 자유롭게 사용할 수 있습니다."
 author: "큐레이터"
 readTime: "5분"

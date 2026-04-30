@@ -2,7 +2,7 @@
 title: "Hermes HUD Web UI: AI 에이전트 의식 모니터링 대시보드"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["Hermes", "AI에이전트", "대시보드", "웹UI", "모니터링"]
+tags: ["Hermes", "AI에이전트", "대시보드"]
 excerpt: "Hermes AI 에이전트의 상태를 브라우저에서 실시간으로 모니터링할 수 있는 웹 기반 의식 대시보드"
 author: "큐레이터"
 readTime: "5분"

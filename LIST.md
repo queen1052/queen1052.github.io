@@ -1,8 +1,8 @@
-
 # 포스트 생성 대기열
 
 링크를 **대기 중** 섹션에 추가한 뒤 **"LIST.md 실행해줘"** 라고 요청하세요.  
-에이전트가 링크를 읽고 `site/posts/` 에 블로그 포스트를 자동 생성합니다.
+에이전트가 링크를 읽고 site/posts/ 에 블로그 포스트를 자동 생성합니다.
+tags는 최대 3개만 생성합니다.
 
 ## 대기 중
 
@@ -185,6 +185,72 @@
 - [2026-04-10-json-render.md](site/posts/2026-04-10-json-render.md) — 원본: https://github.com/vercel-labs/json-render
 - (기존) https://github.com/obra/superpowers — 중복 항목, 건너뜀
 - [2026-04-10-awesome-design-md.md](site/posts/2026-04-10-awesome-design-md.md) — 원본: https://github.com/VoltAgent/awesome-design-md
+- [2026-04-30-local-deep-research.md](site/posts/2026-04-30-local-deep-research.md) — 원본: https://github.com/LearningCircuit/local-deep-research
+- [2026-04-30-codimd.md](site/posts/2026-04-30-codimd.md) — 원본: https://github.com/hackmdio/codimd
+- [2026-04-30-awesome-marketing.md](site/posts/2026-04-30-awesome-marketing.md) — 원본: https://github.com/marketingtoolslist/awesome-marketing
+- [2026-04-30-free-coding-models.md](site/posts/2026-04-30-free-coding-models.md) — 원본: https://github.com/vava-nessa/free-coding-models
+- [2026-04-30-agnt.md](site/posts/2026-04-30-agnt.md) — 원본: https://github.com/agnt-gg/agnt
+- [2026-04-30-airweave.md](site/posts/2026-04-30-airweave.md) — 원본: https://github.com/airweave-ai/airweave
+- [2026-04-30-ghunt.md](site/posts/2026-04-30-ghunt.md) — 원본: https://github.com/mxrch/GHunt
+- [2026-04-30-unioffice.md](site/posts/2026-04-30-unioffice.md) — 원본: https://github.com/unidoc/unioffice
+- [2026-04-30-codeboarding.md](site/posts/2026-04-30-codeboarding.md) — 원본: https://github.com/CodeBoarding/CodeBoarding
+- [2026-04-30-awesome-openclaw-usecases.md](site/posts/2026-04-30-awesome-openclaw-usecases.md) — 원본: https://github.com/hesamsheikh/awesome-openclaw-usecases
+- [2026-04-30-quantaalpha.md](site/posts/2026-04-30-quantaalpha.md) — 원본: https://github.com/QuantaAlpha/QuantaAlpha
+- [2026-04-30-fooocus.md](site/posts/2026-04-30-fooocus.md) — 원본: https://github.com/lllyasviel/Fooocus
+- [2026-04-30-penpot.md](site/posts/2026-04-30-penpot.md) — 원본: https://github.com/penpot/penpot
+- [2026-04-30-cal-diy.md](site/posts/2026-04-30-cal-diy.md) — 원본: https://github.com/calcom/cal.diy
+- [2026-04-30-cline.md](site/posts/2026-04-30-cline.md) — 원본: https://github.com/cline/cline
+- [2026-04-30-hyperframes.md](site/posts/2026-04-30-hyperframes.md) — 원본: https://github.com/heygen-com/hyperframes
+- [2026-04-30-librechat.md](site/posts/2026-04-30-librechat.md) — 원본: https://github.com/danny-avila/LibreChat
+- [2026-04-30-claude-ads.md](site/posts/2026-04-30-claude-ads.md) — 원본: https://github.com/AgriciDaniel/claude-ads
+- [2026-04-30-finceptterminal.md](site/posts/2026-04-30-finceptterminal.md) — 원본: https://github.com/Fincept-Corporation/FinceptTerminal
+- [2026-04-30-claude-agent-teams-ui.md](site/posts/2026-04-30-claude-agent-teams-ui.md) — 원본: https://github.com/777genius/claude_agent_teams_ui
+- [2026-04-30-open-llm-vtuber.md](site/posts/2026-04-30-open-llm-vtuber.md) — 원본: https://github.com/Open-LLM-VTuber/Open-LLM-VTuber
+- [2026-04-30-open-generative-ai.md](site/posts/2026-04-30-open-generative-ai.md) — 원본: https://github.com/Anil-matcha/Open-Generative-AI
+- [2026-04-30-agentic-inbox.md](site/posts/2026-04-30-agentic-inbox.md) — 원본: https://github.com/cloudflare/agentic-inbox
+- [2026-04-30-opencli.md](site/posts/2026-04-30-opencli.md) — 원본: https://github.com/jackwener/OpenCLI
+- [2026-04-30-n8n-as-code.md](site/posts/2026-04-30-n8n-as-code.md) — 원본: https://github.com/EtienneLescot/n8n-as-code
+- [2026-04-30-langchain.md](site/posts/2026-04-30-langchain.md) — 원본: https://github.com/langchain-ai/langchain
+- [2026-04-30-langgraph.md](site/posts/2026-04-30-langgraph.md) — 원본: https://github.com/langchain-ai/langgraph
+- [2026-04-30-llama-index.md](site/posts/2026-04-30-llama-index.md) — 원본: https://github.com/run-llama/llama_index
+- [2026-04-30-crewai.md](site/posts/2026-04-30-crewai.md) — 원본: https://github.com/crewAIInc/crewAI
+- [2026-04-30-qdrant.md](site/posts/2026-04-30-qdrant.md) — 원본: https://github.com/qdrant/qdrant
+- [2026-04-30-ragas.md](site/posts/2026-04-30-ragas.md) — 원본: https://github.com/vibrantlabsai/ragas
+- [2026-04-30-awesome-mcp-servers.md](site/posts/2026-04-30-awesome-mcp-servers.md) — 원본: https://github.com/punkpeye/awesome-mcp-servers
+- [2026-04-30-ai-agents-for-beginners.md](site/posts/2026-04-30-ai-agents-for-beginners.md) — 원본: https://github.com/microsoft/ai-agents-for-beginners
+- [2026-04-30-obscura.md](site/posts/2026-04-30-obscura.md) — 원본: https://github.com/h4ckf0r0day/obscura
+- [2026-04-30-videoagent.md](site/posts/2026-04-30-videoagent.md) — 원본: https://github.com/HKUDS/VideoAgent
+- [2026-04-30-open-lovable.md](site/posts/2026-04-30-open-lovable.md) — 원본: https://github.com/firecrawl/open-lovable
+- [2026-04-30-warp.md](site/posts/2026-04-30-warp.md) — 원본: https://github.com/warpdotdev/warp
+- [2026-04-30-codex-autorunner.md](site/posts/2026-04-30-codex-autorunner.md) — 원본: https://github.com/Git-on-my-level/codex-autorunner
+- [2026-04-30-terraink.md](site/posts/2026-04-30-terraink.md) — 원본: https://github.com/yousifamanuel/terraink
+- [2026-04-30-opnform.md](site/posts/2026-04-30-opnform.md) — 원본: https://github.com/OpnForm/OpnForm
+- [2026-04-30-station.md](site/posts/2026-04-30-station.md) — 원본: https://github.com/cloudshipai/station
+- [2026-04-30-datagen.md](site/posts/2026-04-30-datagen.md) — 원본: https://github.com/starpig1129/DATAGEN
+- [2026-04-30-awesome-llm-skills.md](site/posts/2026-04-30-awesome-llm-skills.md) — 원본: https://github.com/Prat011/awesome-llm-skills
+- [2026-04-30-openaev.md](site/posts/2026-04-30-openaev.md) — 원본: https://github.com/OpenAEV-Platform/openaev
+- [2026-04-30-future-agi.md](site/posts/2026-04-30-future-agi.md) — 원본: https://github.com/future-agi/future-agi
+- [2026-04-30-ralph.md](site/posts/2026-04-30-ralph.md) — 원본: https://github.com/iannuttall/ralph
+- [2026-04-30-second-brain.md](site/posts/2026-04-30-second-brain.md) — 원본: https://github.com/henrydaum/second-brain
+- [2026-04-30-bvm.md](site/posts/2026-04-30-bvm.md) — 원본: https://github.com/Botspot/bvm
+- [2026-04-30-workout-cool.md](site/posts/2026-04-30-workout-cool.md) — 원본: https://github.com/Snouzy/workout-cool
+- [2026-04-30-ollm.md](site/posts/2026-04-30-ollm.md) — 원본: https://github.com/Mega4alik/ollm
+- [2026-04-30-agent-skills.md](site/posts/2026-04-30-agent-skills.md) — 원본: https://github.com/sleekdotdesign/agent-skills
+- [2026-04-30-rust-trade.md](site/posts/2026-04-30-rust-trade.md) — 원본: https://github.com/Erio-Harrison/rust-trade
+- [2026-04-30-llm-wiki.md](site/posts/2026-04-30-llm-wiki.md) — 원본: https://github.com/nashsu/llm_wiki
+- [2026-04-30-sentrux.md](site/posts/2026-04-30-sentrux.md) — 원본: https://github.com/sentrux/sentrux
+- [2026-04-30-video-use.md](site/posts/2026-04-30-video-use.md) — 원본: https://github.com/browser-use/video-use
+- [2026-04-30-svgl.md](site/posts/2026-04-30-svgl.md) — 원본: https://github.com/pheralb/svgl
+- [2026-04-30-agent-zero.md](site/posts/2026-04-30-agent-zero.md) — 원본: https://github.com/agent0ai/agent-zero
+- [2026-04-30-toprank.md](site/posts/2026-04-30-toprank.md) — 원본: https://github.com/nowork-studio/toprank
+- [2026-04-30-context-mode.md](site/posts/2026-04-30-context-mode.md) — 원본: https://github.com/mksglu/context-mode
+- [2026-04-30-public-apis.md](site/posts/2026-04-30-public-apis.md) — 원본: https://github.com/public-apis/public-apis
+- [2026-04-30-yt-dlp.md](site/posts/2026-04-30-yt-dlp.md) — 원본: https://github.com/yt-dlp/yt-dlp
+- [2026-04-30-headroom.md](site/posts/2026-04-30-headroom.md) — 원본: https://github.com/henchmarketing-rgb/headroom
+- [2026-04-30-tradingview-api.md](site/posts/2026-04-30-tradingview-api.md) — 원본: https://github.com/Mathieu2301/TradingView-API
+- [2026-04-30-muxy.md](site/posts/2026-04-30-muxy.md) — 원본: https://github.com/jasonkneen/muxy/tree/huxy
+- [2026-04-30-drawnix.md](site/posts/2026-04-30-drawnix.md) — 원본: https://github.com/plait-board/drawnix
+
 
 ## 오류
 

@@ -2,7 +2,7 @@
 title: "Stable Diffusion WebUI: 162k 스타 이미지 생성 AI의 사실상 표준 인터페이스"
 date: "2026-04-11"
 category: "AI 이미지"
-tags: ["StableDiffusion", "AI", "ImageGeneration", "Python", "Gradio", "WebUI", "AUTOMATIC1111"]
+tags: ["StableDiffusion", "AI", "ImageGeneration"]
 excerpt: "AUTOMATIC1111의 Stable Diffusion WebUI는 Stable Diffusion 모델을 위한 웹 인터페이스입니다. 162k 스타로 AI 이미지 생성 분야의 사실상 표준이 된 오픈소스 도구입니다."
 author: "큐레이터"
 readTime: "7분"

@@ -2,7 +2,7 @@
 title: "RAGatouille: ColBERT 검색을 쉽게 쓰게 해주는 RAG 툴킷"
 date: "2026-04-20"
 category: "RAG"
-tags: ["ColBERT", "retrieval", "RAG", "Python", "search"]
+tags: ["ColBERT", "retrieval", "RAG"]
 excerpt: "복잡한 ColBERT 검색기를 더 간단하게 다루기 위한 파이썬 도구입니다."
 author: "큐레이터"
 readTime: "5분"

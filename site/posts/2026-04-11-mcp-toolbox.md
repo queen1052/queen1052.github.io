@@ -2,7 +2,7 @@
 title: "MCP Toolbox: Google의 데이터베이스용 MCP 서버 — 20+ DB 지원"
 date: "2026-04-11"
 category: "AI 인프라"
-tags: ["MCP", "데이터베이스", "Google", "AI 도구", "Go"]
+tags: ["MCP", "데이터베이스", "Google"]
 excerpt: "AlloyDB, BigQuery, PostgreSQL, MySQL, MongoDB, Redis 등 20개 이상의 데이터베이스를 지원하는 Google의 오픈소스 데이터베이스 MCP 서버."
 author: "큐레이터"
 readTime: "7분"

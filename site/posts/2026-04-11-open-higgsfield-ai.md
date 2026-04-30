@@ -2,7 +2,7 @@
 title: "Open Higgsfield AI: 200+ AI 모델을 지원하는 오픈소스 미디어 생성 플랫폼"
 date: "2026-04-11"
 category: "AI 미디어"
-tags: ["AI 이미지", "AI 비디오", "Next.js", "오픈소스", "Higgsfield"]
+tags: ["AI 이미지", "AI 비디오", "Next.js"]
 excerpt: "Text-to-Image 50+, Image-to-Video 60+, LipSync 9종 등 200개 이상의 AI 모델을 통합한 Higgsfield AI 오픈소스 대안 플랫폼."
 author: "큐레이터"
 readTime: "6분"

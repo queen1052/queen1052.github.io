@@ -2,7 +2,7 @@
 title: "SmythOS Studio: AI 에이전트를 위한 비주얼 빌더 플랫폼"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["TypeScript", "visual-builder", "no-code", "agent", "pnpm"]
+tags: ["TypeScript", "visual-builder", "no-code"]
 excerpt: "코드 없이 AI 에이전트를 시각적으로 설계하고 배포하는 SmythOS Studio — TypeScript 기반의 완전한 에이전트 개발 플랫폼."
 author: "큐레이터"
 readTime: "5분"

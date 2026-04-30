@@ -2,7 +2,7 @@
 title: "blog-writer: AI 기반 블로그 자동 수익화 풀스택 엔진"
 date: "2026-04-11"
 category: "자동화"
-tags: ["블로그 자동화", "콘텐츠 생성", "YouTube Shorts", "Python", "멀티플랫폼", "수익화"]
+tags: ["블로그 자동화", "콘텐츠 생성", "YouTube Shorts"]
 excerpt: "Google AdSense·쿠팡 파트너스·YouTube 광고를 동시 추구하는 완전 자동 블로그 수익화 엔진. 글 하나를 인스타그램·X·틱톡·YouTube Shorts로 자동 변환 배포한다."
 author: "큐레이터"
 readTime: "8분"

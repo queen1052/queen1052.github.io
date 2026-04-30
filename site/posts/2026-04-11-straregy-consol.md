@@ -2,7 +2,7 @@
 title: "22B Strategy Engine: Binance Futures 자동매매를 위한 풀스택 AI 트레이딩 시스템"
 date: "2026-04-11"
 category: "트레이딩"
-tags: ["Binance", "자동매매", "AI 분석", "이미지 패턴", "Kill Switch", "페이퍼 트레이딩"]
+tags: ["Binance", "자동매매", "AI 분석"]
 excerpt: "Binance Futures 선물 거래를 위한 풀스택 자동매매 시스템. OpenClaw 기반 AI 분석, 차트 이미지 패턴 전략, Kill Switch를 갖춘 22B Strategy Engine."
 author: "큐레이터"
 readTime: "7분"

@@ -2,7 +2,7 @@
 title: "AI Logo Generator: Flux 기반 오픈소스 로고 생성기"
 date: "2026-04-20"
 category: "생성형AI"
-tags: ["Flux", "Next.js", "design", "Together-AI", "TypeScript"]
+tags: ["Flux", "Next.js", "design"]
 excerpt: "짧은 프롬프트로 로고 시안을 빠르게 뽑아보는 웹 앱 예제입니다."
 author: "큐레이터"
 readTime: "5분"

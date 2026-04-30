@@ -2,7 +2,7 @@
 title: "Mission Control: Tinder 방식의 자율 제품 개발 엔진"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["product", "autonomous", "Next.js", "SQLite", "Docker"]
+tags: ["product", "autonomous", "Next.js"]
 excerpt: "Autensa의 자율 제품 엔진(APE) — RESEARCH→BUILD→PR까지 8단계 자동화, Tinder 스타일 기능 우선순위 결정 인터페이스."
 author: "큐레이터"
 readTime: "6분"

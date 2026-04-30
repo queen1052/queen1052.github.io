@@ -2,7 +2,7 @@
 title: "Impeccable: 18가지 명령어로 완성하는 프론트엔드 디자인 어휘"
 date: "2026-04-10"
 category: "디자인"
-tags: ["Claude", "design", "frontend", "commands", "UI"]
+tags: ["Claude", "design", "frontend"]
 excerpt: "pbakaus의 Impeccable — 1개 스킬과 18개 명령어로 AI 에이전트에게 프로 디자이너의 언어를 가르치는 프론트엔드 디자인 보조 시스템."
 author: "큐레이터"
 readTime: "5분"

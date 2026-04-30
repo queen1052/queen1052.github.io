@@ -2,7 +2,7 @@
 title: "Shorts Engine: 취향에서 출발하는 숏폼 영상 시나리오 생성 CLI"
 date: "2026-04-11"
 category: "콘텐츠 생성"
-tags: ["YouTube Shorts", "틱톡", "AI 영상", "TypeScript", "CLI", "콘텐츠 자동화"]
+tags: ["YouTube Shorts", "틱톡", "AI 영상"]
 excerpt: "좋아하는 영화·스타일·작가를 입력하면 취향 DNA를 구축해 YouTube Shorts, TikTok, 인스타그램용 시나리오와 Kling·Runway·Veo 프롬프트를 자동 생성하는 CLI."
 author: "큐레이터"
 readTime: "6분"

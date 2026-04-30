@@ -2,7 +2,7 @@
 title: "AutoResearchClaw: 아이디어 한 줄이 완성된 학술 논문으로"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["research", "LaTeX", "autonomous", "academic", "Claude"]
+tags: ["research", "LaTeX", "autonomous"]
 excerpt: "aiming-lab의 AutoResearchClaw — 23단계 8페이즈 파이프라인으로 아이디어에서 LaTeX 논문까지 자동 생성. OpenAlex·S2·arXiv 인용 4중 검증."
 author: "큐레이터"
 readTime: "7분"

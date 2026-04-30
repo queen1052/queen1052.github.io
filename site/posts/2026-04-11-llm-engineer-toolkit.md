@@ -2,7 +2,7 @@
 title: "LLM Engineer Toolkit: 120+ LLM 라이브러리 완전 가이드"
 date: "2026-04-11"
 category: "AI/LLM"
-tags: ["LLM", "AI 에이전트", "RAG", "파인튜닝", "큐레이션"]
+tags: ["LLM", "AI 에이전트", "RAG"]
 excerpt: "훈련, 추론, 에이전트, RAG, 평가, 모니터링까지 120+ LLM 라이브러리를 카테고리별로 정리한 종합 가이드. Apache-2.0, 10.1k 스타."
 author: "큐레이터"
 readTime: "8분"

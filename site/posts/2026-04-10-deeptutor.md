@@ -2,7 +2,7 @@
 title: "DeepTutor: 에이전트 기반 개인화 튜터링 플랫폼"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["AI", "education", "agent", "LLM", "RAG"]
+tags: ["AI", "education", "agent"]
 excerpt: "개인 자료를 기반으로 시각적 학습 여정을 설계하고 논문·코드까지 함께 쓰는 에이전트 튜터 시스템."
 author: "큐레이터"
 readTime: "6분"

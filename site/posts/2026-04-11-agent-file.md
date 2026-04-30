@@ -2,7 +2,7 @@
 title: "Agent File(.af): 상태를 가진 AI 에이전트를 이식 가능한 단일 파일로"
 date: "2026-04-11"
 category: "AI 에이전트"
-tags: ["에이전트포맷", "Letta", "에이전트공유", "상태저장", "오픈스탠다드"]
+tags: ["에이전트포맷", "Letta", "에이전트공유"]
 excerpt: "시스템 프롬프트·메모리·도구·대화 히스토리를 하나의 .af 파일로 직렬화하는 오픈 스탠다드. Letta ADE, Python/TypeScript SDK, REST API로 에이전트 이식·공유·버전 관리 지원."
 author: "큐레이터"
 readTime: "7분"

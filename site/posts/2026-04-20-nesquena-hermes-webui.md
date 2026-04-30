@@ -2,7 +2,7 @@
 title: "Hermes WebUI: Hermes Agent를 위한 브라우저 인터페이스"
 date: "2026-04-20"
 category: "AI/인터페이스"
-tags: ["Hermes", "WebUI", "Python", "self-hosted", "SSE"]
+tags: ["Hermes", "WebUI", "Python"]
 excerpt: "Hermes Agent를 웹과 모바일에서 다룰 수 있게 해주는 가벼운 UI입니다."
 author: "큐레이터"
 readTime: "5분"

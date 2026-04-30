@@ -2,7 +2,7 @@
 title: "AVA AI Voice Agent: Asterisk/FreePBX를 위한 오픈소스 AI 음성 에이전트"
 date: "2026-04-11"
 category: "AI 개발"
-tags: ["음성AI", "Asterisk", "STT", "TTS", "Docker"]
+tags: ["음성AI", "Asterisk", "STT"]
 excerpt: "OpenAI Realtime, Deepgram, ElevenLabs 등 6개 골든 베이스라인을 지원하는 Asterisk/FreePBX용 오픈소스 AI 음성 에이전트."
 author: "큐레이터"
 readTime: "7분"

@@ -2,7 +2,7 @@
 title: "Claude Code Usage Dashboard: 토큰 사용량 완전 추적 도구"
 date: "2026-04-11"
 category: "개발 도구"
-tags: ["Claude Code", "토큰", "사용량", "대시보드", "비용 추적"]
+tags: ["Claude Code", "토큰", "사용량"]
 excerpt: "Claude Code의 토큰 사용량, 비용, 세션 히스토리를 로컬에서 완벽하게 추적하는 대시보드. pip install 없이 Python 표준 라이브러리만으로 동작합니다."
 author: "큐레이터"
 readTime: "5분"

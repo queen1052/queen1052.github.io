@@ -2,7 +2,7 @@
 title: "code-review-graph: 구조 기반 코드 리뷰 최적화 도구"
 date: "2026-04-20"
 category: "개발도구"
-tags: ["MCP", "Tree-sitter", "code-review", "knowledge-graph", "Python"]
+tags: ["MCP", "Tree-sitter", "code-review"]
 excerpt: "변경 영향 범위를 그래프로 좁혀 코드 리뷰 효율을 높여주는 도구입니다."
 author: "큐레이터"
 readTime: "5분"

@@ -2,7 +2,7 @@
 title: "Agent Orchestrator: 병렬 AI 코딩 에이전트를 위한 오케스트레이션 레이어"
 date: "2026-04-11"
 category: "AI 에이전트"
-tags: ["AI 에이전트", "병렬 처리", "git worktree", "Claude Code", "오케스트레이션"]
+tags: ["AI 에이전트", "병렬 처리", "git worktree"]
 excerpt: "Agent Orchestrator(ComposioHQ)는 병렬 AI 코딩 에이전트 플릿을 관리하는 오케스트레이션 플랫폼입니다. 각 에이전트는 독립된 git worktree를 갖고 자율적으로 CI 수정, PR 생성, 코드 리뷰 대응을 처리합니다."
 author: "큐레이터"
 readTime: "7분"

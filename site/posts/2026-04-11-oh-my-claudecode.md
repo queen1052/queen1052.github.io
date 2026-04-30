@@ -2,7 +2,7 @@
 title: "oh-my-claudecode: Claude Code를 위한 팀 퍼스트 멀티 에이전트 오케스트레이션"
 date: "2026-04-11"
 category: "AI 에이전트"
-tags: ["Claude Code", "멀티 에이전트", "오케스트레이션", "oh-my-claudecode", "오픈소스"]
+tags: ["Claude Code", "멀티 에이전트", "오케스트레이션"]
 excerpt: "oh-my-claudecode(OMC)는 Claude Code를 위한 제로 학습 곡선의 멀티 에이전트 오케스트레이션 플랫폼입니다. 팀 모드, 오토파일럿, 울트라워크 등 다양한 실행 모드와 19개의 전문 에이전트, 스마트 모델 라우팅을 제공합니다."
 author: "큐레이터"
 readTime: "8분"

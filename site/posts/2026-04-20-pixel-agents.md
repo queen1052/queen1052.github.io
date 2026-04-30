@@ -2,7 +2,7 @@
 title: "Pixel Agents: 에이전트를 픽셀 오피스로 시각화하는 VS Code 확장"
 date: "2026-04-20"
 category: "개발도구"
-tags: ["VS-Code", "Claude-Code", "visualization", "agents", "TypeScript"]
+tags: ["VS-Code", "Claude-Code", "visualization"]
 excerpt: "AI 에이전트의 상태를 픽셀 캐릭터와 오피스 UI로 보여주는 확장입니다."
 author: "큐레이터"
 readTime: "5분"

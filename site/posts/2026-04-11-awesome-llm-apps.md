@@ -2,7 +2,7 @@
 title: "Awesome LLM Apps: 105k 스타 LLM 앱 컬렉션의 모든 것"
 date: "2026-04-11"
 category: "AI 개발"
-tags: ["LLM", "RAG", "AI 에이전트", "멀티에이전트", "MCP"]
+tags: ["LLM", "RAG", "AI 에이전트"]
 excerpt: "RAG, AI 에이전트, 멀티에이전트 팀, MCP, 음성 에이전트를 아우르는 105k 스타의 오픈소스 LLM 앱 큐레이션 컬렉션."
 author: "큐레이터"
 readTime: "8분"

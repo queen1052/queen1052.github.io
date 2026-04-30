@@ -2,7 +2,7 @@
 title: "Spec Kitty: AI 코딩 팀을 위한 스펙 주도 개발 CLI"
 date: "2026-04-20"
 category: "개발자동화"
-tags: ["spec-driven", "agents", "Python", "dashboard", "worktrees"]
+tags: ["spec-driven", "agents", "Python"]
 excerpt: "스펙 기반 개발과 멀티 에이전트 실행 흐름을 정리해 주는 CLI입니다."
 author: "큐레이터"
 readTime: "5분"

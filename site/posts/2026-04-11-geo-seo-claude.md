@@ -2,7 +2,7 @@
 title: "GEO-SEO Claude: AI 검색 시대를 위한 GEO 최적화 도구"
 date: "2026-04-11"
 category: "SEO/GEO"
-tags: ["GEO", "SEO", "Claude Code", "AI 검색", "ChatGPT", "Perplexity"]
+tags: ["GEO", "SEO", "Claude Code"]
 excerpt: "ChatGPT, Claude, Perplexity, Gemini 등 AI 검색 엔진에 최적화된 GEO-first SEO 스킬. 인용성 점수화, AI 크롤러 분석, llms.txt 생성, PDF 리포트. 5.1k 스타."
 author: "큐레이터"
 readTime: "7분"

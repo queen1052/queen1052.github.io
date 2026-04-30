@@ -2,7 +2,7 @@
 title: "TurboQuant+: LLM KV 캐시를 최대 6.4배 압축하는 오픈소스 프로젝트"
 date: "2026-04-10"
 category: "오픈소스"
-tags: ["LLM", "양자화", "KV캐시", "llama.cpp", "Apple Silicon"]
+tags: ["LLM", "양자화", "KV캐시"]
 excerpt: "ICLR 2026 논문을 구현한 TurboQuant+. llama.cpp에서 PolarQuant + Walsh-Hadamard 회전으로 KV 캐시를 최대 6.4배 압축하면서도 q8_0 수준의 속도와 품질을 유지합니다."
 author: "큐레이터"
 readTime: "6분"

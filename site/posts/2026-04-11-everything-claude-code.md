@@ -2,7 +2,7 @@
 title: "Everything Claude Code: 15만 Stars의 Claude Code 에코시스템 컬렉션"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["ClaudeCode", "에이전트", "스킬", "훅", "개발도구"]
+tags: ["ClaudeCode", "에이전트", "스킬"]
 excerpt: "Claude Code를 위한 에이전트, 스킬, 훅, 룰, MCP 설정의 최대 컬렉션 - 15만 스타를 넘긴 커뮤니티 주도 리소스"
 author: "큐레이터"
 readTime: "6분"

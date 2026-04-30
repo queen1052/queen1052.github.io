@@ -2,7 +2,7 @@
 title: "Iterative Studio: BFS/DFS로 LLM 솔루션 탐색 공간을 확장하는 멀티에이전트 시스템"
 date: "2026-04-11"
 category: "AI 에이전트"
-tags: ["멀티에이전트", "LangGraph", "반복정제", "TypeScript", "AI추론"]
+tags: ["멀티에이전트", "LangGraph", "반복정제"]
 excerpt: "Deepthink·Contextual·Agentic 5가지 모드로 BFS/DFS 탐색 기법을 LLM에 적용, 2시간 무인 자율 실행이 가능한 反복 컨텍스트 정제 시스템."
 author: "큐레이터"
 readTime: "8분"

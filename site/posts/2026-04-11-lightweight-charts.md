@@ -2,7 +2,7 @@
 title: "TradingView Lightweight Charts: 가장 작고 빠른 HTML5 금융 차트 라이브러리"
 date: "2026-04-11"
 category: "개발 도구"
-tags: ["금융 차트", "TypeScript", "HTML5", "TradingView", "오픈소스"]
+tags: ["금융 차트", "TypeScript", "HTML5"]
 excerpt: "TradingView가 오픈소스로 공개한 초경량 금융 차트 라이브러리. 정적 이미지보다 작은 번들 크기로 초고속 인터랙티브 금융 차트를 구현한다."
 author: "큐레이터"
 readTime: "6분"

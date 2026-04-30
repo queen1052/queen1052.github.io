@@ -2,7 +2,7 @@
 title: "Scrapling: 현대 웹을 위한 적응형 스크래핑 프레임워크"
 date: "2026-04-11"
 category: "웹 스크래핑"
-tags: ["웹 스크래핑", "Python", "AI", "MCP", "크롤링"]
+tags: ["웹 스크래핑", "Python", "AI"]
 excerpt: "웹사이트 변경에도 자동으로 적응하는 고성능 Python 스크래핑 프레임워크. 단일 요청부터 전체 규모 크롤까지 모든 것을 처리합니다. 36k 스타."
 author: "큐레이터"
 readTime: "8분"

@@ -2,7 +2,7 @@
 title: "Hermes Agent: 스스로 성장하는 자기개선형 AI 에이전트"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["AI 에이전트", "자기개선 AI", "멀티플랫폼", "Nous Research", "오픈소스"]
+tags: ["AI 에이전트", "자기개선 AI", "멀티플랫폼"]
 excerpt: "경험에서 스킬을 생성하고, 대화 기록을 검색하며, 당신을 점점 더 깊이 이해하는 유일한 AI 에이전트. Telegram·Discord·Slack에서 클라우드 VM을 제어한다."
 author: "큐레이터"
 readTime: "8분"

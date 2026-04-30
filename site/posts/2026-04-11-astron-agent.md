@@ -2,7 +2,7 @@
 title: "Astron Agent: iFLYTEK의 엔터프라이즈급 에이전틱 워크플로우 플랫폼"
 date: "2026-04-11"
 category: "AI 에이전트"
-tags: ["AI", "Agent", "Workflow", "Enterprise", "MCP", "LLM", "iFLYTEK"]
+tags: ["AI", "Agent", "Workflow"]
 excerpt: "iFLYTEK가 오픈소스로 공개한 Astron Agent는 AI 워크플로우 오케스트레이션, 모델 관리, 지능형 RPA 자동화를 하나로 통합한 엔터프라이즈급 플랫폼입니다."
 author: "큐레이터"
 readTime: "7분"

@@ -2,7 +2,7 @@
 title: "Trendshift: AI가 분류한 오픈소스 트렌드 탐색 플랫폼"
 date: "2026-04-10"
 category: "개발도구"
-tags: ["open-source", "trending", "discovery", "AI", "GitHub"]
+tags: ["open-source", "trending", "discovery"]
 excerpt: "Julian Li의 Trendshift.io — GitHub 트렌딩의 한계를 뛰어넘어 AI 자동 분류와 일별 인기 저장소를 배출하는 오픈소스 트렌드 탐색 플랫폼."
 author: "큐레이터"
 readTime: "5분"

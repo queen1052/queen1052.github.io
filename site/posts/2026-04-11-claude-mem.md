@@ -2,7 +2,7 @@
 title: "Claude-Mem: Claude Code를 위한 영구 메모리 압축 시스템"
 date: "2026-04-11"
 category: "AI 메모리"
-tags: ["Claude Code", "메모리", "컨텍스트", "MCP", "SQLite", "ChromaDB"]
+tags: ["Claude Code", "메모리", "컨텍스트"]
 excerpt: "Claude Code 세션 간 맥락을 자동 포착·압축·재주입하는 영구 메모리 시스템. SQLite+ChromaDB 하이브리드 검색, MCP 3레이어 워크플로우. 47.7k 스타."
 author: "큐레이터"
 readTime: "7분"

@@ -2,7 +2,7 @@
 title: "GET SHIT DONE: 컨텍스트 엔지니어링 기반 개발 워크플로우"
 date: "2026-04-20"
 category: "개발자동화"
-tags: ["Claude-Code", "spec-driven", "context-engineering", "automation", "TypeScript"]
+tags: ["Claude-Code", "spec-driven", "context-engineering"]
 excerpt: "AI 코딩 품질 저하를 줄이기 위한 강력한 워크플로우 시스템입니다."
 author: "큐레이터"
 readTime: "5분"

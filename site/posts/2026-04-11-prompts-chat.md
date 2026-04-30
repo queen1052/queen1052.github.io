@@ -2,7 +2,7 @@
 title: "prompts.chat: 세계 최대 오픈소스 AI 프롬프트 라이브러리 — 159k 스타"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["프롬프트", "ChatGPT", "프롬프트엔지니어링", "자체호스팅", "MCP"]
+tags: ["프롬프트", "ChatGPT", "프롬프트엔지니어링"]
 excerpt: "Forbes·Harvard에서 인용된 159k 스타의 첫 프롬프트 라이브러리. 자체 호스팅, Claude Code 플러그인, MCP 서버를 지원하는 커뮤니티 중심 AI 프롬프트 허브."
 author: "큐레이터"
 readTime: "7분"

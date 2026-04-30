@@ -2,7 +2,7 @@
 title: "Freqtrade: 48.6k Stars의 오픈소스 암호화폐 거래 봇 — 백테스팅부터 FreqAI까지"
 date: "2026-04-11"
 category: "트레이딩"
-tags: ["freqtrade", "암호화폐", "자동매매", "백테스팅", "FreqAI", "Telegram"]
+tags: ["freqtrade", "암호화폐", "자동매매"]
 excerpt: "Python으로 작성된 자유 오픈소스 암호화폐 거래 봇. 모든 주요 거래소 지원, Telegram/WebUI 제어, 머신러닝 전략 최적화(FreqAI), 강력한 백테스팅 엔진을 갖춘 성숙한 프레임워크."
 author: "큐레이터"
 readTime: "7분"

@@ -2,7 +2,7 @@
 title: "PriceDrop MVP: 네이버 쇼핑 가격 하락 감지 및 텔레그램 알림 시스템"
 date: "2026-04-11"
 category: "생산성"
-tags: ["가격 알림", "네이버 쇼핑", "Telegram", "Python", "MVP", "자동화"]
+tags: ["가격 알림", "네이버 쇼핑", "Telegram"]
 excerpt: "네이버 쇼핑 가격을 수집하고 SQLite에 이력을 저장해 임계치 이상 가격 하락 시 Telegram으로 즉시 알림을 보내는 한국 시장 특화 MVP 파이프라인."
 author: "큐레이터"
 readTime: "5분"

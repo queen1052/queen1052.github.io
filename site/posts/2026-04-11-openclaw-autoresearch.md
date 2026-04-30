@@ -2,7 +2,7 @@
 title: "openclaw-autoresearch: OpenClaw을 위한 자율 실험 루프 플러그인"
 date: "2026-04-11"
 category: "AI 도구"
-tags: ["OpenClaw", "자동화", "실험", "최적화", "TypeScript", "플러그인"]
+tags: ["OpenClaw", "자동화", "실험"]
 excerpt: "OpenClaw에서 코드 편집 → 벤치마크 실행 → 결과 측정 → 유지/폐기 루프를 자율 반복하는 실험 플러그인. pi-autoresearch의 충실한 포트."
 author: "큐레이터"
 readTime: "6분"

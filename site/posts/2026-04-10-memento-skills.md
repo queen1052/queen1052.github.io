@@ -2,7 +2,7 @@
 title: "Memento-Skills: 에이전트가 에이전트를 설계하는 자기 진화 스킬"
 date: "2026-04-10"
 category: "AI 에이전트"
-tags: ["self-evolving", "skills", "Python", "benchmark", "GAIA"]
+tags: ["self-evolving", "skills", "Python"]
 excerpt: "Memento-Teams의 Memento-Skills — 'Let Agents Design Agents'. HLE·GAIA 벤치마크 검증, 10개 내장 스킬로 자율 에이전트가 스스로 새 스킬을 생성하고 진화."
 author: "큐레이터"
 readTime: "6분"

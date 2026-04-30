@@ -2,7 +2,7 @@
 title: "gpui-component: Rust 데스크톱 앱용 GPUI 컴포넌트 모음"
 date: "2026-04-20"
 category: "UI/데스크톱"
-tags: ["Rust", "GPUI", "desktop", "components", "UI"]
+tags: ["Rust", "GPUI", "desktop"]
 excerpt: "Rust로 데스크톱 인터페이스를 만들 때 참고할 수 있는 GPUI 컴포넌트 모음입니다."
 author: "큐레이터"
 readTime: "5분"

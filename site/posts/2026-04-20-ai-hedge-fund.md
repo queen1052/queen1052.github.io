@@ -2,7 +2,7 @@
 title: "AI Hedge Fund: 멀티 에이전트 투자 실험장"
 date: "2026-04-20"
 category: "AI/금융"
-tags: ["agents", "trading", "finance", "Python", "backtesting"]
+tags: ["agents", "trading", "finance"]
 excerpt: "여러 분석 에이전트가 협업해 투자 결정을 실험하는 오픈소스 프로젝트입니다."
 author: "큐레이터"
 readTime: "5분"

@@ -2,7 +2,7 @@
 title: "ByteRover CLI: AI 코딩 에이전트를 위한 휴대용 메모리 계층"
 date: "2026-04-20"
 category: "개발도구"
-tags: ["memory", "CLI", "agents", "TypeScript", "MCP"]
+tags: ["memory", "CLI", "agents"]
 excerpt: "에이전트가 프로젝트 지식을 오래 기억하도록 돕는 메모리 CLI입니다."
 author: "큐레이터"
 readTime: "5분"

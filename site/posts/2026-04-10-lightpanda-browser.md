@@ -2,7 +2,7 @@
 title: "Lightpanda Browser: AI 에이전트를 위한 초경량 헤드리스 브라우저"
 date: "2026-04-10"
 category: "개발도구"
-tags: ["browser", "Zig", "headless", "AI", "automation"]
+tags: ["browser", "Zig", "headless"]
 excerpt: "Chromium 포크가 아닌 Zig로 처음부터 새로 만든 헤드리스 브라우저. 크롬 대비 16배 적은 메모리, 9배 빠른 실행 속도."
 author: "큐레이터"
 readTime: "6분"

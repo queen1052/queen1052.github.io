@@ -2,7 +2,7 @@
 title: "Camofox Browser: AI 에이전트용 안티-탐지 브라우저 서버"
 date: "2026-04-11"
 category: "브라우저 자동화"
-tags: ["AI 에이전트", "안티-탐지", "Camoufox", "Firefox", "브라우저 자동화"]
+tags: ["AI 에이전트", "안티-탐지", "Camoufox"]
 excerpt: "C++ 레벨 핑거프린트 스푸핑으로 Cloudflare와 Google 봇 탐지를 우회하는 AI 에이전트용 브라우저 서버. 접근성 스냅샷으로 토큰 90% 절약. 1.8k 스타."
 author: "큐레이터"
 readTime: "7분"

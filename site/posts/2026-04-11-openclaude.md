@@ -2,7 +2,7 @@
 title: "OpenClaude: OpenAI·Gemini·Ollama 200개 모델을 지원하는 오픈소스 코딩 에이전트 CLI"
 date: "2026-04-11"
 category: "AI 개발 도구"
-tags: ["ClaudeCode", "코딩에이전트", "CLI", "오픈소스", "멀티프로바이더"]
+tags: ["ClaudeCode", "코딩에이전트", "CLI"]
 excerpt: "Claude Code 코드베이스에서 파생된 CLI로, OpenAI, Gemini, DeepSeek, Ollama 등 200개 이상의 모델을 단일 터미널 워크플로우에서 사용할 수 있는 20.5k 스타 오픈소스 프로젝트입니다."
 author: "큐레이터"
 readTime: "7분"
