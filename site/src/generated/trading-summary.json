@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-18T20:47:26+09:00",
+  "currency": "KRW",
+  "scope": "현재 활성화되어 외부 주문 대상에 연결된 전략만 포함합니다. 손익은 가상매매 런타임 값이며, 실제 손익은 원본 상태에 없으면 null입니다.",
+  "projects": [
+    {
+      "project": "mt5",
+      "status": "virtual_only",
+      "comparison": "실거래 주문·실현손익 원본을 이 프로젝트에서 찾지 못해 공개 비교 대상에서 제외했습니다."
+    },
+    {
+      "project": "mt5_codex1",
+      "status": "execution_status_unreported",
+      "strategies": [
+        {
+          "strategy": "GOLD#_cusbox2_2m_1700",
+          "symbol": "GOLD#",
+          "execution_target": "mt5",
+          "virtual": {
+            "open": false,
+            "current_profit_krw": 0.0,
+            "total_profit_krw": 0.0,
+            "source_file": "trades_GOLD#_20261118_090000.csv",
+            "events": 0,
+            "entries": 0,
+            "exits": 0
+          },
+          "real": {
+            "order_status": null,
+            "realized_profit_krw": null
+          },
+          "comparison": "연결은 확인되지만 주문 결과·실현손익이 상태 파일에 기록되지 않아 손익 비교를 보류합니다."
+        }
+      ]
+    },
+    {
+      "project": "mt5_rust1",
+      "status": "active",
+      "strategies": [
+        {
+          "strategy": "GOLD#_crs_2m_0900_trend_a",
+          "symbol": "GOLD#",
+          "execution_target": "mt5",
+          "virtual": {
+            "open": false,
+            "current_profit_krw": 1588500.0,
+            "total_profit_krw": 1588500.0,
+            "source_file": "trades_20261118_075439.csv",
+            "events": 2,
+            "entries": 1,
+            "exits": 1
+          },
+          "real": {
+            "dry_run": false,
+            "completed_cycles": 7,
+            "realized_profit_krw": null
+          },
+          "comparison": "실주문 실행 완료는 확인됐지만 실현손익 원본이 없어 수익률 비교는 보류합니다."
+        },
+        {
+          "strategy": "BTCUSD#_cusbox1_240t_0900",
+          "symbol": "BTCUSD#",
+          "execution_target": "binance",
+          "virtual": {
+            "open": true,
+            "current_profit_krw": 1020000.0,
+            "total_profit_krw": -724500.0,
+            "source_file": "trades_20261118_075439.csv",
+            "events": 5,
+            "entries": 3,
+            "exits": 2
+          },
+          "real": {
+            "dry_run": false,
+            "completed_cycles": 44,
+            "active_cycles": 0,
+            "realized_profit_krw": null
+          },
+          "comparison": "실주문 상태는 확인됐지만 실현손익 원본이 없어 수익률 비교는 보류합니다."
+        }
+      ]
+    }
+  ]
+}
