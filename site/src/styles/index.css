@@ -112,3 +112,45 @@
   color: #fff;
 }
 
+.article-content {
+  overflow-wrap: anywhere;
+}
+
+.article-content :is(h1, h2, h3) {
+  scroll-margin-top: 6rem;
+}
+
+.article-content :is(h1, h2) {
+  margin-top: 2.5rem;
+}
+
+.article-content h3 {
+  margin-top: 1.75rem;
+}
+
+.article-content p,
+.article-content li {
+  line-height: 1.85;
+}
+
+.article-progress {
+  appearance: none;
+  display: block;
+  height: 0.25rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: var(--color-zinc-800);
+}
+
+.article-progress::-webkit-progress-bar {
+  background: var(--color-zinc-800);
+}
+
+.article-progress::-webkit-progress-value {
+  background: var(--color-purple-400);
+}
+
+.article-progress::-moz-progress-bar {
+  background: var(--color-purple-400);
+}
+
