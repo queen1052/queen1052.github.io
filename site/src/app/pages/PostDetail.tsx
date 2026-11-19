@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { ArrowLeft, ChevronDown, Clock, Hash, LibraryBig, Network } from 'lucide-react';
 import { posts } from '../data/posts';
+import { tradeReportFor } from '../data/tradeReports';
+import { TradeComparison } from '../components/TradeComparison';
+import { MarketPriceCharts } from '../components/MarketPriceCharts';
 import type { BlogPost } from '../data/types';
 
 interface ArticleHeading {
@@ -44,6 +47,7 @@ export function PostDetail() {
 }
 
 function Article({ post }: { post: BlogPost }) {
+  const tradeReport = post.marketBriefDate ? tradeReportFor(post.marketBriefDate) : undefined;
   const articleRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [headings, setHeadings] = useState<ArticleHeading[]>([]);
@@ -173,6 +177,12 @@ function Article({ post }: { post: BlogPost }) {
             className="prose-content article-content text-zinc-300"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
+          {tradeReport && (
+            <div className="market-article-report mt-8 space-y-8">
+              <TradeComparison report={tradeReport} />
+              <MarketPriceCharts />
+            </div>
+          )}
 
           <footer className="mt-10 border-t border-zinc-800 pt-6">
             <div className="flex flex-wrap gap-2">

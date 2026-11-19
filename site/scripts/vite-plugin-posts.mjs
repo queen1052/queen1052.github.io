@@ -60,7 +60,7 @@ export function postsPlugin(options = {}) {
           console.warn(`[vite-plugin-posts] Skipping "${file}" — filename must be YYYY-MM-DD-slug.md`);
           continue;
         }
-        const [, , slug] = nameMatch;
+        const [, fileDate, baseSlug] = nameMatch;
 
         const raw = readFileSync(filePath, 'utf-8');
         let data;
@@ -102,6 +102,8 @@ export function postsPlugin(options = {}) {
           },
         });
 
+        const marketBrief = baseSlug === 'market-brief' && data.marketBrief === true;
+        const slug = marketBrief ? `market-brief-${fileDate}` : baseSlug;
         parsedPosts.push({
           id: slug,
           slug,
@@ -113,6 +115,7 @@ export function postsPlugin(options = {}) {
           author: data.author ? String(data.author) : '작성자',
           readTime: data.readTime ? String(data.readTime) : '5분',
           image: data.image ? String(data.image) : null,
+          ...(marketBrief ? { marketBriefDate: fileDate } : {}),
           contentHtml,
         });
       }

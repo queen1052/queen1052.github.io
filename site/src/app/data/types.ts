@@ -10,6 +10,7 @@ export interface BlogPost {
   readTime: string;
   image: string | null;
   contentHtml: string;
+  marketBriefDate?: string;
 }
 
 export interface PostFrontMatter {
