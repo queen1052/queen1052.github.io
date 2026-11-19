@@ -4,7 +4,7 @@ import csv
 import json
 import sqlite3
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date, datetime, timedelta, timezone
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
@@ -27,6 +27,56 @@ class Pair:
     live: Decimal
     currency: str
     tickets: frozenset
+    normalized: Decimal | None = None
+
+
+def price_move(side, entry, exit):
+    if side not in ("BUY", "SELL"):
+        raise ValueError("unknown trade direction")
+    return exit - entry if side == "BUY" else entry - exit
+
+
+def same_exposure_pnl(pair, event, virtual_prices):
+    """Value the virtual move using the observed gross sensitivity of the same MT5 fill."""
+    if pair.currency != "USD":
+        return None
+    deals = {str(row["ticket"]): row for row in event["mt5_deals"]}.values()
+    qty = money(event["filled"])
+    actual_open = sum(money(row["price"]) * money(row["volume"]) for row in deals if int(row["entry"]) == 0) / qty
+    actual_close = sum(money(row["price"]) * money(row["volume"]) for row in deals if int(row["entry"]) in (1, 3)) / qty
+    side, virtual_open, virtual_close = virtual_prices
+    if side != event.get("side"):
+        return None
+    actual_move = price_move(side, actual_open, actual_close)
+    gross = sum(money(row["profit"]) for row in deals)
+    if not actual_move or gross / actual_move <= 0:
+        return None
+    return price_move(side, virtual_open, virtual_close) * gross / actual_move
+
+
+def rust_virtual_prices(root, symbol, strategy, stamp, virtual_profit):
+    matches = set()
+    date_start = datetime.fromisoformat(stamp).date() - timedelta(days=2)
+    for file in (root / "results" / f"{symbol}#").glob("trades_*.csv"):
+        try:
+            if date.fromisoformat(file.stem.split("_")[-2]) < date_start:
+                continue
+        except ValueError:
+            continue
+        opened = None
+        with file.open(encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                if row["strategy"] != strategy:
+                    continue
+                kind = row["kind"]
+                if kind == "진입":
+                    side = {"매수": "BUY", "매도": "SELL", "BUY": "BUY", "SELL": "SELL"}.get(row["side"])
+                    opened = (side, money(row["price"])) if side else None
+                elif kind == "청산":
+                    if opened and row["time"] == stamp and money(row["profit_krw"]) == virtual_profit:
+                        matches.add((*opened, money(row["price"])))
+                    opened = None
+    return next(iter(matches)) if len(matches) == 1 else None
 
 
 def money(value):
@@ -204,6 +254,19 @@ def collect(roots, evidence_dir, today):
                 if pair is None or seen.intersection(pair.tickets):
                     continue
                 seen.update(pair.tickets)
+                normalized = None
+                try:
+                    if project == "mt5_rust1":
+                        prices = rust_virtual_prices(root, pair.symbol, event["strategy_name"],
+                                                    event["virtual_profit_at"], pair.simulated)
+                    else:
+                        explicit = event.get("virtual_prices")
+                        prices = (explicit["side"], money(explicit["entry"]), money(explicit["exit"])) if explicit else None
+                    if prices:
+                        normalized = same_exposure_pnl(pair, event, prices)
+                except (OSError, KeyError, TypeError, ValueError, InvalidOperation, csv.Error):
+                    pass
+                pair = replace(pair, normalized=normalized)
                 pairs.append((project, pair))
                 coverage[project] = "partial"
         except (OSError, sqlite3.Error, csv.Error, ValueError, TypeError, KeyError):
@@ -223,7 +286,7 @@ def parse_rates(text):
 
 
 def public_report(days, pairs, coverage, rates):
-    amounts = defaultdict(lambda: [Decimal(0), Decimal(0), 0])
+    amounts = defaultdict(lambda: [Decimal(0), Decimal(0), 0, Decimal(0), 0])
     missing_fx = 0
     included = set()
     for project, pair in pairs:
@@ -238,21 +301,26 @@ def public_report(days, pairs, coverage, rates):
         values[0] += pair.simulated
         values[1] += pair.live * rate
         values[2] += 1
+        values[3] += (pair.normalized * rate) if pair.normalized is not None else 0
+        values[4] += pair.normalized is not None
         included.add(project)
     if not amounts:
         raise ValueError("검증된 비교 결과가 없습니다. 체결 근거와 환율을 확인하세요.")
     return {
         "currency": "KRW",
+        "basis": "same_fill_v1",
         "days": [day.isoformat() for day in days],
         "coverage": {project: status if project in included or status != "partial" else "unavailable"
                      for project, status in coverage.items()},
         "missingFx": missing_fx,
         "series": {
             symbol: [
-                dict(zip(("simulated", "live", "count"), (
-                    int(amounts[symbol, day][0].quantize(Decimal(1), rounding=ROUND_HALF_UP)),
+                dict(zip(("simulated", "live", "count", "virtualOriginal"), (
+                    int(amounts[symbol, day][3].quantize(Decimal(1), rounding=ROUND_HALF_UP))
+                    if amounts[symbol, day][2] == amounts[symbol, day][4] else None,
                     int(amounts[symbol, day][1].quantize(Decimal(1), rounding=ROUND_HALF_UP)),
                     amounts[symbol, day][2],
+                    int(amounts[symbol, day][0].quantize(Decimal(1), rounding=ROUND_HALF_UP)),
                 ))) if (symbol, day) in amounts else None
                 for day in days
             ]

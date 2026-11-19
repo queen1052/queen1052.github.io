@@ -73,23 +73,26 @@ def markdown(today, report, news, draft):
     lines += [
         "## 가상매매와 실거래 비교", "",
         f"{report['days'][0]} ~ {report['days'][-1]} (KST)의 확인된 거래를 원화로 집계했습니다.", "",
-        "| 종목 | 비교 거래 | 가상 손익 | 실거래 순손익 |", "| --- | ---: | ---: | ---: |",
+        "| 종목 | 확인 거래 | 가상 손익 (실체결 수량 기준) | MT5 실거래 순손익 |", "| --- | ---: | ---: | ---: |",
     ]
     for symbol, rows in report["series"].items():
         values = [item for item in rows if item is not None]
         if not values:
             lines.append(f"| {symbol} | 미확인 | — | — |")
             continue
+        comparable = all(row["simulated"] is not None for row in values)
+        simulated = f"{sum(row['simulated'] for row in values):+,}원" if comparable else "보정 미확인"
         lines.append(f"| {symbol} | {sum(row['count'] for row in values):,} | "
-                     f"{sum(row['simulated'] for row in values):+,}원 | {sum(row['live'] for row in values):+,}원 |")
+                     f"{simulated} | {sum(row['live'] for row in values):+,}원 |")
     unavailable = [project for project, status in report["coverage"].items() if status == "unavailable"]
     if unavailable:
         lines.extend(["", "비교 자료 미확인 · " + ", ".join(unavailable)])
     if report["missingFx"]:
         lines.extend(["", f"환율 미확인으로 비교 {report['missingFx']}건을 제외했습니다."])
-    lines += ["", "실거래 손익은 확인된 체결 비용과 스왑을 반영합니다. USD는 거래일 전일까지의 "
+    lines += ["", "가상 손익은 기록된 가상 진입·청산 가격에 동일 실체결 수량의 계약 손익률을 적용한 추정치입니다. "
+              "MT5 실거래 순손익은 확인된 체결 비용과 스왑을 반영합니다. 두 USD 금액은 거래일 전일까지의 "
               "최근 [FRED DEXKOUS](https://fred.stlouisfed.org/series/DEXKOUS) 관측값을 사용합니다. "
-              "누락 구간은 합계에서 제외됩니다. 비교 차이에는 체결 수량과 거래 비용 차이도 반영될 수 있습니다.",
+              "가격이나 계약 손익률을 확인할 수 없으면 가상 손익을 미확인으로 표시합니다. Binance BTCUSDT는 이 MT5 집계의 범위 밖입니다.",
               "", "이 브리핑은 공개 출처와 거래 집계를 바탕으로 AI 도구의 도움을 받아 작성했습니다.", ""]
     return "\n".join(lines)
 

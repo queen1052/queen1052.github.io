@@ -9,7 +9,8 @@ export interface TradeReport {
   days: string[];
   coverage: Record<string, 'partial' | 'unavailable' | 'no_selection'>;
   missingFx: number;
-  series: Record<TradeSymbol, ({ simulated: number; live: number; count: number } | null)[]>;
+  basis?: 'same_fill_v1';
+  series: Record<TradeSymbol, ({ simulated: number | null; live: number; count: number; virtualOriginal?: number } | null)[]>;
 }
 
 const reports = import.meta.glob<TradeReport>('./trade-reports/*.json', { eager: true, import: 'default' });

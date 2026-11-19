@@ -1,4 +1,5 @@
 {
+  "basis": "same_fill_v1",
   "coverage": {
     "mt5": "unavailable",
     "mt5_codex1": "unavailable",
@@ -35,7 +36,8 @@
       {
         "count": 1,
         "live": 29431,
-        "simulated": 1588500
+        "simulated": 28309,
+        "virtualOriginal": 1588500
       }
     ],
     "US100Cash": [
