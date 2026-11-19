@@ -7,6 +7,8 @@ import re
 import shutil
 import subprocess
 import xml.etree.ElementTree as ET
+from html import unescape
+from html.parser import HTMLParser
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -66,10 +68,25 @@ def source_items(item, now):
             url = entry.findtext("link", "").strip()
             if (now - timedelta(hours=48) <= timestamp <= now and MARKET.search(title)
                     and trusted(url) and urlsplit(url).hostname == urlsplit(feed).hostname):
-                results.append({"publisher": publisher, "title": title[:300], "url": url, "published": timestamp.isoformat()})
+                description = " ".join(unescape(re.sub(r"<[^>]*>", " ", entry.findtext("description", ""))).split())
+                results.append({"publisher": publisher, "title": title[:300], "url": url, "published": timestamp.isoformat(),
+                                "source_summary": description[:650]})
         except (TypeError, ValueError, OverflowError):
             continue
     return results
+
+
+class ArticleMetadata(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.descriptions = {}
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "meta":
+            values = dict(attrs)
+            key = values.get("name") or values.get("property")
+            if key in ("description", "og:description") and values.get("content"):
+                self.descriptions[key] = " ".join(values["content"].split())[:650]
 
 
 def search_news(now):
@@ -82,10 +99,16 @@ def search_news(now):
         if any(part in seen for part in key):
             continue
         try:
-            if not download(row["url"], limit=4_000_000):
+            raw = download(row["url"], limit=4_000_000)
+            if not raw:
                 continue
         except (OSError, ValueError):
             continue
+        parsed = ArticleMetadata()
+        parsed.feed(raw.decode("utf-8", errors="replace"))
+        description = parsed.descriptions.get("og:description") or parsed.descriptions.get("description")
+        if description and description != row["source_summary"]:
+            row["source_summary"] = " ".join(filter(None, (row["source_summary"], description)))[:1100]
         seen.update(key)
         picked.append({"id": len(picked) + 1, **row})
         if len(picked) == 5:
@@ -102,6 +125,7 @@ def object_schema(properties):
 STRING = {"type": "string"}
 DRAFT_SCHEMA = object_schema({
     "title": STRING, "excerpt": STRING,
+    "watch": object_schema({"btc": STRING, "gold": STRING, "nasdaq": STRING}),
     "items": {"type": "array", "items": object_schema({
         "source": {"type": "integer"}, "fact": STRING, "analysis": STRING,
     })},
@@ -138,12 +162,16 @@ def codex_json(work, name, instruction, payload):
 
 
 def valid_draft(data, sources):
-    if not isinstance(data, dict) or set(data) != {"title", "excerpt", "items"}:
+    if not isinstance(data, dict) or set(data) != {"title", "excerpt", "items", "watch"}:
         raise ValueError("제목·요약·본문 구조가 올바르지 않습니다.")
     used = set()
     if not isinstance(data["items"], list) or not 1 <= len(data["items"]) <= min(5, len(sources)):
         raise ValueError("기사 항목 개수가 올바르지 않습니다.")
     texts = [(data["title"], 120), (data["excerpt"], 300)]
+    watch = data["watch"]
+    if not isinstance(watch, dict) or set(watch) != {"btc", "gold", "nasdaq"}:
+        raise ValueError("세 종목의 점검 포인트가 필요합니다.")
+    texts.extend((watch[key], 420) for key in ("btc", "gold", "nasdaq"))
     for item in data["items"]:
         if not isinstance(item, dict) or set(item) != {"source", "fact", "analysis"} or type(item["source"]) is not int:
             raise ValueError("기사 항목 구조가 올바르지 않습니다.")
@@ -151,11 +179,13 @@ def valid_draft(data, sources):
         if source not in sources or source in used:
             raise ValueError("중복되거나 확인되지 않은 기사 ID입니다.")
         used.add(source)
-        texts.extend(((item["fact"], 450), (item["analysis"], 550)))
+        texts.extend(((item["fact"], 480), (item["analysis"], 850)))
     if any(not isinstance(value, str) or not value.strip() or len(value) > limit
            or re.search(r"[\x00-\x1f<>]|https?://|!\[|\]\(|(?:^|\s)#[# ]", value)
            for value, limit in texts):
         raise ValueError("본문은 규격 내의 일반 텍스트여야 합니다.")
+    if any(len(watch[key].strip()) < 100 for key in watch) or any(len(item["analysis"].strip()) < 120 for item in data["items"]):
+        raise ValueError("종목별 점검 포인트 또는 시장 해석이 지나치게 짧습니다.")
     return [value for value, _ in texts]
 
 
@@ -174,7 +204,8 @@ def editorial(work, policy, rules, report, news):
     protected = re.compile(r"\d+(?:[.,]\d+)*|[A-Z][A-Z0-9-]{1,}")
     reverted = 0
     # im-not-ai keeps the original wherever the rewrite changes a protected fact token.
-    for original, revised, fields in [(draft, polished, ("title", "excerpt")), *(
+    for original, revised, fields in [(draft, polished, ("title", "excerpt")),
+        (draft["watch"], polished["watch"], ("btc", "gold", "nasdaq")), *(
         (a, b, ("fact", "analysis")) for a, b in zip(draft["items"], polished["items"])
     )]:
         for field in fields:

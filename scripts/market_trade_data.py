@@ -28,6 +28,8 @@ class Pair:
     currency: str
     tickets: frozenset
     normalized: Decimal | None = None
+    lots: Decimal | None = None
+    virtual_lots: Decimal | None = None
 
 
 def price_move(side, entry, exit):
@@ -170,11 +172,13 @@ def verified_pair(event, selected, days, *, observed=False):
     currency = event["currency"]
     if currency not in ("USD", "KRW"):
         return None
-    return Pair(symbol, day, money(event["virtual_profit_krw"]), net, currency, frozenset(rows))
+    virtual_lots = money(event["virtual_lot"]) if event.get("virtual_lot") else None
+    return Pair(symbol, day, money(event["virtual_profit_krw"]), net, currency, frozenset(rows),
+                lots=entry, virtual_lots=virtual_lots if virtual_lots and virtual_lots > 0 else None)
 
 
-def rust_events(root):
-    path = root / "results/mt5_telegram.sqlite3"
+def rust_events(root, venue="mt5"):
+    path = root / "results" / f"{venue}_telegram.sqlite3"
     with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, timeout=3) as db:
         return [json.loads(row[0]) for row in db.execute("""
             SELECT payload FROM jobs
@@ -182,6 +186,69 @@ def rust_events(root):
             ORDER BY CASE json_extract(payload, '$.event') WHEN 'settlement_update' THEN 0 ELSE 1 END,
             due DESC, rowid DESC
         """)]
+
+
+def binance_settlement(event, selected, environment, days):
+    if not (
+        event.get("symbol") == "BTCUSDT" and symbol_key(event.get("virtual_symbol", "")) == "BTCUSD"
+        and event.get("strategy_name") in selected and event.get("environment") == environment
+        and event.get("notification_history_complete") is True and event.get("dry_run") is not True
+    ):
+        return None
+    day = local_day(event["observed_at"])
+    if day not in days:
+        return None
+    settlement = event["settlement"]
+    quantity = money(settlement["quantity"])
+    net, gross, fees, funding = (money(settlement[key]) for key in ("net", "gross", "fees", "funding"))
+    if (quantity <= 0 or quantity != money(event["filled"]) or money(event["actual_remaining"]) != 0
+            or net != gross - fees + funding):
+        return None
+    return day, net, quantity, fees, funding
+
+
+def binance_report(root, days):
+    try:
+        config = read_json(root / CONFIGS["mt5_rust1"])["trade_binance"]
+        settings = config["real_trade"]
+        selected = {item for key, value in settings.items() if symbol_key(key) == "BTCUSD"
+                    for item in value.get("select_Strategy", value.get("select_strategy", []))}
+        if not config["enabled"] or not selected:
+            return None
+        environment = next((name for name in ("Demo", "Live", "Testnet")
+                            if name.lower() == config["environment"].lower()), None)
+        if not environment:
+            return None
+        events = rust_events(root, "binance")
+    except (OSError, sqlite3.Error, KeyError, ValueError, TypeError, AttributeError):
+        return None
+    grouped = defaultdict(lambda: [Decimal(0), Decimal(0), Decimal(0), Decimal(0), 0])
+    seen = set()
+    for event in events:
+        try:
+            result = binance_settlement(event, selected, environment, days)
+            key = (event["config_scope"], event["cycle_id"])
+            if result is None or not all(key) or key in seen:
+                continue
+        except (KeyError, ValueError, TypeError, InvalidOperation, OverflowError):
+            continue
+        day, net, quantity, fees, funding = result
+        seen.add(key)
+        daily = grouped[day]
+        daily[0] += net
+        daily[1] += quantity
+        daily[2] += fees
+        daily[3] += funding
+        daily[4] += 1
+    return {
+        "environment": environment, "symbol": "BTCUSDT", "currency": "USDT",
+        "series": [
+            dict(zip(("live", "quantity", "fees", "funding", "count"), (
+                *[float(value.quantize(Decimal("0.00000001"))) for value in grouped[day][:4]], grouped[day][4],
+            ))) if day in grouped else None
+            for day in days
+        ],
+    }
 
 
 def native_closes(project, root, selected, days):
@@ -243,6 +310,8 @@ def collect(roots, evidence_dir, today):
             for event in events:
                 try:
                     pair = verified_pair(event, selected, days, observed=observed)
+                    if pair is not None and pair.symbol == "BTCUSD":
+                        continue
                     if pair is not None and native is not None:
                         stamp = datetime.fromisoformat(event["virtual_profit_at"]).astimezone(KST)
                         key = pair.symbol, event["strategy_name"], stamp.replace(microsecond=0), pair.simulated
@@ -285,10 +354,11 @@ def parse_rates(text):
     return rates
 
 
-def public_report(days, pairs, coverage, rates):
+def public_report(days, pairs, coverage, rates, binance=None):
     amounts = defaultdict(lambda: [Decimal(0), Decimal(0), 0, Decimal(0), 0])
     missing_fx = 0
     included = set()
+    lots = defaultdict(list)
     for project, pair in pairs:
         rate = Decimal(1)
         if pair.currency == "USD":
@@ -303,8 +373,9 @@ def public_report(days, pairs, coverage, rates):
         values[2] += 1
         values[3] += (pair.normalized * rate) if pair.normalized is not None else 0
         values[4] += pair.normalized is not None
+        lots[pair.symbol, pair.day].append((pair.lots, pair.virtual_lots))
         included.add(project)
-    if not amounts:
+    if not amounts and not (binance and any(binance["series"])):
         raise ValueError("검증된 비교 결과가 없습니다. 체결 근거와 환율을 확인하세요.")
     return {
         "currency": "KRW",
@@ -313,14 +384,19 @@ def public_report(days, pairs, coverage, rates):
         "coverage": {project: status if project in included or status != "partial" else "unavailable"
                      for project, status in coverage.items()},
         "missingFx": missing_fx,
+        **({"binance": binance} if binance else {}),
         "series": {
             symbol: [
-                dict(zip(("simulated", "live", "count", "virtualOriginal"), (
+                dict(zip(("simulated", "live", "count", "virtualOriginal", "lots", "virtualLots"), (
                     int(amounts[symbol, day][3].quantize(Decimal(1), rounding=ROUND_HALF_UP))
                     if amounts[symbol, day][2] == amounts[symbol, day][4] else None,
                     int(amounts[symbol, day][1].quantize(Decimal(1), rounding=ROUND_HALF_UP)),
                     amounts[symbol, day][2],
                     int(amounts[symbol, day][0].quantize(Decimal(1), rounding=ROUND_HALF_UP)),
+                    float(sum(actual for actual, _ in lots[symbol, day]))
+                    if all(actual is not None for actual, _ in lots[symbol, day]) else None,
+                    float(sum(virtual for _, virtual in lots[symbol, day]))
+                    if all(virtual is not None for _, virtual in lots[symbol, day]) else None,
                 ))) if (symbol, day) in amounts else None
                 for day in days
             ]

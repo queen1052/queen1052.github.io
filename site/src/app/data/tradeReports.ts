@@ -10,7 +10,20 @@ export interface TradeReport {
   coverage: Record<string, 'partial' | 'unavailable' | 'no_selection'>;
   missingFx: number;
   basis?: 'same_fill_v1';
-  series: Record<TradeSymbol, ({ simulated: number | null; live: number; count: number; virtualOriginal?: number } | null)[]>;
+  binance?: {
+    environment: 'Demo' | 'Live' | 'Testnet';
+    symbol: 'BTCUSDT';
+    currency: 'USDT';
+    series: ({ live: number; quantity: number; fees: number; funding: number; count: number } | null)[];
+  };
+  series: Record<TradeSymbol, ({
+    simulated: number | null;
+    live: number;
+    count: number;
+    virtualOriginal?: number;
+    lots?: number | null;
+    virtualLots?: number | null;
+  } | null)[]>;
 }
 
 const reports = import.meta.glob<TradeReport>('./trade-reports/*.json', { eager: true, import: 'default' });

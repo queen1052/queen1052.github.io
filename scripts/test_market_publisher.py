@@ -4,7 +4,7 @@ from datetime import date, timedelta
 from decimal import Decimal
 
 from market_news import trusted, valid_draft
-from market_trade_data import parse_rates, public_report, same_exposure_pnl, selection, verified_pair
+from market_trade_data import binance_settlement, parse_rates, public_report, same_exposure_pnl, selection, verified_pair
 from publish_market_brief import markdown
 
 
@@ -38,7 +38,9 @@ class MarketPublisherTests(unittest.TestCase):
         rates = parse_rates("observation_date,DEXKOUS\n2026-11-17,1300\n2026-11-18,1400\n")
         coverage = {"mt5_rust1": "partial", "mt5": "unavailable"}
         report = public_report([self.day - timedelta(days=1), self.day], [("mt5_rust1", pair)], coverage, rates)
-        self.assertEqual(report["series"]["GOLD"], [None, {"simulated": None, "live": 2600, "count": 1, "virtualOriginal": 200}])
+        self.assertEqual(report["series"]["GOLD"], [None, {
+            "simulated": None, "live": 2600, "count": 1, "virtualOriginal": 200, "lots": 0.1, "virtualLots": None,
+        }])
         self.assertNotIn("local-strategy", str(report))
         self.assertNotIn("ticket", str(report))
         with self.assertRaises(ValueError):
@@ -46,14 +48,17 @@ class MarketPublisherTests(unittest.TestCase):
 
     def test_structured_article_and_trusted_urls(self):
         sources = [{"id": 1, "publisher": "BLS", "url": "https://www.bls.gov/news.release/", "published": "2026-11-18T17:00:00+00:00"}]
+        setup = ("미국 장기금리의 움직임을 살피고 정책 발표에 대한 기대 변화가 실제 국채 수익률에 반영됐는지 확인한다. "
+                 "가격 방향이 국채 움직임과 엇갈리면 수급과 변동성도 함께 점검한다. 이런 경우에는 단일 지표만으로 원인을 특정하기 어렵다.")
         draft = {"title": "고용 지표와 금 시장", "excerpt": "고용 소식을 살핍니다.",
-                 "items": [{"source": 1, "fact": "고용 지표가 나왔습니다.", "analysis": "금리 흐름을 확인할 필요가 있습니다."}]}
+                 "watch": {key: setup for key in ("btc", "gold", "nasdaq")},
+                 "items": [{"source": 1, "fact": "고용 지표가 나왔습니다.", "analysis": setup}]}
         valid_draft(draft, {1: sources[0]})
         pair = replace(verified_pair(self.event, self.selected, [self.day]), normalized=Decimal("1.5"))
         report = public_report([self.day], [("mt5_rust1", pair)], {"mt5_rust1": "partial"}, {self.day - timedelta(days=1): Decimal(1300)})
         post = markdown(self.day.isoformat(), report, sources, draft)
         self.assertIn("marketBrief: true", post)
-        self.assertIn("| GOLD | 1 | +1,950원 | +2,600원 |", post)
+        self.assertIn("| GOLD | 1 | 0.1 | +200원 | +1,950원 | +2,600원 |", post)
         self.assertIn("https://www.bls.gov/news.release/", post)
         self.assertFalse(trusted("https://www.bls.gov@127.0.0.1/"))
         draft["items"][0]["source"] = 2
@@ -68,6 +73,19 @@ class MarketPublisherTests(unittest.TestCase):
         prices = ("SELL", Decimal("3827.62"), Decimal("3817.03"))
         self.assertEqual(same_exposure_pnl(pair, self.event, prices), Decimal("21.18"))
         self.assertIsNone(same_exposure_pnl(pair, self.event, ("BUY", *prices[1:])))
+
+    def test_binance_settlement_keeps_environment_and_costs(self):
+        event = {
+            "symbol": "BTCUSDT", "virtual_symbol": "BTCUSD#", "strategy_name": "local-strategy",
+            "environment": "Demo", "notification_history_complete": True,
+            "observed_at": "2026-11-18T08:15:00+09:00", "filled": "0.1", "actual_remaining": "0",
+            "settlement": {"quantity": "0.1", "net": "4", "gross": "6", "fees": "3", "funding": "1"},
+        }
+        selected = {"local-strategy"}
+        self.assertEqual(binance_settlement(event, selected, "Demo", [self.day])[1], Decimal(4))
+        self.assertIsNone(binance_settlement(event, selected, "Live", [self.day]))
+        event["settlement"]["net"] = "7"
+        self.assertIsNone(binance_settlement(event, selected, "Demo", [self.day]))
 
 
 if __name__ == "__main__":

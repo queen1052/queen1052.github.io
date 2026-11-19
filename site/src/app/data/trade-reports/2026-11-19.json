@@ -1,5 +1,19 @@
 {
   "basis": "same_fill_v1",
+  "binance": {
+    "currency": "USDT",
+    "environment": "Demo",
+    "series": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      { "count": 1, "fees": 25.90637999, "funding": 0.0, "live": 62.19362001, "quantity": 1.0 },
+      { "count": 3, "fees": 102.74646465, "funding": 0.0, "live": 511.15433535, "quantity": 3.0 }
+    ],
+    "symbol": "BTCUSDT"
+  },
   "coverage": {
     "mt5": "unavailable",
     "mt5_codex1": "unavailable",
@@ -36,7 +50,9 @@
       {
         "count": 1,
         "live": 29431,
+        "lots": 0.02,
         "simulated": 28309,
+        "virtualLots": null,
         "virtualOriginal": 1588500
       }
     ],

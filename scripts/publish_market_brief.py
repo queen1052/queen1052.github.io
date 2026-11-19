@@ -14,7 +14,7 @@ from pathlib import Path
 from urllib.error import URLError
 
 from market_news import editorial, search_news
-from market_trade_data import KST, collect, parse_rates, public_report
+from market_trade_data import KST, binance_report, collect, parse_rates, public_report
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / ".market-publisher"
@@ -70,20 +70,42 @@ def markdown(today, report, news, draft):
         stamp = datetime.fromisoformat(source["published"]).astimezone(KST).strftime("%m-%d %H:%M KST")
         lines += [plain(item["fact"]), "", f"**시장 해석** · {plain(item['analysis'])}", "",
                   f"출처 [{plain(source['publisher'])}](<{source['url']}>) · {stamp}", ""]
+    if draft.get("watch"):
+        lines.extend(["## 종목별 점검 포인트", ""])
+        for symbol, label in (("btc", "BTCUSD"), ("gold", "GOLD"), ("nasdaq", "나스닥 100")):
+            lines.extend([f"### {label}", "", plain(draft["watch"][symbol]), ""])
     lines += [
         "## 가상매매와 실거래 비교", "",
-        f"{report['days'][0]} ~ {report['days'][-1]} (KST)의 확인된 거래를 원화로 집계했습니다.", "",
-        "| 종목 | 확인 거래 | 가상 손익 (실체결 수량 기준) | MT5 실거래 순손익 |", "| --- | ---: | ---: | ---: |",
+        f"집계 기간은 {report['days'][0]} ~ {report['days'][-1]} (KST)입니다. MT5는 원화, Binance는 USDT로 표시합니다.", "",
+        "| MT5 종목 | 확인 거래 | 청산 lot 합계 | 가상 엔진 원본 | 가상 손익 (동일 lot) | MT5 순손익 |",
+        "| --- | ---: | ---: | ---: | ---: | ---: |",
     ]
     for symbol, rows in report["series"].items():
+        if symbol == "BTCUSD":
+            continue
         values = [item for item in rows if item is not None]
         if not values:
-            lines.append(f"| {symbol} | 미확인 | — | — |")
+            lines.append(f"| {symbol} | 미확인 | — | — | — | — |")
             continue
         comparable = all(row["simulated"] is not None for row in values)
         simulated = f"{sum(row['simulated'] for row in values):+,}원" if comparable else "보정 미확인"
-        lines.append(f"| {symbol} | {sum(row['count'] for row in values):,} | "
-                     f"{simulated} | {sum(row['live'] for row in values):+,}원 |")
+        lots = f"{sum(row['lots'] for row in values):g}" if all(row.get("lots") is not None for row in values) else "미확인"
+        lines.append(f"| {symbol} | {sum(row['count'] for row in values):,} | {lots} | "
+                     f"{sum(row['virtualOriginal'] for row in values):+,}원 | {simulated} | "
+                     f"{sum(row['live'] for row in values):+,}원 |")
+    binance = report.get("binance")
+    lines.extend(["", "### BTCUSD 지표 · Binance BTCUSDT 정산", ""])
+    settled = [row for row in binance["series"] if row] if binance else []
+    if settled:
+        lines.append(
+            f"Binance {binance['environment']}에서 확인한 정산 {sum(row['count'] for row in settled)}건의 "
+            f"순손익은 {sum(row['live'] for row in settled):+,.2f} USDT입니다. "
+            f"청산 수량 합계는 {sum(row['quantity'] for row in settled):g} BTC이며 "
+            f"수수료 {sum(row['fees'] for row in settled):,.2f} USDT와 "
+            f"펀딩 {sum(row['funding'] for row in settled):+,.2f} USDT가 반영됐습니다."
+        )
+    else:
+        lines.append("이 기간에 사용할 수 있는 Binance 정산 자료를 확인하지 못했습니다.")
     unavailable = [project for project, status in report["coverage"].items() if status == "unavailable"]
     if unavailable:
         lines.extend(["", "비교 자료 미확인 · " + ", ".join(unavailable)])
@@ -92,7 +114,7 @@ def markdown(today, report, news, draft):
     lines += ["", "가상 손익은 기록된 가상 진입·청산 가격에 동일 실체결 수량의 계약 손익률을 적용한 추정치입니다. "
               "MT5 실거래 순손익은 확인된 체결 비용과 스왑을 반영합니다. 두 USD 금액은 거래일 전일까지의 "
               "최근 [FRED DEXKOUS](https://fred.stlouisfed.org/series/DEXKOUS) 관측값을 사용합니다. "
-              "가격이나 계약 손익률을 확인할 수 없으면 가상 손익을 미확인으로 표시합니다. Binance BTCUSDT는 이 MT5 집계의 범위 밖입니다.",
+              "가격이나 계약 손익률이 미확인인 가상 손익은 금액을 비웁니다. Binance 정산은 USDT로 별도 표시합니다.",
               "", "이 브리핑은 공개 출처와 거래 집계를 바탕으로 AI 도구의 도움을 받아 작성했습니다.", ""]
     return "\n".join(lines)
 
@@ -237,9 +259,8 @@ def main():
             now = datetime.now(timezone.utc)
             today = now.astimezone(KST).date()
             days, pairs, coverage = collect(args.projects, args.evidence_dir, today)
+            binance = binance_report(args.projects / "mt5_rust1", days)
             print(f"{days[0]} ~ {days[-1]} · 검증 후보 {len(pairs)}건 · {coverage}", flush=True)
-            if not pairs:
-                raise ValueError("검증된 비교 결과가 없습니다. 체결 근거를 확인하세요.")
             endpoint = ("https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS"
                         f"&cosd={days[0] - timedelta(days=7)}&coed={days[-1]}")
             rates = {}
@@ -250,7 +271,7 @@ def main():
                     ], timeout=25))
                 except (ValueError, OSError, subprocess.SubprocessError):
                     print("FRED 환율 조회 실패")
-            report = public_report(days, pairs, coverage, rates)
+            report = public_report(days, pairs, coverage, rates, binance)
             news = search_news(now)
             print(f"검증된 기사 {len(news)}건", flush=True)
             if not args.dry_run:
