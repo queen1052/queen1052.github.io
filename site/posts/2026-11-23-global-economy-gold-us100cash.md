@@ -47,7 +47,7 @@ US100Cash MT5 로그에는 주문·청산 요청, `deal`, `order`, `ticket`, `re
 
 Gold는 이번 글에서 codex1·rust1 가상매매 거래 이력으로 분석했고, MT5 Gold 실거래로 표현하지 않았습니다. 이 구분을 지켜야 세계 경제에 대한 해석과 내부 전략 검증이 서로의 증거 수준을 오염시키지 않습니다.
 
-![가상매매와 MT5 실매매 비교](/assets/research-charts/virtual-vs-mt5.png)
+![세계 경제·Gold·기술주 흐름을 보여주는 편집 일러스트](/assets/research-charts/global-economy-gold-tech-editorial.png)
 
 ## 결론
 
