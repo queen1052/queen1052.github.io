@@ -139,7 +139,7 @@ export function postsPlugin(options = {}) {
 
       generateSitemap(posts, outDir, siteUrl);
       generateFeed(posts, outDir, siteUrl);
-      generateSpaFallback(outDir);
+      generateSpaFallback(outDir, posts);
     },
   };
 }
@@ -211,12 +211,19 @@ ${items}
 }
 
 /**
- * Copies the built SPA entry to 404.html so GitHub Pages can serve client-side routes.
+ * Copies the built SPA entry to 404.html and each post permalink directory.
+ * The directory index keeps direct GitHub Pages requests at HTTP 200 while
+ * the client-side router selects the requested post.
  *
  * @param {string} outDir
  */
-function generateSpaFallback(outDir) {
+function generateSpaFallback(outDir, posts) {
   const indexHtml = readFileSync(join(outDir, 'index.html'), 'utf-8');
   writeFileSync(join(outDir, '404.html'), indexHtml, 'utf-8');
+  for (const post of posts) {
+    const postDir = join(outDir, 'post', post.slug);
+    mkdirSync(postDir, { recursive: true });
+    writeFileSync(join(postDir, 'index.html'), indexHtml, 'utf-8');
+  }
   console.log('[vite-plugin-posts] 404.html written');
 }
