@@ -39,7 +39,7 @@ Gold의 수익은 위 경제 환경에서 위험 회피·인플레이션·달러
 
 반면 현재 실투 대상인 `US100Cash# / ewo_240t_trendA_21`은 **9건 중 3건 수익, 6건 손실, 누적 -12,601,680**, 평균 손익 **-1,400,186.67**이었습니다. 이는 AI·기술주 기대가 재평가되는 환경에서 성장주 지수의 하락 변동성이 전략 손실로 연결됐을 가능성을 보여 주지만, 시장 하락의 원인을 전략 결과만으로 증명하는 것은 아닙니다. 전략 관점의 핵심은 방향을 맞혔는지가 아니라, 기대가 무너질 때 손실을 제한하고 연속 손실을 감당 가능한 수준으로 유지했는지입니다.
 
-![Gold·US100Cash 전략별 누적 손익](/assets/research-charts/virtual-cumulative-pnl.svg)
+![Gold·US100Cash 전략별 누적 손익](/assets/research-charts/virtual-cumulative-pnl.png)
 
 ## 실거래 해석에서 반드시 남겨야 할 구분
 
@@ -47,7 +47,7 @@ US100Cash MT5 로그에는 주문·청산 요청, `deal`, `order`, `ticket`, `re
 
 Gold는 이번 글에서 codex1·rust1 가상매매 거래 이력으로 분석했고, MT5 Gold 실거래로 표현하지 않았습니다. 이 구분을 지켜야 세계 경제에 대한 해석과 내부 전략 검증이 서로의 증거 수준을 오염시키지 않습니다.
 
-![가상매매와 MT5 실매매 비교](/assets/research-charts/virtual-vs-mt5.svg)
+![가상매매와 MT5 실매매 비교](/assets/research-charts/virtual-vs-mt5.png)
 
 ## 결론
 
