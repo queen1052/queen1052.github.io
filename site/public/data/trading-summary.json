@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-11-25T12:37:37+09:00",
+  "completed_session_date": "2026-11-24",
+  "session_definition": "거래소 날짜별 완료 거래의 확정 손익 (원본 세션 날짜 기준)",
+  "cumulative_virtual_krw": 576868500,
+  "closed_trades": 302,
+  "winning_trades": 190,
+  "win_rate": 62.91,
+  "strategies": [
+    {
+      "project": "mt5_codex1",
+      "target": "mt5",
+      "symbol": "GOLD#",
+      "strategy": "GOLD#_cusbox2_2m_1700",
+      "cumulative_virtual_krw": 144336000,
+      "status": "available",
+      "completed_sessions": 64,
+      "first_session_date": "2026-06-08",
+      "completed_session_date": "2026-11-23",
+      "closed_trades": 72,
+      "winning_trades": 48,
+      "win_rate": 66.67
+    },
+    {
+      "project": "mt5_codex1",
+      "target": "binance",
+      "symbol": "BTCUSD#",
+      "strategy": "BTCUSD#_vsps_1m_0900_trend_b",
+      "cumulative_virtual_krw": 297557250,
+      "status": "available",
+      "completed_sessions": 45,
+      "first_session_date": "2026-06-09",
+      "completed_session_date": "2026-11-23",
+      "closed_trades": 49,
+      "winning_trades": 29,
+      "win_rate": 59.18
+    },
+    {
+      "project": "mt5_rust1",
+      "target": "mt5",
+      "symbol": "GOLD#",
+      "strategy": "GOLD#_crs_2m_0900_trend_a",
+      "cumulative_virtual_krw": 49146000,
+      "status": "available",
+      "completed_sessions": 31,
+      "first_session_date": "2026-10-12",
+      "completed_session_date": "2026-11-24",
+      "closed_trades": 71,
+      "winning_trades": 53,
+      "win_rate": 74.65
+    },
+    {
+      "project": "mt5_rust1",
+      "target": "binance",
+      "symbol": "BTCUSD#",
+      "strategy": "BTCUSD#_cusbox1_240t_0900",
+      "cumulative_virtual_krw": 85829250,
+      "status": "available",
+      "completed_sessions": 31,
+      "first_session_date": "2026-10-12",
+      "completed_session_date": "2026-11-24",
+      "closed_trades": 110,
+      "winning_trades": 60,
+      "win_rate": 54.55
+    }
+  ]
+}

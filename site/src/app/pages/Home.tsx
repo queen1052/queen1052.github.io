@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Activity, ArrowDown, ArrowRight, ArrowUpRight, BookOpen, Network } from 'lucide-react';
+import { Activity, ArrowDown, ArrowRight, ArrowUpRight, Network } from 'lucide-react';
 import { Link, useSearchParams } from 'react-router';
 import { CmeSchedule, MarketQuotes } from '../components/MarketBrief';
 import { TradeComparison } from '../components/TradeComparison';
+import { RecentEconomicNews } from '../components/RecentEconomicNews';
 import { allTags, categories, posts } from '../data/posts';
 import './market-home.css';
 
@@ -70,16 +71,7 @@ export function Home() {
 
         <div className="market-week" id="weekly">
           <CmeSchedule />
-          <section className="market-panel macro-panel" aria-labelledby="macro-heading">
-            <div className="cme-icon"><BookOpen size={22} aria-hidden="true" /></div>
-            <p className="market-kicker">시장 읽기</p>
-            <h2 id="macro-heading">한 주를 시작하는 세 가지 질문</h2>
-            <dl>
-              <div><dt>BTCUSD</dt><dd>주말에 형성된 흐름이 미국장 개장 후에도 이어지는가?</dd></div>
-              <div><dt>US100Cash</dt><dd>지수 상승을 소수 대형주가 이끌고 있는가?</dd></div>
-              <div><dt>GOLD</dt><dd>금 가격과 달러, 미국 실질금리가 같은 방향으로 움직이는가?</dd></div>
-            </dl>
-          </section>
+          <RecentEconomicNews />
         </div>
 
         <section className="market-articles" id="articles" aria-labelledby="articles-heading">
