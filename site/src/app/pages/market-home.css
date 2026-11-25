@@ -42,6 +42,8 @@
 .market-quote-slot { overflow: hidden; transition: opacity .3s ease; }
 .market-tape[data-state="loading"] .market-quote-slot { opacity: 0; }
 .market-tape-body .tradingview-widget-container { overflow: hidden; max-width: 100%; }
+/* Embed frames paint an opaque light canvas when they inherit the page's dark color-scheme; normal lets the transparent widget show the teal panel. */
+.market-tape-body iframe { color-scheme: normal; }
 .market-tape-body iframe:focus-visible { outline: 2px solid var(--market-accent); outline-offset: -2px; }
 
 .market-quote-skeleton { display: flex; align-items: center; gap: 1.6rem; padding: .8rem 1rem; overflow: hidden; }
