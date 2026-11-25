@@ -1,24 +1,41 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, CalendarDays } from 'lucide-react';
 
 const cmeUrl = 'https://www.cmegroup.com/trading-hours.html';
+// proName values are the TradingView symbol IDs passed to the official ticker-tape embed.
+// Source links point at the matching TradingView symbol page; they are shown when the embed fails.
 const marketSymbols = [
   { proName: 'FX_IDC:USDKRW', title: '달러 / 원', url: 'https://www.tradingview.com/symbols/USDKRW/' },
   { proName: 'KRX:KOSPI', title: 'KOSPI', url: 'https://www.tradingview.com/symbols/KRX-KOSPI/' },
   { proName: 'NASDAQ:NDX', title: 'NASDAQ 100', url: 'https://www.tradingview.com/symbols/NASDAQ-NDX/' },
 ];
+const embedUrl = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+// Cross-origin iframe contents cannot be inspected, so "ready" means the embed frame loaded.
+const loadTimeoutMs = 10_000;
+
+type QuoteState = 'loading' | 'ready' | 'error';
+
+const statusText: Record<QuoteState, string> = {
+  loading: '불러오는 중',
+  ready: '위젯 표시됨',
+  error: '불러오기 실패',
+};
 
 export function MarketQuotes() {
   const widget = useRef<HTMLDivElement>(null);
+  const [state, setState] = useState<QuoteState>('loading');
 
   useEffect(() => {
     const element = widget.current;
+    if (!element) return;
+    setState('loading');
+
     const mount = document.createElement('div');
     mount.className = 'tradingview-widget-container';
     const slot = document.createElement('div');
     slot.className = 'tradingview-widget-container__widget';
     const script = document.createElement('script');
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+    script.src = embedUrl;
     script.async = true;
     script.textContent = JSON.stringify({
       symbols: marketSymbols.map(({ proName, title }) => ({ proName, title })),
@@ -28,20 +45,60 @@ export function MarketQuotes() {
       colorTheme: 'dark',
       locale: 'kr',
     });
+
+    let settled = false;
+    const observed = new WeakSet<HTMLIFrameElement>();
+    const settle = (next: QuoteState) => {
+      if (settled) return;
+      settled = true;
+      setState(next);
+      window.clearTimeout(timer);
+      observer.disconnect();
+    };
+    const watchFrame = (frame: HTMLIFrameElement) => {
+      if (observed.has(frame)) return;
+      observed.add(frame);
+      frame.addEventListener('load', () => settle('ready'), { once: true });
+    };
+    const observer = new MutationObserver(() => {
+      mount.querySelectorAll('iframe').forEach(watchFrame);
+    });
+    observer.observe(mount, { childList: true, subtree: true });
+    const timer = window.setTimeout(() => settle('error'), loadTimeoutMs);
+    script.addEventListener('error', () => settle('error'));
+
     mount.append(slot, script);
-    element?.append(mount);
-    return () => mount.remove();
+    element.append(mount);
+
+    return () => {
+      settled = true;
+      window.clearTimeout(timer);
+      observer.disconnect();
+      mount.remove();
+    };
   }, []);
 
+  const failed = state === 'error';
+
   return (
-    <section className="market-tape" aria-labelledby="market-heading">
+    <section className="market-tape" aria-labelledby="market-heading" data-state={state}>
       <div className="market-tape-label">
         <span className="market-dot" />
         <h2 id="market-heading">시장 지표</h2>
-        <span>TradingView · 지연 가능</span>
+        <span className="market-status" role="status" aria-live="polite">{statusText[state]}</span>
       </div>
-      <div ref={widget} />
-      <div className="market-source-links" aria-label="시장 지표 원문">
+      <div className="market-tape-body">
+        <div className="market-quote-skeleton" aria-hidden="true"><i /><i /><i /></div>
+        <div ref={widget} className="market-quote-slot" hidden={failed} />
+        <div className="market-quote-fallback" hidden={!failed}>
+          <p>실시간 값을 표시하지 못했습니다. 아래 원문에서 확인하세요.</p>
+          {marketSymbols.map(({ title, url }) => (
+            <a href={url} key={title} target="_blank" rel="noreferrer">{title} <ArrowUpRight size={13} aria-hidden="true" /></a>
+          ))}
+        </div>
+      </div>
+      <div className="market-source-links" aria-label="시장 지표 원문" hidden={failed}>
+        <span className="market-note">값: TradingView · 지연될 수 있음</span>
         {marketSymbols.map(({ title, url }) => (
           <a href={url} key={title} target="_blank" rel="noreferrer">{title} <ArrowUpRight size={13} aria-hidden="true" /></a>
         ))}
