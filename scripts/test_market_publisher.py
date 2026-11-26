@@ -1,10 +1,10 @@
 import unittest
 from dataclasses import replace
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from decimal import Decimal
 
 from market_news import trusted, valid_draft
-from market_trade_data import binance_settlement, parse_rates, public_report, same_exposure_pnl, selection, verified_pair
+from market_trade_data import binance_settlement, in_session, parse_rates, public_report, same_exposure_pnl, selection, session_window, verified_pair
 from publish_market_brief import markdown
 
 
@@ -86,6 +86,15 @@ class MarketPublisherTests(unittest.TestCase):
         self.assertIsNone(binance_settlement(event, selected, "Live", [self.day]))
         event["settlement"]["net"] = "7"
         self.assertIsNone(binance_settlement(event, selected, "Demo", [self.day]))
+
+    def test_session_window_is_kst_0900_to_next_day_0500(self):
+        window = session_window(date(2026, 11, 27))
+        self.assertEqual(window[0], datetime.fromisoformat("2026-11-26T09:00:00+09:00"))
+        self.assertEqual(window[1], datetime.fromisoformat("2026-11-27T05:00:00+09:00"))
+        self.assertFalse(in_session("2026-11-26T08:59:59+09:00", window))
+        self.assertTrue(in_session("2026-11-26T09:00:00+09:00", window))
+        self.assertTrue(in_session("2026-11-27T04:59:59+09:00", window))
+        self.assertFalse(in_session("2026-11-27T05:00:00+09:00", window))
 
 
 if __name__ == "__main__":

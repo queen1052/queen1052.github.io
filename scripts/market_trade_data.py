@@ -5,11 +5,13 @@ import json
 import sqlite3
 from collections import Counter, defaultdict
 from dataclasses import dataclass, replace
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
+SESSION_START = time(9, 0)
+SESSION_END = time(5, 0)
 SYMBOLS = ("BTCUSD", "US100Cash", "GOLD")
 CONFIGS = {
     "mt5": "config/settings_org.json",
@@ -30,6 +32,22 @@ class Pair:
     normalized: Decimal | None = None
     lots: Decimal | None = None
     virtual_lots: Decimal | None = None
+
+
+def session_window(today):
+    """Return the completed KST trading window ending at today's 05:00."""
+    start = datetime.combine(today - timedelta(days=1), SESSION_START, tzinfo=KST)
+    end = datetime.combine(today, SESSION_END, tzinfo=KST)
+    return start, end
+
+
+def in_session(value, window):
+    stamp = datetime.fromisoformat(str(value))
+    if stamp.tzinfo is None:
+        raise ValueError("timestamp must include timezone")
+    local = stamp.astimezone(KST)
+    start, end = window
+    return start <= local < end
 
 
 def price_move(side, entry, exit):
@@ -127,7 +145,7 @@ def local_day(value):
     return stamp.astimezone(KST).date()
 
 
-def verified_pair(event, selected, days, *, observed=False):
+def verified_pair(event, selected, days, *, observed=False, session=None):
     symbol = symbol_key(event["symbol"])
     if event["strategy_name"] not in selected.get(symbol, ()):
         return None
@@ -139,7 +157,10 @@ def verified_pair(event, selected, days, *, observed=False):
         return None
     closed = event["observed_at"] if observed else event["closed_at"]
     day = local_day(closed)
-    if day not in days or day != local_day(event["virtual_profit_at"]):
+    if session is not None:
+        if not in_session(closed, session) or not in_session(event["virtual_profit_at"], session):
+            return None
+    elif day not in days or day != local_day(event["virtual_profit_at"]):
         return None
     if observed:
         delta = datetime.fromtimestamp(closed, timezone.utc) - datetime.fromisoformat(event["virtual_profit_at"])
@@ -251,7 +272,7 @@ def binance_report(root, days):
     }
 
 
-def native_closes(project, root, selected, days):
+def native_closes(project, root, selected, days, *, session=None):
     closes = Counter()
     first_file_day = days[0] - timedelta(days=2)
     for symbol, choices in selected.items():
@@ -281,7 +302,8 @@ def native_closes(project, root, selected, days):
                     try:
                         stamp = datetime.fromisoformat(timestamp)
                         stamp = stamp.replace(tzinfo=KST) if stamp.tzinfo is None else stamp.astimezone(KST)
-                        if stamp.date() in days:
+                        if (in_session(stamp.isoformat(), session) if session is not None
+                                else stamp.date() in days):
                             closes[symbol, strategy, stamp.replace(microsecond=0), money(amount)] += 1
                     except (ValueError, InvalidOperation, TypeError):
                         continue
@@ -289,7 +311,8 @@ def native_closes(project, root, selected, days):
 
 
 def collect(roots, evidence_dir, today):
-    days = [today - timedelta(days=offset) for offset in range(7, 0, -1)]
+    session = session_window(today)
+    days = [session[0].date()]
     pairs = []
     seen = set()
     coverage = {}
@@ -306,10 +329,11 @@ def collect(roots, evidence_dir, today):
             events = rust_events(root) if observed else read_json(external)
             if not isinstance(events, list):
                 raise ValueError("invalid transaction evidence")
-            native = native_closes(project, root, selected, days) if project != "mt5_rust1" else None
+            native = (native_closes(project, root, selected, days, session=session)
+                      if project != "mt5_rust1" else None)
             for event in events:
                 try:
-                    pair = verified_pair(event, selected, days, observed=observed)
+                    pair = verified_pair(event, selected, days, observed=observed, session=session)
                     if pair is not None and pair.symbol == "BTCUSD":
                         continue
                     if pair is not None and native is not None:
