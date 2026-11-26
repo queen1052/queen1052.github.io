@@ -39,7 +39,7 @@ export function MarketQuotes() {
       symbols: marketSymbols.map(({ proName, title }) => ({ proName, title })),
       showSymbolLogo: true,
       isTransparent: true,
-      displayMode: 'compact',
+      displayMode: 'adaptive',
       colorTheme: 'dark',
       locale: 'kr',
     });
