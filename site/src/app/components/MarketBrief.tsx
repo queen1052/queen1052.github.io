@@ -6,8 +6,8 @@ const cmeUrl = 'https://www.cmegroup.com/trading-hours.html';
 // Source links point at the matching TradingView symbol page; they are shown when the embed fails.
 const marketSymbols = [
   { proName: 'FX_IDC:USDKRW', title: '달러 / 원', url: 'https://www.tradingview.com/symbols/USDKRW/' },
-  { proName: 'KRX:KOSPI', title: 'KOSPI', url: 'https://www.tradingview.com/symbols/KRX-KOSPI/' },
-  { proName: 'NASDAQ:NDX', title: 'NASDAQ 100', url: 'https://www.tradingview.com/symbols/NASDAQ-NDX/' },
+  { proName: 'TVC:KOSPI', title: 'KOSPI', url: 'https://www.tradingview.com/symbols/TVC-KOSPI/' },
+  { proName: 'FOREXCOM:NSXUSD', title: 'NASDAQ 100', url: 'https://www.tradingview.com/symbols/FOREXCOM-NSXUSD/' },
 ];
 const embedUrl = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
 // Cross-origin iframe contents cannot be inspected, so "ready" means the embed frame loaded.
