@@ -49,7 +49,13 @@ US100Cash는 특히 할인율과 기대 현금흐름에 민감하다. AI 대형�
 
 ![AI 조정과 금리 재평가를 보여주는 경제 편집 이미지](https://queen1052.github.io/assets/research-charts/global-economy-gold-tech-editorial.png)
 
-![완료 세션 누적 손익 흐름](https://queen1052.github.io/assets/research-charts/virtual-cumulative-pnl.png)
+*경제 편집 이미지: 금리·현금흐름 재평가가 AI 자산에 전달되는 맥락을 설명하는 시각 자료입니다.*
+
+위 경제 맥락과 거래 결과를 혼동하지 않도록, 아래 차트는 이번 완료 세션의 확인된 손익만 따로 표시합니다.
+
+![11월 26일 09시부터 11월 27일 05시까지 완료 세션 누적 손익](https://queen1052.github.io/assets/research-charts/virtual-cumulative-pnl-2026-11-27.svg)
+
+*누적 손익 차트: Gold 두 가상매매 결과를 분리했고, US100Cash 실거래는 이번 세션의 종료 증거가 없어 미확인으로 표시했습니다.*
 
 ## 결론: 얇은 유동성에서는 방향보다 확인 조건이 중요하다
 
