@@ -47,15 +47,15 @@ US100Cash는 특히 할인율과 기대 현금흐름에 민감하다. AI 대형�
 
 이 세션의 US100Cash MT5 실거래는 주문·deal·position 종료가 모두 연결된 공개 증거를 확인하지 못했으므로 손익을 기재하지 않는다. 이전 세션의 실거래 수치를 이번 세션으로 옮겨 적지 않는 것이 맞다. 다음 검증에서는 전환 지연, 스프레드와 수수료, 보호청산이 손익 비대칭을 어떻게 바꾸는지 봐야 한다.
 
-![블랙프라이데이 유동성과 AI·Gold·데이터센터 재평가를 표현한 새 경제 편집 이미지](https://queen1052.github.io/assets/research-charts/global-economy-gold-tech-editorial-2026-11-27.png)
+![블랙프라이데이 얇은 유동성 속 AI 조정과 Gold 강세를 표현한 시장 상황 이미지](https://queen1052.github.io/assets/research-charts/black-friday-thin-liquidity-ai-gold-2026-11-27.png)
 
 *경제 편집 이미지: 금리·현금흐름 재평가가 AI 자산에 전달되는 맥락을 설명하는 시각 자료입니다.*
 
 위 경제 맥락과 거래 결과를 혼동하지 않도록, 아래 차트는 이번 완료 세션의 확인된 손익만 따로 표시합니다.
 
-![11월 26일 09시부터 11월 27일 05시까지 완료 세션 누적 손익](https://queen1052.github.io/assets/research-charts/virtual-cumulative-pnl-2026-11-27.svg)
+![11월 26일 09시부터 11월 27일 05시까지 Gold 가상매매 거래별 누적 손익](https://queen1052.github.io/assets/research-charts/virtual-cumulative-pnl-2026-11-27.svg)
 
-*누적 손익 차트: Gold 두 가상매매 결과를 분리했고, US100Cash 실거래는 이번 세션의 종료 증거가 없어 미확인으로 표시했습니다.*
+*누적 손익 차트: 시작점 0원에서 실제 청산 손익을 시간순으로 누적한 Gold 가상매매 그래프입니다. US100Cash는 가상매매가 아니며 이번 세션 증거도 미확인이라 선에 포함하지 않았습니다.*
 
 ## 결론: 얇은 유동성에서는 방향보다 확인 조건이 중요하다
 
