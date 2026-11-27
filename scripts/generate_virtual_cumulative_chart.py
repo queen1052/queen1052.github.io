@@ -37,7 +37,7 @@ def money(value):
     return f"{sign}{abs(value):,.0f}원"
 
 
-def make_svg(series, cutoff):
+def make_svg(series, common_start, cutoff):
     width, height = 960, 520
     left, right, top, bottom = 132, 820, 150, 402
     values = [Decimal(0)]
@@ -54,24 +54,39 @@ def make_svg(series, cutoff):
     def y(value):
         return bottom - float((value - low) / (high - low)) * (bottom - top)
 
-    count = max(len(events) for events in series.values())
-    def x(index):
-        return left + (right - left) * index / max(count - 1, 1)
+    duration = max((cutoff - common_start).total_seconds(), 1)
+
+    def x(stamp):
+        elapsed = min(max((stamp - common_start).total_seconds(), 0), duration)
+        return left + (right - left) * elapsed / duration
 
     paths = []
     labels = []
+    endpoint_labels = []
     for label, events in series.items():
         total = Decimal(0)
-        points = [(x(0), y(total))]
-        for index, (_, profit) in enumerate(events, start=1):
+        points = [(x(common_start), y(total))]
+        for stamp, profit in events:
             total += profit
-            points.append((x(index), y(total)))
+            points.append((x(stamp), y(total)))
         path = " ".join(("M" if i == 0 else "L") + f"{px:.1f} {py:.1f}" for i, (px, py) in enumerate(points))
         color = STRATEGIES[label][1]
         paths.append(f'<path d="{path}" fill="none" stroke="{color}" stroke-width="3"/>')
         for px, py in (points[0], points[-1]):
             labels.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="5" fill="{color}" stroke="#111c2e" stroke-width="2"/>')
-        labels.append(f'<text x="{right - 4}" y="{y(total) - 10:.1f}" text-anchor="end" fill="{color}" font-weight="700">{label}: {money(total)}</text>')
+        endpoint_labels.append((y(total) - 10, label, total, color))
+
+    positioned = []
+    for target_y, label, total, color in sorted(endpoint_labels):
+        label_y = max(top + 14, min(bottom - 8, target_y))
+        if positioned:
+            label_y = max(label_y, positioned[-1][0] + 22)
+        positioned.append((label_y, label, total, color))
+    if positioned and positioned[-1][0] > bottom - 8:
+        shift = positioned[-1][0] - (bottom - 8)
+        positioned = [(label_y - shift, label, total, color) for label_y, label, total, color in positioned]
+    for label_y, label, total, color in positioned:
+        labels.append(f'<text x="{right - 4}" y="{label_y:.1f}" text-anchor="end" fill="{color}" font-weight="700">{label}: {money(total)}</text>')
 
     ticks = []
     for fraction in (0, 0.25, 0.5, 0.75, 1):
@@ -87,13 +102,14 @@ def make_svg(series, cutoff):
             STRATEGIES.items(), (520, 720, 520), (67, 67, 88)
         )
     )
+    display_start = common_start.replace(second=0, microsecond=0)
     display_cutoff = cutoff.replace(minute=0, second=0, microsecond=0) if cutoff.minute == 5 else cutoff
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
   <title id="title">Gold·US100Cash 가상매매 전략 전체 누적 손익</title>
-  <desc id="desc">각 선택 전략의 최초 기록부터 2026년 11월 27일 05시까지 모든 확정 청산 손익을 시간순으로 누적한 그래프</desc>
+  <desc id="desc">세 전략 모두 {display_start.strftime('%Y년 %m월 %d일 %H시 %M분')}부터 2026년 11월 27일 05시까지 모든 확정 청산 손익을 시간순으로 누적한 그래프</desc>
   <rect width="{width}" height="{height}" rx="24" fill="#0b1220"/><rect x="32" y="32" width="896" height="456" rx="18" fill="#111c2e" stroke="#263852"/>
   <text x="72" y="78" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Gold·US100Cash 가상매매 전략 전체 누적 손익</text>
-  <text x="72" y="106" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">최초 기록부터 {display_cutoff.strftime('%Y-%m-%d %H:%M')} KST까지 · 세션 종료 직후 최종 기록 포함 · 일별 손익이 아니라 모든 청산을 누적</text>
+  <text x="72" y="106" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">세 전략 공통 {display_start.strftime('%Y-%m-%d %H:%M')}부터 {display_cutoff.strftime('%Y-%m-%d %H:%M')} KST까지 · 일별 손익이 아니라 모든 청산을 누적</text>
   <g stroke="#263852" stroke-width="1" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">{"".join(ticks)}</g>
   <line x1="{left}" y1="{top}" x2="{left}" y2="{bottom}" stroke="#64748b" stroke-width="2"/>
   {''.join(paths)}{''.join(labels)}
@@ -116,8 +132,13 @@ def main():
         "mt5_rust1 Gold": args.rust_root,
         "mt5_codex1 US100Cash": args.us100cash_root,
     }
-    series = OrderedDict((label, read_closes(roots[label], strategy, cutoff)) for label, (strategy, _) in STRATEGIES.items())
-    Path(args.output).write_text(make_svg(series, cutoff), encoding="utf-8")
+    raw_series = OrderedDict((label, read_closes(roots[label], strategy, cutoff)) for label, (strategy, _) in STRATEGIES.items())
+    common_start = max(events[0][0] for events in raw_series.values() if events)
+    series = OrderedDict(
+        (label, [(stamp, profit) for stamp, profit in events if stamp >= common_start])
+        for label, events in raw_series.items()
+    )
+    Path(args.output).write_text(make_svg(series, common_start, cutoff), encoding="utf-8")
     for label, events in series.items():
         print(label, len(events), sum((profit for _, profit in events), Decimal(0)))
 
