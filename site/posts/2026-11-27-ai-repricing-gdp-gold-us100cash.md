@@ -33,7 +33,7 @@ AI 관련 주식은 매출 기대가 큰 만큼 투자비도 크다. 데이터�
 
 US100Cash는 이 경로를 더 직접적으로 반영한다. 지수 안에서 성장주 비중이 높고, 금리와 위험선호가 동시에 움직이면 변동성이 커진다. 달러가 강해지는 국면에서는 해외 매출의 환산 부담과 글로벌 유동성 위축이 겹칠 수 있다. 다만 이것은 시장 메커니즘에 대한 해석이지, 특정 가격 방향을 보장하는 예측은 아니다.
 
-![시장 조정과 불확실성을 경계하는 동일한 여성 주인공](https://queen1052.github.io/assets/research-charts/ai-repricing-trading-floor-protagonist-cautious-2026-11-27.png)
+![시장 상황에 맞춘 의상을 입고 AI 조정을 지켜보는 동일한 여성 주인공](https://queen1052.github.io/assets/research-charts/ai-repricing-trading-floor-protagonist-wardrobe-2026-11-27.png)
 
 *경제 편집 이미지: AI 조정 뒤에도 시장 참가자들이 성장률보다 자본비용과 현금흐름을 함께 확인하는 장면을 표현했습니다.*
 
