@@ -39,7 +39,7 @@ def money(value):
 
 def make_svg(series, common_start, cutoff):
     width, height = 960, 520
-    left, right, top, bottom = 132, 820, 150, 402
+    left, right, top, bottom = 132, 820, 155, 402
     values = [Decimal(0)]
     for events in series.values():
         total = Decimal(0)
@@ -62,7 +62,7 @@ def make_svg(series, common_start, cutoff):
 
     paths = []
     labels = []
-    endpoint_labels = []
+    final_values = []
     for label, events in series.items():
         total = Decimal(0)
         points = [(x(common_start), y(total))]
@@ -74,19 +74,7 @@ def make_svg(series, common_start, cutoff):
         paths.append(f'<path d="{path}" fill="none" stroke="{color}" stroke-width="3"/>')
         for px, py in (points[0], points[-1]):
             labels.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="5" fill="{color}" stroke="#111c2e" stroke-width="2"/>')
-        endpoint_labels.append((y(total) - 10, label, total, color))
-
-    positioned = []
-    for target_y, label, total, color in sorted(endpoint_labels):
-        label_y = max(top + 14, min(bottom - 8, target_y))
-        if positioned:
-            label_y = max(label_y, positioned[-1][0] + 22)
-        positioned.append((label_y, label, total, color))
-    if positioned and positioned[-1][0] > bottom - 8:
-        shift = positioned[-1][0] - (bottom - 8)
-        positioned = [(label_y - shift, label, total, color) for label_y, label, total, color in positioned]
-    for label_y, label, total, color in positioned:
-        labels.append(f'<text x="{right - 4}" y="{label_y:.1f}" text-anchor="end" fill="{color}" font-weight="700">{label}: {money(total)}</text>')
+        final_values.append((label, total, color))
 
     ticks = []
     for fraction in (0, 0.25, 0.5, 0.75, 1):
@@ -96,11 +84,9 @@ def make_svg(series, common_start, cutoff):
         ticks.append(f'<text x="{left - 10}" y="{yy + 4:.1f}" text-anchor="end">{money(value)}</text>')
 
     legend = ''.join(
-        f'<line x1="{x1}" y1="{y}" x2="{x1 + 28}" y2="{y}" stroke="{color}" stroke-width="3"/>'
-        f'<text x="{x1 + 36}" y="{y + 5}">{label}</text>'
-        for (label, (_, color)), x1, y in zip(
-            STRATEGIES.items(), (520, 720, 520), (67, 67, 88)
-        )
+        f'<line x1="520" y1="{row_y}" x2="548" y2="{row_y}" stroke="{color}" stroke-width="3"/>'
+        f'<text x="556" y="{row_y + 5}">{label}: {money(total)}</text>'
+        for row_y, (label, total, color) in zip((67, 89, 111), final_values)
     )
     display_start = common_start.replace(second=0, microsecond=0)
     display_cutoff = cutoff.replace(minute=0, second=0, microsecond=0) if cutoff.minute == 5 else cutoff
@@ -109,7 +95,7 @@ def make_svg(series, common_start, cutoff):
   <desc id="desc">세 전략 모두 {display_start.strftime('%Y년 %m월 %d일 %H시 %M분')}부터 2026년 11월 27일 05시까지 모든 확정 청산 손익을 시간순으로 누적한 그래프</desc>
   <rect width="{width}" height="{height}" rx="24" fill="#0b1220"/><rect x="32" y="32" width="896" height="456" rx="18" fill="#111c2e" stroke="#263852"/>
   <text x="72" y="78" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Gold·US100Cash 가상매매 전략 전체 누적 손익</text>
-  <text x="72" y="106" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">세 전략 공통 {display_start.strftime('%Y-%m-%d %H:%M')}부터 {display_cutoff.strftime('%Y-%m-%d %H:%M')} KST까지 · 일별 손익이 아니라 모든 청산을 누적</text>
+  <text x="72" y="133" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">세 전략 공통 {display_start.strftime('%Y-%m-%d %H:%M')}부터 {display_cutoff.strftime('%Y-%m-%d %H:%M')} KST까지 · 일별 손익이 아니라 모든 청산을 누적</text>
   <g stroke="#263852" stroke-width="1" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">{"".join(ticks)}</g>
   <line x1="{left}" y1="{top}" x2="{left}" y2="{bottom}" stroke="#64748b" stroke-width="2"/>
   {''.join(paths)}{''.join(labels)}
