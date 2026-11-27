@@ -47,7 +47,7 @@ US100Cash는 특히 할인율과 기대 현금흐름에 민감하다. AI 대형�
 
 이 세션의 US100Cash MT5 실거래는 주문·deal·position 종료가 모두 연결된 공개 증거를 확인하지 못했으므로 손익을 기재하지 않는다. 이전 세션의 실거래 수치를 이번 세션으로 옮겨 적지 않는 것이 맞다. 다음 검증에서는 전환 지연, 스프레드와 수수료, 보호청산이 손익 비대칭을 어떻게 바꾸는지 봐야 한다.
 
-![AI 조정과 금리 재평가를 보여주는 경제 편집 이미지](https://queen1052.github.io/assets/research-charts/global-economy-gold-tech-editorial.png)
+![블랙프라이데이 유동성과 AI·Gold·데이터센터 재평가를 표현한 새 경제 편집 이미지](https://queen1052.github.io/assets/research-charts/global-economy-gold-tech-editorial-2026-11-27.png)
 
 *경제 편집 이미지: 금리·현금흐름 재평가가 AI 자산에 전달되는 맥락을 설명하는 시각 자료입니다.*
 
