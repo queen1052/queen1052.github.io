@@ -12,6 +12,7 @@ STRATEGIES = OrderedDict(
     [
         ("mt5_codex1 Gold", ("GOLD#_cusbox2_2m_1700", "#38bdf8")),
         ("mt5_rust1 Gold", ("GOLD#_crs_2m_0900_trend_a", "#f59e0b")),
+        ("mt5_codex1 US100Cash", ("US100Cash#_ewo_240t_0900_trend_a", "#f472b6")),
     ]
 )
 
@@ -79,13 +80,19 @@ def make_svg(series, cutoff):
         ticks.append(f'<line x1="{left}" y1="{yy:.1f}" x2="{right}" y2="{yy:.1f}"/>')
         ticks.append(f'<text x="{left - 10}" y="{yy + 4:.1f}" text-anchor="end">{money(value)}</text>')
 
-    legend = '<line x1="590" y1="67" x2="618" y2="67" stroke="#38bdf8" stroke-width="3"/><text x="626" y="72">mt5_codex1 Gold</text><line x1="770" y1="67" x2="798" y2="67" stroke="#f59e0b" stroke-width="3"/><text x="806" y="72">mt5_rust1 Gold</text>'
+    legend = ''.join(
+        f'<line x1="{x1}" y1="{y}" x2="{x1 + 28}" y2="{y}" stroke="{color}" stroke-width="3"/>'
+        f'<text x="{x1 + 36}" y="{y + 5}">{label}</text>'
+        for (label, (_, color)), x1, y in zip(
+            STRATEGIES.items(), (520, 720, 520), (67, 67, 88)
+        )
+    )
     display_cutoff = cutoff.replace(minute=0, second=0, microsecond=0) if cutoff.minute == 5 else cutoff
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-  <title id="title">Gold 가상매매 전략 전체 누적 손익</title>
+  <title id="title">Gold·US100Cash 가상매매 전략 전체 누적 손익</title>
   <desc id="desc">각 선택 전략의 최초 기록부터 2026년 11월 27일 05시까지 모든 확정 청산 손익을 시간순으로 누적한 그래프</desc>
   <rect width="{width}" height="{height}" rx="24" fill="#0b1220"/><rect x="32" y="32" width="896" height="456" rx="18" fill="#111c2e" stroke="#263852"/>
-  <text x="72" y="78" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Gold 가상매매 전략 전체 누적 손익</text>
+  <text x="72" y="78" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Gold·US100Cash 가상매매 전략 전체 누적 손익</text>
   <text x="72" y="106" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">최초 기록부터 {display_cutoff.strftime('%Y-%m-%d %H:%M')} KST까지 · 세션 종료 직후 최종 기록 포함 · 일별 손익이 아니라 모든 청산을 누적</text>
   <g stroke="#263852" stroke-width="1" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">{"".join(ticks)}</g>
   <line x1="{left}" y1="{top}" x2="{left}" y2="{bottom}" stroke="#64748b" stroke-width="2"/>
@@ -99,11 +106,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--codex-root", required=True)
     parser.add_argument("--rust-root", required=True)
+    parser.add_argument("--us100cash-root", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--cutoff", default="2026-11-27T05:00:00+09:00")
     args = parser.parse_args()
     cutoff = datetime.fromisoformat(args.cutoff)
-    roots = {"mt5_codex1 Gold": args.codex_root, "mt5_rust1 Gold": args.rust_root}
+    roots = {
+        "mt5_codex1 Gold": args.codex_root,
+        "mt5_rust1 Gold": args.rust_root,
+        "mt5_codex1 US100Cash": args.us100cash_root,
+    }
     series = OrderedDict((label, read_closes(roots[label], strategy, cutoff)) for label, (strategy, _) in STRATEGIES.items())
     Path(args.output).write_text(make_svg(series, cutoff), encoding="utf-8")
     for label, events in series.items():
