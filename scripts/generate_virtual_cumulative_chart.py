@@ -38,7 +38,7 @@ def money(value):
 
 
 def make_svg(series, common_start, cutoff):
-    width, height = 960, 520
+    width, height = 960, 560
     left, right, top, bottom = 132, 820, 155, 402
     values = [Decimal(0)]
     for events in series.values():
@@ -84,22 +84,22 @@ def make_svg(series, common_start, cutoff):
         ticks.append(f'<text x="{left - 10}" y="{yy + 4:.1f}" text-anchor="end">{money(value)}</text>')
 
     legend = ''.join(
-        f'<line x1="520" y1="{row_y}" x2="548" y2="{row_y}" stroke="{color}" stroke-width="3"/>'
-        f'<text x="556" y="{row_y + 5}">{label}: {money(total)}</text>'
-        for row_y, (label, total, color) in zip((67, 89, 111), final_values)
+        f'<line x1="72" y1="{row_y}" x2="100" y2="{row_y}" stroke="{color}" stroke-width="3"/>'
+        f'<text x="108" y="{row_y + 5}">{label}: {money(total)}</text>'
+        for row_y, (label, total, color) in zip((442, 464, 486), final_values)
     )
     display_start = common_start.replace(second=0, microsecond=0)
     display_cutoff = cutoff.replace(minute=0, second=0, microsecond=0) if cutoff.minute == 5 else cutoff
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
   <title id="title">Gold·US100Cash 가상매매 전략 전체 누적 손익</title>
   <desc id="desc">세 전략 모두 {display_start.strftime('%Y년 %m월 %d일 %H시 %M분')}부터 2026년 11월 27일 05시까지 모든 확정 청산 손익을 시간순으로 누적한 그래프</desc>
-  <rect width="{width}" height="{height}" rx="24" fill="#0b1220"/><rect x="32" y="32" width="896" height="456" rx="18" fill="#111c2e" stroke="#263852"/>
+  <rect width="{width}" height="{height}" rx="24" fill="#0b1220"/><rect x="32" y="32" width="896" height="528" rx="18" fill="#111c2e" stroke="#263852"/>
   <text x="72" y="78" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Gold·US100Cash 가상매매 전략 전체 누적 손익</text>
   <text x="72" y="133" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">세 전략 공통 {display_start.strftime('%Y-%m-%d %H:%M')}부터 {display_cutoff.strftime('%Y-%m-%d %H:%M')} KST까지 · 일별 손익이 아니라 모든 청산을 누적</text>
   <g stroke="#263852" stroke-width="1" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">{"".join(ticks)}</g>
   <line x1="{left}" y1="{top}" x2="{left}" y2="{bottom}" stroke="#64748b" stroke-width="2"/>
   {''.join(paths)}{''.join(labels)}
-  <g fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12"><text x="72" y="470">선: 전략별 모든 확정 청산의 누적 손익 · 현재 글의 세션 표와 다른 전체 기간 범위</text></g>
+  <g fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12"><text x="72" y="530">선: 전략별 모든 확정 청산의 누적 손익 · 현재 글의 세션 표와 다른 전체 기간 범위</text></g>
   <g fill="#cbd5e1" font-family="Arial, sans-serif" font-size="11">{legend}</g>
 </svg>'''
 

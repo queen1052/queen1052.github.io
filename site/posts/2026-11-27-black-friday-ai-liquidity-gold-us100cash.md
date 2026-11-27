@@ -55,7 +55,7 @@ US100Cash는 특히 할인율과 기대 현금흐름에 민감하다. AI 대형�
 
 이번 표는 11월 26일 09:00부터 11월 27일 05:00까지의 한 세션 결과이고, 아래 그래프는 세 전략 중 가장 늦게 기록이 시작된 10월 12일 14:33부터 이번 세션 종료까지 동일한 기간의 모든 확정 청산을 합산한 누적 손익이다. 따라서 표의 하루 손익과 그래프의 최종 누적값은 서로 다른 범위다.
 
-![10월 12일 공통 시작 시점부터 11월 27일 세션 종료까지 Gold·US100Cash 가상매매 전략 누적 손익](https://queen1052.github.io/assets/research-charts/virtual-cumulative-pnl-readable-2026-11-27.svg)
+![10월 12일 공통 시작 시점부터 11월 27일 세션 종료까지 Gold·US100Cash 가상매매 전략 누적 손익](https://queen1052.github.io/assets/research-charts/virtual-cumulative-pnl-readable-v2-2026-11-27.svg)
 
 *공통 기간 누적 손익 차트: `mt5_codex1` Gold 19건 누적 `+49,708,500원`, `mt5_rust1` Gold 72건 누적 `+48,655,500원`, `mt5_codex1` US100Cash 325건 누적 `-26,833,800원`입니다. 세 선 모두 10월 12일 14:33 이후의 확정 청산을 시간순으로 누적한 값이며, 일별 손익이 아닙니다. US100Cash 선도 가상매매 기록입니다.*
 
