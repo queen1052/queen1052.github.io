@@ -6,7 +6,7 @@ category: "경제"
 tags: ["세계경제", "AI", "금리", "GDP", "Gold", "US100Cash", "가상매매"]
 author: "마켓노트"
 readTime: "7분"
-image: "https://queen1052.github.io/assets/research-charts/ai-repricing-trading-floor-2026-11-27.png"
+image: null
 ---
 
 # 성장률은 강한데 주가는 흔들린다: AI 재평가와 금리의 간격
